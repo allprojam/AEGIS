@@ -90,15 +90,26 @@ class Handler(BaseHTTPRequestHandler):
     def log_message(self, fmt, *args):
         sys.stderr.write("%s %s\n" % (time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), fmt % args))
 
-    def _send(self, code, payload, extra=None):
+    def _send(self, code, payload, extra=None, close=False):
         body = json.dumps(payload).encode() if not isinstance(payload, bytes) else payload
         self.send_response(code)
         self.send_header("Content-Type", "application/json")
         self.send_header("Content-Length", str(len(body)))
         for k, v in (extra or {}).items():
             self.send_header(k, v)
+        # EARLY REJECTIONS MUST CLOSE THE CONNECTION.
+        # On the 401 and 413 paths the request body is deliberately never read. Under HTTP/1.1
+        # keep-alive those unread bytes stay in the socket and the next read sees them as a
+        # request line, which produced 'Bad request syntax' in the journal. Closing is the only
+        # correct answer when a body has been refused but not consumed.
+        self.close_connection = close
+        if close:
+            self.send_header("Connection", "close")
         self.end_headers()
-        self.wfile.write(body)
+        try:
+            self.wfile.write(body)
+        except (BrokenPipeError, ConnectionResetError):
+            self.close_connection = True
 
     def do_GET(self):
         if self.path.split("?")[0] in ("/health", "/healthz"):
@@ -107,7 +118,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         if self.path.split("?")[0] != "/mcp":
-            return self._send(404, {"error": "not found"})
+            return self._send(404, {"error": "not found"}, close=True)
 
         # 1. size, before reading
         try:
@@ -117,7 +128,7 @@ class Handler(BaseHTTPRequestHandler):
         if length <= 0:
             return self._send(400, {"error": "empty body"})
         if length > MAX_BODY:
-            return self._send(413, {"error": "body too large", "max_bytes": MAX_BODY})
+            return self._send(413, {"error": "body too large", "max_bytes": MAX_BODY}, close=True)
 
         # 2. auth, before metering, so unauthenticated traffic costs no buckets
         tok = None
@@ -127,12 +138,12 @@ class Handler(BaseHTTPRequestHandler):
             claims = _verify_token(tok)
             if not claims:
                 return self._send(401, {"error": "valid bearer token required"},
-                                  {"WWW-Authenticate": 'Bearer realm="Aegis MCP"'})
+                                  {"WWW-Authenticate": 'Bearer realm="Aegis MCP"'}, close=True)
 
         # 3. limits
         allowed, hdrs, why = _limiter.check(ip=_client_ip(self), token=tok)
         if not allowed:
-            return self._send(429, {"error": why}, hdrs)
+            return self._send(429, {"error": why}, hdrs)   # body was read, keep-alive is safe
 
         # 4. dispatch: the same function stdio uses, so transports cannot drift
         try:

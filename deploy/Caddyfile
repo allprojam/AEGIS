@@ -1,0 +1,61 @@
+# Aegis MCP — public HTTPS endpoint.
+#
+# The backend (mcp_http.py) binds 127.0.0.1:8051 and enforces its own bearer-token auth and
+# rate limits. Caddy adds TLS and identity; it does NOT replace either.
+{
+	# No `admin off`: Caddy's admin API on localhost:2019 is needed for `caddy reload`.
+	# It is loopback-bound by default, and ufw denies it from outside.
+	email admin@airjoymechanical.com
+}
+
+# ---------------------------------------------------------------- HTTPS endpoint
+srv1619135.hstgr.cloud {
+	# BIND IS REQUIRED HERE. Tailscale already holds 0.0.0.0:443 on this host, so Caddy's
+	# default `*:443` fails with 'address already in use'. Binding the public IP explicitly
+	# leaves the tailnet's TLS on tailscale0 untouched.
+	bind 187.127.255.228
+	encode zstd gzip
+
+	# Only the MCP surface is proxied. /health is proxied too, deliberately: it exposes
+	# nothing but {"ok":true} and it makes the uptime check trivial.
+	handle /mcp* {
+		reverse_proxy 127.0.0.1:8051 {
+			# The backend trusts X-Forwarded-For ONLY when TRUST_PROXY=1, and the unit binds
+			# loopback so the only possible writer of that header is this proxy.
+			header_up X-Forwarded-For {remote_host}
+			header_up X-Real-IP {remote_host}
+		}
+	}
+
+	handle /health* {
+		reverse_proxy 127.0.0.1:8051
+	}
+
+	# Everything else is a 404. This is not a website; it is one endpoint.
+	handle {
+		respond "Not found" 404
+	}
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "no-referrer"
+		-Server
+	}
+
+	log {
+		output file /var/log/caddy/aegis-mcp.log {
+			roll_size 10mb
+			roll_keep 5
+		}
+	}
+}
+
+# ---------------------------------------------------------------- HTTP -> HTTPS
+# Port 80 is already occupied by the tailnet's TLS on tailscale0, so this site is explicitly
+# bound to the public interface. Without the bind, Caddy would try to bind *:80 and conflict.
+http://srv1619135.hstgr.cloud:80 {
+	bind 187.127.255.228
+	redir https://{host}{uri} permanent
+}

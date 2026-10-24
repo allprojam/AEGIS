@@ -181,3 +181,21 @@ DIFFERENT empty directory — publish to both locations separately, never assume
 Oracle), never a component we own, and never the LLM. If a plan says "oracle engine" it is
 naming the wrong thing — the orchestrator is `aegis_loop.py` and the prompt contract is
 `ORCHESTRATOR_INITIATOR` + `triage_prompt()` in `aegis_run.py`.
+
+## Public endpoint (2026-10-24)
+
+```
+internet ──443──> Caddy (bind 187.127.255.228) ──> 127.0.0.1:8051 ──> mcp_http.py
+```
+
+Host: `https://srv1619135.hstgr.cloud` · cert: Let's Encrypt, auto-renewed · verified `tls_verify=0`.
+
+**Caddy must bind the public IP explicitly.** Tailscale already holds `:443` on `tailscale0`, so
+Caddy's default `*:443` fails with `address already in use`. `deploy/Caddyfile` has the bind.
+
+**Only `/mcp` and `/health` are proxied.** Everything else returns 404 — this is one endpoint,
+not a website. `TRUST_PROXY=1` on the unit is safe **only** because Caddy is the sole writer of
+`X-Forwarded-For`; the unit binds loopback so nothing else can reach it.
+
+**`8051` is still open in ufw but no longer needs to be.** Caddy reaches the backend over
+loopback. Closing it is a pending hardening step, kept for direct-testing convenience.

@@ -20,7 +20,10 @@ Environment=MCP_PORT=8051
 Environment=MCP_REQUIRE_TOKEN=1
 # TRUST_PROXY stays 0: nothing sits in front of this process yet. If a proxy is added, set it
 # to 1 *and* make the unit bind to 127.0.0.1 so X-Forwarded-For can only come from that proxy.
-Environment=TRUST_PROXY=0
+# 1 = trust X-Forwarded-For. Safe ONLY because Caddy is the sole writer: the unit binds
+# 127.0.0.1 and Caddy is the only process forwarding to it. Without a proxy this must be 0,
+# or any caller could set their own IP and evade the per-IP limit.
+Environment=TRUST_PROXY=1
 Environment=PYTHONUNBUFFERED=1
 
 ExecStart=/usr/bin/python3 mcp_http.py
