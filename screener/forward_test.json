@@ -1,5 +1,5 @@
 {
- "coverage_started": "2026-10-07T18:39:02Z",
+ "coverage_started": "2026-10-24T18:43:44Z",
  "days": [
   {
    "day": "2026-10-07",
@@ -97,6 +97,6 @@
   "bad_debt_events": 0,
   "bad_debt_usd": 0.0
  },
- "as_of": "2026-10-13T18:15:41Z",
- "events_total": 31123
+ "as_of": "2026-10-24T19:44:18Z",
+ "events_total": 187
 }

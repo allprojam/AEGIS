@@ -1,11 +1,11 @@
 {
- "median_interval_seconds": 909.0,
+ "median_interval_seconds": 909.5,
  "median_interval_hours": 0.25,
  "z_threshold": 3.0,
  "raw_floor": 0.05,
  "min_intervals": 10,
  "counts": {
-  "markets_tracked": 64,
+  "markets_tracked": 0,
   "alerts": 0
  },
  "alerts": []
