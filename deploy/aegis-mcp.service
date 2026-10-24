@@ -1,0 +1,51 @@
+[Unit]
+Description=Aegis MCP — read-only risk data over HTTP
+Documentation=file:///root/agency_bot/workspace/aegis/SECURITY.md
+After=network-online.target
+Wants=network-online.target
+# Restart storm guard. The limiter is in-process, so every restart empties its buckets;
+# a crash loop would also mean no rate limiting at all. Keep restarts rare.
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/agency_bot/workspace/aegis
+
+# Bind to loopback ONLY. Public exposure is a separate, deliberate step (deploy/firewall.sh).
+# A mistake here must not mean "the internet can reach an unauthenticated data endpoint".
+Environment=MCP_HOST=127.0.0.1
+Environment=MCP_PORT=8051
+Environment=MCP_REQUIRE_TOKEN=1
+# TRUST_PROXY stays 0: nothing sits in front of this process yet. If a proxy is added, set it
+# to 1 *and* make the unit bind to 127.0.0.1 so X-Forwarded-For can only come from that proxy.
+Environment=TRUST_PROXY=0
+Environment=PYTHONUNBUFFERED=1
+
+ExecStart=/usr/bin/python3 mcp_http.py
+
+Restart=always
+RestartSec=3
+
+# Hardening. The process needs to read the repo and the token secret, and nothing else.
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/root/agency_bot/workspace/aegis/screener
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+RestrictNamespaces=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+SystemCallArchitectures=native
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=aegis-mcp
+
+[Install]
+WantedBy=multi-user.target

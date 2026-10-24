@@ -9,6 +9,39 @@
 
 ---
 
+## Where this stands: 2026-10-24 — repo published, MCP hostable
+
+| item | state |
+|---|---|
+| repo history | **1→2 commits**, rebuilt fresh. The old history included `screener/token_secret.key`; it is now in **no** commit. |
+| secret | **rotated.** Old key archived to `/root/.aegis-private/` (mode 600). Ledger reset. `tokens.py --selftest` passes. |
+| tracked size | 8,845 → **739 files**; `.git` 196MB → **70MB**. `runs/` 276MB → 596KB, `audits/` 20MB → 116KB. |
+| clone test | clean clone runs `lending_screen.py` (100 markets) and passes `mcp_protocol.py --selftest` |
+| `TRAP_TABLE.md` | written from live data. **12 of 12** highest-APY markets fail. |
+| `rate_limit.py` | 12/12 selftest |
+| `mcp_http.py` | live-tested: 8 tools, auth 401/200/401, 70 req → 58×200 + 12×429, 2MB → 413 |
+| `deploy/aegis-mcp.service` | `systemd-analyze verify` clean. Loopback-bound, auth on. |
+| `deploy/firewall.sh` | syntax checked. **NOT YET RUN** — ufw is inactive. |
+
+### Blockers
+
+1. **ufw is inactive.** `deploy/firewall.sh` allows SSH first and only then enables — that
+   ordering is the difference between a firewall and a lockout. Do not reorder it.
+2. **No reverse proxy installed** (no nginx/caddy/traefik). 8051 is therefore not reachable
+   from the internet even if ufw allows it, because the service binds loopback. Opening the
+   port is a prerequisite for a proxy, not a substitute for one.
+3. **The limiter is in-process.** A restart empties the buckets. Fine for one box; a fleet
+   needs a shared store.
+
+### Next
+
+1. `systemctl enable --now aegis-mcp` then confirm `curl 127.0.0.1:8051/health`.
+2. Decide on a proxy. If added: set `TRUST_PROXY=1`, keep the unit loopback-bound.
+3. Run `deploy/firewall.sh` — **after** verifying you can still SSH in a second session.
+4. Publish `TRAP_TABLE.md`. Hosting does not create demand; that post does.
+
+---
+
 ## Status: operational — screen + provenance + liquidations + covariance diagnostic + DEX fee feed live
 
 - **Active task:** none between cycles. Next pick listed below.

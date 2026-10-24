@@ -55,3 +55,73 @@ nothing, the zero-assertion "pass", the `--check` that ran the cycle it gated, t
 masquerading as a suite (`_jsdom_util.cjs` swept by a `*.cjs` glob → now `test_*.cjs`), and the
 prompt's double-prefixed verify path. RULE: when an assertion fails, decide whether CODE or
 ASSERTION is wrong BEFORE touching either, and record that call here when it is the assertion.
+
+---
+
+## 2026-10-24 — Publishing Aegis, and hosting the MCP
+
+Four decisions and one correction, recorded because each closed off an option that was
+argued for and rejected on evidence.
+
+### D1. Publish under AGPL-3.0, not MIT
+
+**Chosen:** AGPL-3.0. **Rejected:** MIT, and "no license".
+
+The argument for MIT was reach. The argument against is that this repo's value is a
+*conclusion* — most high-yield markets fail basic solvency checks — plus the harness that
+proves it case by case. AGPL keeps a network service running a modified version obligated to
+publish its changes, so the corpus stays attributable rather than quietly re-badged, while
+still being forkable.
+
+"No license" was never actually a strategy: without a license the code is **all rights
+reserved**, so publishing it would have granted nothing. That was an accident waiting to be
+made permanent.
+
+### D2. Host the HTTP MCP, but keep the unit loopback-bound
+
+**Chosen:** write `mcp_http.py`, run it on **127.0.0.1:8051**, expose it deliberately later.
+**Rejected:** binding 0.0.0.0 immediately.
+
+`mcp_protocol.py` spoke stdio only. stdio is correct for local use and **cannot be hosted or
+rate limited** — there is no request to count. So the transport had to exist before the
+limiter could mean anything.
+
+The binding stays loopback because a mistake in a unit file should not mean "the internet can
+reach a data endpoint".
+
+### D3. Three rate limits, sliding window, in-process
+
+**Chosen:** per-IP + per-token + global, sliding window, in-process state.
+**Rejected:** a single limit; fixed windows; Redis.
+
+One limit is not enough: a per-IP limit alone lets one subscriber behind CGNAT starve
+another, and no per-IP limit bounds total load. Sliding rather than fixed because a
+fixed-window counter lets a caller send 2× the limit across a boundary.
+
+In-process is honest for one box, one process, one dataset. A restart empties the buckets —
+that is a stated limitation, not an oversight, and it is why `StartLimitBurst` is set: a crash
+loop would also mean no rate limiting at all.
+
+### D4. `TRUST_PROXY` defaults to 0
+
+**Chosen:** off by default, explicit opt-in.
+**Rejected:** reading `X-Forwarded-For` when present.
+
+There is no reverse proxy on this box. Trusting the header by default would let any caller
+set their own IP and walk around the per-IP limit — defeating the control while appearing to
+implement it. If a proxy is added it must set `TRUST_PROXY=1` **and** the unit must stay
+loopback-bound, so the header can only come from that proxy.
+
+### C1. CORRECTION — the auth bypass, and the rule it re-confirms
+
+`tokens.verify()` returns `(ok, payload)`. The first version of `_verify_token` returned that
+tuple directly. **`(False, "bad_signature")` is a truthy tuple**, so every non-empty token
+was accepted. Measured: no token → 401, valid → 200, **garbage → 200**.
+
+Fixed by unpacking. Retested: bad, forged and truncated tokens all return 401.
+
+This is the seventh instance of the rule already recorded above — *when an assertion fails,
+decide whether CODE or ASSERTION is wrong before touching either* — with a twist worth
+naming: **a passing test proved nothing here, because the test only used a valid token.** The
+bypass surfaced only from testing a token that must fail. Negative tests are not optional for
+an auth path.

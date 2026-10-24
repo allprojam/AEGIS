@@ -101,6 +101,43 @@ systems). `report.html` and `screener/index.html` are checked byte-identical by 
 | `aegis-forward.timer` | the production cycle every 15 min, `flock`-guarded |
 | `aegis-amm.timer` | DefiLlama AMM snapshot → `screener/results.json` |
 | tailscale | `https://srv1619135.tailf16ee8.ts.net` → 8099, tailnet only |
+| `aegis-mcp.service` | **HTTP MCP on 127.0.0.1:8051**, `mcp_http.py`, auth on, loopback-bound |
+
+### The two MCP transports, and why both exist
+
+| transport | file | who it is for |
+|---|---|---|
+| stdio | `mcp_protocol.py` | local use. An MCP client spawns the process. No network, no auth, no attack surface. |
+| HTTP | `mcp_http.py` | hosting. A socket, peer identity, and limits. |
+
+**Both call the same `mcp_protocol.handle()`.** That is the invariant: the transports cannot
+drift apart, because there is exactly one dispatcher. `mcp_http.py` contains no tool logic.
+
+**stdio cannot be rate limited**, because there is no request to count. That is why the HTTP
+transport had to be written before any limiter could mean anything.
+
+### Bind policy
+
+The unit binds **127.0.0.1 only**. Public exposure is a deliberate, separate step. A mistake
+in the unit must never mean "the internet can reach a data endpoint."
+
+`TRUST_PROXY` defaults to **0**. Reading `X-Forwarded-For` without a proxy you control lets
+any caller set their own identity and walk around the per-IP limit, which is the entire
+purpose of that limit.
+
+### Rate limiting
+
+`rate_limit.py` — sliding window, three independent limits:
+
+| limit | default | why it is separate |
+|---|---|---|
+| per-IP | 60 / 60s | one caller cannot monopolise the endpoint |
+| per-token | 600 / 60s | a subscriber cannot be starved by another behind the same CGNAT IP |
+| global | 1200 / 60s | total load has a ceiling however the above distribute |
+
+Sliding, not fixed: a fixed-window counter lets a caller send 2× the limit across a window
+boundary. State is **in-process and single-box**; a restart empties the buckets, and a fleet
+would need a shared store. Stated, not hidden.
 
 `aegis-test.{service,timer}` was cleaned up (2026-10-08). The app-preview `/workspace` is a
 DIFFERENT empty directory — publish to both locations separately, never assume one covers the other.
@@ -114,7 +151,17 @@ DIFFERENT empty directory — publish to both locations separately, never assume
 4. **A run records the orchestrator initiator** (version, sha256, full text) in
    `orchestrator.json` + `provenance.orchestrator`, on every run including no-`--reason` ones.
 5. **No silent zero.** The suite fails loudly if a suite passes reporting 0 assertions.
-6. **Units travel with the data.** `normalize()` converts once; anything dividing by 1e6
+6. **No tool writes, signs, or spends.** Enforced by test, not by convention.
+   `mcp_protocol.py --selftest` asserts the tool surface; `SECURITY.md` states the grep proof.
+7. **One dispatcher, two transports.** `mcp_http.py` imports `mcp_protocol.handle()`; it does
+   not reimplement dispatch. Any new transport must do the same.
+8. **Auth fails closed.** `tokens.verify()` returns `(ok, payload)`. A **truthy tuple** like
+   `(False, "bad_signature")` will accept every token if returned directly — this shipped as a
+   real bypass and was fixed. Callers must unpack. Regression test: bad/forged/truncated tokens
+   all return 401.
+9. **Oversized bodies are rejected before they are read.** 1 MiB cap, checked against
+   `Content-Length` before `rfile.read()`, so an attacker cannot exhaust memory with a header.
+10. **Units travel with the data.** `normalize()` converts once; anything dividing by 1e6
    unconditionally produced "$1.4T seized in 30 minutes" and would again.
 
 ## Data sources
