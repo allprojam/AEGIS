@@ -1,0 +1,41 @@
+GNU AFFERO GENERAL PUBLIC LICENSE
+Version 3, 19 November 2007
+
+Copyright (C) 2026 Aegis
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+---
+
+WHY AGPL AND NOT MIT
+====================
+
+This repository is a measured-findings corpus and a risk screener. Its value
+is not the code — it is the conclusion that most high-yield opportunities fail
+basic solvency checks, and the harness that proves it case by case.
+
+AGPL keeps that conclusion attributable. If you run a modified version of this
+screener as a network service, you must publish your changes, so the corpus
+stays honest and forkable rather than being quietly re-badged.
+
+If you want to use this commercially without the AGPL network clause, that is
+available under a separate license. Open an issue to discuss.
+
+---
+
+ADDITIONAL DISCLAIMER (not part of the AGPL text)
+
+Nothing in this repository is financial advice. It places no orders, signs no
+transactions, and holds no funds. Every number it produces is a measurement of
+CURRENT state at a stated timestamp, not a forecast. See README.md.

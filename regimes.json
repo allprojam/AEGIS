@@ -1,0 +1,1246 @@
+{
+ "median_interval_seconds": 907.0,
+ "median_interval_hours": 0.25,
+ "jump_threshold": 0.05,
+ "jump_threshold_small": 0.02,
+ "counts": {
+  "markets": 61,
+  "active": 23,
+  "quiescent": 6,
+  "frozen": 32,
+  "jumps_5pp": 33,
+  "jumps_2pp": 80,
+  "quiescent_but_at_or_past_lock": 0,
+  "active_at_or_past_lock": 0,
+  "quiescent_but_above_90pct": 2
+ },
+ "active": [
+  {
+   "market_id": "0x9125d0fa03c3137166df68bcc72283477830de2a4a5536512374c573ad4583c3",
+   "collateral": "cbLTC",
+   "runs_seen": 106,
+   "utilization": 0.7777359087776321,
+   "supply_usd": 1072333.9399692474,
+   "verdict": {
+    "REAL": 103,
+    "CAUTION": 2,
+    "AVOID": 1
+   },
+   "runs": 106,
+   "util_min": 0.7777359087776321,
+   "util_max": 0.9747307864641652,
+   "range": 0.19699487768653312,
+   "sd": 0.027796210644211096,
+   "max_jump": 0.11812218388062123,
+   "jumps_5pp": 17,
+   "jumps_2pp": 36,
+   "biggest_jump_at": "20261008T173844Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0xdaa04f6819210b11fe4e3b65300c725c32e55755e3598671559b9ae3bac453d7",
+   "collateral": "AERO",
+   "runs_seen": 106,
+   "utilization": 0.8845874164964788,
+   "supply_usd": 360575.2792815471,
+   "verdict": {
+    "CAUTION": 105,
+    "AVOID": 1
+   },
+   "runs": 106,
+   "util_min": 0.883623443785047,
+   "util_max": 0.9947924852602719,
+   "range": 0.11116904147522488,
+   "sd": 0.009944948611522808,
+   "max_jump": 0.11116904147522488,
+   "jumps_5pp": 2,
+   "jumps_2pp": 2,
+   "biggest_jump_at": "20261008T175400Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x73527ddd796e6d4f48387adaae36f6f3d49d606d7f2a15eb0c931416a58875d8",
+   "collateral": "cbDOGE",
+   "runs_seen": 106,
+   "utilization": 0.7976242305891039,
+   "supply_usd": 3052248.793881527,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.7976242305891039,
+   "util_max": 0.9197432809781397,
+   "range": 0.12211905038903581,
+   "sd": 0.02340325250170717,
+   "max_jump": 0.10348516455718848,
+   "jumps_5pp": 12,
+   "jumps_2pp": 32,
+   "biggest_jump_at": "20261008T180910Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x52a2a376586d0775e3e80621facc464f6e96d81c8cb70fd461527dde195a079f",
+   "collateral": "LBTC",
+   "runs_seen": 96,
+   "utilization": 0.9006507290228621,
+   "supply_usd": 46463.16590712578,
+   "verdict": {
+    "CAUTION": 96
+   },
+   "runs": 96,
+   "util_min": 0.8298568075682722,
+   "util_max": 0.9006507290228621,
+   "range": 0.07079392145458996,
+   "sd": 0.006203574208181583,
+   "max_jump": 0.05774370984613575,
+   "jumps_5pp": 2,
+   "jumps_2pp": 2,
+   "biggest_jump_at": "20261008T084645Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x1c21c59df9db44bf6f645d854ee710a8ca17b479451447e9f56758aee10a2fad",
+   "collateral": "cbETH",
+   "runs_seen": 106,
+   "utilization": 0.8994307357267695,
+   "supply_usd": 1727688.105354308,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.8300612680996559,
+   "util_max": 0.8995001885600284,
+   "range": 0.06943892046037259,
+   "sd": 0.010069527244413824,
+   "max_jump": 0.03564918065872691,
+   "jumps_5pp": 0,
+   "jumps_2pp": 1,
+   "biggest_jump_at": "20261008T173844Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0xd4a903dc6d949519060c7707f9604fdc9772c046e05c2e3a8fce0bd7196e4109",
+   "collateral": "cbXRP",
+   "runs_seen": 106,
+   "utilization": 0.8676317384470869,
+   "supply_usd": 64445583.71131921,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.8676317384470869,
+   "util_max": 0.9080479673594763,
+   "range": 0.040416228912389496,
+   "sd": 0.0043468732863262945,
+   "max_jump": 0.03354072853180301,
+   "jumps_5pp": 0,
+   "jumps_2pp": 1,
+   "biggest_jump_at": "20261008T180910Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x2e26ecfe44dd56f2e6b0257e421e69474e838397b7194e2c934195c6d975af62",
+   "collateral": "sUSN",
+   "runs_seen": 106,
+   "utilization": 0.8991407910620913,
+   "supply_usd": 3377311.983257106,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.8949607831206028,
+   "util_max": 0.9279338957033618,
+   "range": 0.032973112582759034,
+   "sd": 0.006686262160650465,
+   "max_jump": 0.025230509764153308,
+   "jumps_5pp": 0,
+   "jumps_2pp": 1,
+   "biggest_jump_at": "20261008T064509Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x2e2548390b8894d2ffaaababebc2b5f2501920e03a4c611b63b46e19bfc6b75d",
+   "collateral": "uniBTC",
+   "runs_seen": 106,
+   "utilization": 0.9005065009322095,
+   "supply_usd": 369245.2322821176,
+   "verdict": {
+    "CAUTION": 106
+   },
+   "runs": 106,
+   "util_min": 0.8799632061847477,
+   "util_max": 0.9055999472326992,
+   "range": 0.02563674104795155,
+   "sd": 0.010044786491164364,
+   "max_jump": 0.0251737132040446,
+   "jumps_5pp": 0,
+   "jumps_2pp": 2,
+   "biggest_jump_at": "20261007T203600Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0xd7520ad198b497b6eb75bc690268f4597630dbc12e305e9d4105843bab36e41d",
+   "collateral": "cbADA",
+   "runs_seen": 106,
+   "utilization": 0.8797357163759275,
+   "supply_usd": 2665500.0823326013,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.878929692804544,
+   "util_max": 0.9060622232036156,
+   "range": 0.027132530399071597,
+   "sd": 0.004945992657624042,
+   "max_jump": 0.02360373818090067,
+   "jumps_5pp": 0,
+   "jumps_2pp": 3,
+   "biggest_jump_at": "20261008T180910Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x76629002c9fdb20fb2092053a4f22c5c65e04a81887218b9546f2a2d82b4c0a8",
+   "collateral": "cbHYPE",
+   "runs_seen": 106,
+   "utilization": 0.9226026722853738,
+   "supply_usd": 357090.0127836044,
+   "verdict": {
+    "CAUTION": 106
+   },
+   "runs": 106,
+   "util_min": 0.9159309547918185,
+   "util_max": 0.9380135387280498,
+   "range": 0.022082583936231304,
+   "sd": 0.0026733525913232355,
+   "max_jump": 0.015679270176991555,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T000920Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x7dc02ff6c536b1d49d7fba770438d79f5bd1f1c78884629b7d1aaee19675782b",
+   "collateral": "SOL",
+   "runs_seen": 106,
+   "utilization": 0.899859286791052,
+   "supply_usd": 7381666.749440645,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.8924174223021215,
+   "util_max": 0.9173701270151027,
+   "range": 0.024952704712981166,
+   "sd": 0.0028451400801625076,
+   "max_jump": 0.01363722707716375,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T130531Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x0ca10126f6c94cbd9cf0a48cc9516ae5e3dec5aa68303e6d988ee37c5149bf0d",
+   "collateral": "cbETH",
+   "runs_seen": 106,
+   "utilization": 0.9013392755757793,
+   "supply_usd": 15556607.04939853,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.8875968866556444,
+   "util_max": 0.9024110347928544,
+   "range": 0.014814148137210048,
+   "sd": 0.003124769562742433,
+   "max_jump": 0.013374326319232188,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T155239Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x54cf9be57fdfa6457a660991907434ff9d295c465a603a50126ff647d50b7354",
+   "collateral": "USDe",
+   "runs_seen": 106,
+   "utilization": 0.9020905482273895,
+   "supply_usd": 389087983.9065256,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.8898146482634819,
+   "util_max": 0.9027083756260715,
+   "range": 0.012893727362589646,
+   "sd": 0.002346916441113723,
+   "max_jump": 0.01118591622792331,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T233543Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x09276541cfecb6920a80679a1deced4dde3ae64bf5fc2c9c1f9c21e0c152e1a5",
+   "collateral": "JitoSOL",
+   "runs_seen": 106,
+   "utilization": 0.8739165926964171,
+   "supply_usd": 3853063.173270556,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.8739165926964171,
+   "util_max": 0.9084689714899079,
+   "range": 0.03455237879349082,
+   "sd": 0.004602531932130478,
+   "max_jump": 0.010812606832320104,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T173844Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0xe458a501c1103ca3b256f2bcb45d223263fb34b6349d82675494ce3a94ce1327",
+   "collateral": "cbZEC",
+   "runs_seen": 106,
+   "utilization": 0.9138271673445889,
+   "supply_usd": 1602224.9273553633,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.906194720295862,
+   "util_max": 0.9217038191629692,
+   "range": 0.015509098867107163,
+   "sd": 0.002091818570200191,
+   "max_jump": 0.009725456752013306,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T110409Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x8793cf302b8ffd655ab97bd1c695dbd967807e8367a65cb2f4edaf1380ba1bda",
+   "collateral": "WETH",
+   "runs_seen": 106,
+   "utilization": 0.9008763229016825,
+   "supply_usd": 102578988.62440336,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.8918363447029686,
+   "util_max": 0.9018936812185301,
+   "range": 0.01005733651556151,
+   "sd": 0.0010939437370080744,
+   "max_jump": 0.0069011952273931865,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T153709Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0xdba352d93a64b17c71104cbddc6aef85cd432322a1446b5b65163cbbc615cd0c",
+   "collateral": "cbETH",
+   "runs_seen": 106,
+   "utilization": 0.7460941661376955,
+   "supply_usd": 840975.7034425226,
+   "verdict": {
+    "CAUTION": 106
+   },
+   "runs": 106,
+   "util_min": 0.7460923831643628,
+   "util_max": 0.75196533587833,
+   "range": 0.005872952713967261,
+   "sd": 0.0017968690143936243,
+   "max_jump": 0.005872952713967261,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T153709Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x67a66cbacb2fe48ec4326932d4528215ad11656a86135f2795f5b90e501eb538",
+   "collateral": "superOETHb",
+   "runs_seen": 106,
+   "utilization": 0.9061944031462169,
+   "supply_usd": 465333.058533232,
+   "verdict": {
+    "CAUTION": 106
+   },
+   "runs": 106,
+   "util_min": 0.9045548732118435,
+   "util_max": 0.9092933213727615,
+   "range": 0.004738448160918063,
+   "sd": 0.0015753293557297617,
+   "max_jump": 0.0038737990130568445,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T142110Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x13c42741a359ac4a8aa8287d2be109dcf28344484f91185f9a79bd5a805a55ae",
+   "collateral": "wstETH",
+   "runs_seen": 106,
+   "utilization": 0.9021790806153107,
+   "supply_usd": 2364170.0730118197,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.8972140850018118,
+   "util_max": 0.9026692224534204,
+   "range": 0.005455137451608638,
+   "sd": 0.0011583079063063526,
+   "max_jump": 0.0034019858092099176,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T203600Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0xfdfecf85a4dd90a7637ae2aaf28b35061166f0e62bfc714c565eed9f7e959783",
+   "collateral": "cbXRP",
+   "runs_seen": 106,
+   "utilization": 0.7142497842027523,
+   "supply_usd": 1726040.1563505272,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.7142359264528478,
+   "util_max": 0.7216172779992612,
+   "range": 0.007381351546413395,
+   "sd": 0.002103872566272341,
+   "max_jump": 0.003151453142114624,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T155239Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x9103c3b4e834476c9a62ea009ba2c884ee42e94e6e314a26f04d312434191836",
+   "collateral": "cbBTC",
+   "runs_seen": 106,
+   "utilization": 0.9032983039998111,
+   "supply_usd": 1702585831.0757396,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.9002479318220171,
+   "util_max": 0.9032983039998111,
+   "range": 0.003050372177794025,
+   "sd": 0.0006047102123931963,
+   "max_jump": 0.0015519086891944145,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T180910Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0x29ae7ac08be3a58e11151fed74701fb8e6ffd8e76b1870cf17ad70f332752d0b",
+   "collateral": "mGLO",
+   "runs_seen": 106,
+   "utilization": 0.8990035740661085,
+   "supply_usd": 38690578.829985395,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.8978705123760522,
+   "util_max": 0.8998232446650373,
+   "range": 0.0019527322889850707,
+   "sd": 0.00020075173406938353,
+   "max_jump": 0.0010709174122881526,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T162311Z",
+   "regime": "ACTIVE"
+  },
+  {
+   "market_id": "0xf2a59ad1aec67664c564cb33c33538ab41372363204ce2bdcf00900b7d28c6ab",
+   "collateral": "cbADA",
+   "runs_seen": 106,
+   "utilization": 0.7887682866683919,
+   "supply_usd": 1056561.9433414293,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.7887539295808025,
+   "util_max": 0.7910199709799441,
+   "range": 0.0022660413991416606,
+   "sd": 0.00048237860017818243,
+   "max_jump": 0.0008235302788160981,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "ACTIVE"
+  }
+ ],
+ "quiescent": [
+  {
+   "market_id": "0x4217fed63c853537fb818f4ba4416bc708c3d7534913532feb34c3511ce2aba6",
+   "collateral": "savUSD",
+   "runs_seen": 106,
+   "utilization": 0.9086724382154314,
+   "supply_usd": 3500937.4951982507,
+   "verdict": {
+    "REAL": 106
+   },
+   "runs": 106,
+   "util_min": 0.9078803877758811,
+   "util_max": 0.9086724382154314,
+   "range": 0.0007920504395503292,
+   "sd": 0.00027272977192221916,
+   "max_jump": 0.0007764412499617901,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T203600Z",
+   "regime": "QUIESCENT"
+  },
+  {
+   "market_id": "0x093279173e34dd4589a83f10a1cae316f6227efe8ac51342fec9e29d78b68d4e",
+   "collateral": "GRO",
+   "runs_seen": 106,
+   "utilization": 0.9011376738613924,
+   "supply_usd": 92901.2272318481,
+   "verdict": {
+    "CAUTION": 106
+   },
+   "runs": 106,
+   "util_min": 0.9011232862010526,
+   "util_max": 0.9011376738613924,
+   "range": 1.4387660339787445e-05,
+   "sd": 4.091953050590051e-06,
+   "max_jump": 1.1503840240401075e-06,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T203600Z",
+   "regime": "QUIESCENT"
+  },
+  {
+   "market_id": "0x1a3e69d0109bb1be42b80e11034bb6ee98fc466721f26845dc83b2aa8d979137",
+   "collateral": "yoUSD",
+   "runs_seen": 106,
+   "utilization": 0.7674709155837212,
+   "supply_usd": 356245.55825934856,
+   "verdict": {
+    "CAUTION": 106
+   },
+   "runs": 106,
+   "util_min": 0.7667828433739627,
+   "util_max": 0.7676994932311537,
+   "range": 0.0009166498571909765,
+   "sd": 0.00024006736969101297,
+   "max_jump": 0.00033335414102664274,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T173844Z",
+   "regime": "QUIESCENT"
+  },
+  {
+   "market_id": "0x38c846197ac32a752a60c25d4536ebb0c3920c532e9a859c38c91efb7b8c2abb",
+   "collateral": null,
+   "runs_seen": 106,
+   "utilization": 0.0,
+   "supply_usd": 506417.5487291055,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 0.0,
+   "util_max": 0.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "QUIESCENT"
+  },
+  {
+   "market_id": "0x4e5f9f668b947ade2ec08a90c814ed40a3bb34a30c2b688d106bb20426cf61c6",
+   "collateral": "HOME",
+   "runs_seen": 106,
+   "utilization": 0.0,
+   "supply_usd": 499843.2353837711,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 0.0,
+   "util_max": 0.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "QUIESCENT"
+  },
+  {
+   "market_id": "0x5301093aee39723022f4d3c5b69ccca16f18642d35f5c07dab3e061d79b9328e",
+   "collateral": "sjEUR",
+   "runs_seen": 10,
+   "utilization": null,
+   "supply_usd": null,
+   "verdict": {
+    "CAUTION": 10
+   },
+   "runs": 10,
+   "util_min": 0.3813784142374619,
+   "util_max": 0.38137906369753266,
+   "range": 6.494600707784848e-07,
+   "sd": 2.5609113918081804e-07,
+   "max_jump": 3.2525809340322454e-07,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261008T160801Z",
+   "regime": "QUIESCENT"
+  }
+ ],
+ "frozen": [
+  {
+   "market_id": "0xdc0d7ca7438bc13dea6c8f602b355caae93a0838a0d297c98f0ccc9367ee00f7",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85238345.4983304,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x171d5a09ac5ba88b623bdff785c0534094c7c94ff63d84f7c65dcb973afb4f06",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85238147.92595102,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xd119d5d4d5c725c6304b233fdc7e64492dbfb515046cdce1dd6724be32dcd45e",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85238128.16873087,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x482b79373e56cc2ebb41fac67218eb48058561145c6fd09c399dd4e50f4fed1a",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85238088.65430057,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xb2d1ee708fac379a89f53d77c781cf06db228e30bbb838b7adb969d653ab5baa",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237970.11108766,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x1daadd2c05d51846ce8f974fc228e8b97c4c82f352f4e7e5800311bbce3b9f55",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237792.29648724,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xdd7b21be447900cc2340ab1674690717d66321aef611dc47534f81d6117690f3",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237792.29648724,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xcbaf950a0ba12f0cbe6e645772f978f868b2677d9cb35b3adf5926a250b478e5",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237574.96788937,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x0ccbb1270451e6a7b9a9904cefe0da750a7f800cb2144b2c04c4d958437f3e41",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237495.93940566,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x14e52bfc7b0af05e7886954adb76790d7df16994789f527cf813ec15e2d3920f",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237416.91097394,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x6a2d168c1538f881a46ebeda99ac7f3b5f7131d9af2a6e9b0b51d17a06a5dd3a",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237436.66807713,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xa76a6374ecf479215385f26c3c928f7802c12268b6346cd645fcd1bb1a353894",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237179.82599068,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x3bd6ad3c84176a3224b33397d277a54a128d938bec19adf6ee1f22cc8859c342",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237140.31187227,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x4b18b6847eca450fc40306e398d78af415686f645e8e8d346d40b0d9150b2841",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237081.04071969,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x9bd75c5551e05eb11e8642fc3bc6df49c513bbb7b592482102ef0b79c13a14a3",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237081.04071969,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xf6bbfcc1acfbda9d4cbeb02ad7ba34d5c0daeba3b2f357d97fbf5482bb06e4d1",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85237021.76959509,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xc005e686f1ddc1b6b35115bc49eb8f026485f1246b08d40367e1b8cfce6cf224",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85236982.25552867,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x9941872115a1be9b9b9d8cb4c8e1ef0b7836516018342bdcca952cd3f8b843c7",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 85236982.25552867,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xed83a5d173a4434d64581e81be23bf4b86595aacfc33766eeb48ab5e0764c02e",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 17048502.870261636,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x69a25d6c5dc10dbacf440629664cd3d18bfbd9fa08ed594671332189c282c773",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 17048479.160745528,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x918015b2549bd1c094e7cab39682d07fb14625fdc808ce670fb81f3cfcaf44c7",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 17048475.209161345,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x491ceb59aa75ca607ac3a04f588c52f3d5f8bcb782a43a5615ba23409712c39b",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 17048404.08076497,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x64fc8c1bad8f4bdc3f94b4f4f3865d66fbd69f7d5ee28dc0c0f809f882fb51d9",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 17048404.08076497,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x1293c4e7708c2fd0239b093a9f43ef7792d66691c1216b106f6cfc270edb2f7b",
+   "collateral": "RSS",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 3003929.107617164,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xf0b0922f2634c8d75c92d95097fbc718d37c1efe534b258eb0ab8cd1191b1e8a",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 1704893.3597214473,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x1478d70d1fde3fd5b8eb5766e82b03aa56a1df72a54fc8cd33aad666b0bd5008",
+   "collateral": "RLP",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 570693.7539001738,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x1dcd83ecf78e8edd76648c59201b3641e1f87860f7a2bbeab8a1171f99aeb87f",
+   "collateral": "kk",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 321741.08306190814,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xb609f1d824d70a2127092333f591080be01555535c61d93252dd778e1fa88920",
+   "collateral": "yUSD",
+   "runs_seen": 106,
+   "utilization": 1.0,
+   "supply_usd": 119609.94043411288,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 1.0,
+   "util_max": 1.0,
+   "range": 0.0,
+   "sd": 0.0,
+   "max_jump": 0.0,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T184028Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xff0f2bd52ca786a4f8149f96622885e880222d8bed12bbbf5950296be8d03f89",
+   "collateral": "USR",
+   "runs_seen": 106,
+   "utilization": 0.9999999999733833,
+   "supply_usd": 37558669.18164487,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 0.9999999999727694,
+   "util_max": 0.9999999999733833,
+   "range": 6.138423103152491e-13,
+   "sd": 1.7454580062177135e-13,
+   "max_jump": 4.951594689828198e-14,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T203600Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x40ac09f34c5bc0b0b6d9b5f1ec1b97a6a149ff6278104797c9cb740453a2b794",
+   "collateral": "RSS",
+   "runs_seen": 106,
+   "utilization": 0.9999999997274377,
+   "supply_usd": 2534404.975052053,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 0.9999999997211436,
+   "util_max": 0.9999999997274377,
+   "range": 6.2940763712049375e-12,
+   "sd": 1.7902642859720255e-12,
+   "max_jump": 5.084821452783217e-13,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T203600Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0xe1986e80099257c65dd18091ec7e34752ae2336870a5649f20c450c9c4931fb8",
+   "collateral": "HERMES",
+   "runs_seen": 106,
+   "utilization": 0.9999996529497018,
+   "supply_usd": 235168563.47170374,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 0.9999996449572636,
+   "util_max": 0.9999996529497018,
+   "range": 7.992438266768431e-09,
+   "sd": 2.270185564312816e-09,
+   "max_jump": 6.457152590400028e-10,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T203600Z",
+   "regime": "FROZEN"
+  },
+  {
+   "market_id": "0x124d76e138d7cbabd169de44e1f3c011d4e3e0ee7062642f69c071fa3dfd57d6",
+   "collateral": "FUSD",
+   "runs_seen": 106,
+   "utilization": 0.9999976926280036,
+   "supply_usd": 1949658.9924925454,
+   "verdict": {
+    "AVOID": 106
+   },
+   "runs": 106,
+   "util_min": 0.9999976609669674,
+   "util_max": 0.9999976926280036,
+   "range": 3.166103623719607e-08,
+   "sd": 9.005166964694544e-09,
+   "max_jump": 2.5509168111170766e-09,
+   "jumps_5pp": 0,
+   "jumps_2pp": 0,
+   "biggest_jump_at": "20261007T203600Z",
+   "regime": "FROZEN"
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+########################################################################
+# ENOSYS LOANS — LIVE PROTOCOL STATE (Flare mainnet)
+########################################################################
+
+[ StabilityPool — where the 75% yield goes ]
+  NAME                               0x6c00000000000000000000000000000000000000
+  getTotalBoldDeposits               0
+  getCollBalance                     0
+  getEntireBranchColl                REVERT execution reverted
+  getEntireBranchDebt                REVERT execution reverted
+  boldToken                          0x0000000000000000000000000000000000000000
+  collToken                          0x0000000000000000000000000000000000000000
+  activePool                         0x0000000000000000000000000000000000000000
+  getTroveManager                    0x0000000000000000000000000000000000000000
+
+[ ActivePool — yield routing ]
+  SP_YIELD_SPLIT                     0
+  getBoldDebt                        0
+  getCollBalance                     0
+  getEntireBranchColl                no such fn
+  getEntireBranchDebt                no such fn
+  interestRouter                     0x0000000000000000000000000000000000000000
+  stabilityPool                      0x0000000000000000000000000000000000000000
+  hasBeenShutDown                    False
+
+[ TroveManager — risk parameters ]
+  CCR                                0
+  MCR                                0
+  SCR                                0
+  MIN_DEBT                           0
+  LIQUIDATION_PENALTY_SP             0
+  LIQUIDATION_PENALTY_REDISTRIBUTION 0
+  URGENT_REDEMPTION_BONUS            0
+  getEntireBranchColl                REVERT execution reverted
+  getEntireBranchDebt                REVERT execution reverted
+  isPaused                           False
+
+[ BorrowerOperations — caps & rates ]
+  CCR                                0
+  MCR                                0
+  SCR                                0
+  BCR                                0
+  MIN_ANNUAL_INTEREST_RATE           0
+  MAX_ANNUAL_INTEREST_RATE           0
+  MAX_DEBT_CAP                       0
+  MAX_BRANCH_CAP                     0
+  MIN_INTEREST_RATE_CHANGE_PERIOD    0
+  hasBeenShutDown                    False
+
+[ CollateralRegistry — redemption fees ]
+  REDEMPTION_FEE_FLOOR               0
+  baseRate                           0
+  totalCollaterals                   0
+  boldToken                          0x0000000000000000000000000000000000000000
+
+DONE

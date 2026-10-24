@@ -1,0 +1,36 @@
+// © Dreadblitz
+//@version=4
+//
+study("Bollinguer sobre Macd", shorttitle = "BSM", overlay=false)
+
+SDev = 0.0
+banda_supe = 0.0
+banda_inf = 0.0
+rapida = input(8, "Media Rapida")
+lenta = input(26, "Media Lenta")
+stdv = input(0.8, "Stdv")
+m_rapida = ema(close,rapida)
+m_lenta = ema(close,lenta)
+BBMacd = m_rapida - m_lenta
+Avg = ema(BBMacd,9)
+SDev := stdev(BBMacd,9)
+banda_supe := Avg + stdv * SDev
+banda_inf := Avg - stdv * SDev
+pcol = BBMacd < banda_inf ? #FF0000 : BBMacd > banda_supe ? #008000 : color.blue
+c=plot(BBMacd, title='Linea Macd BB"', color=pcol, linewidth=2, style=plot.style_line, transp=0)
+a=plot(banda_supe, title='Banda Superior"', color=#00BFFF, linewidth=1, style=plot.style_line, transp=30)
+b=plot(banda_inf, title='Banda Inferior"', color=#00BFFF, linewidth=1, style=plot.style_line, transp=30)
+fill(a, b, color=#00BFFF)
+pcol1 = BBMacd < banda_inf ? #FF0000 :  na
+fill(c, b, color=pcol1, transp=50)
+pcol2 = BBMacd > banda_supe ? #008000  :  na
+fill(c, a, color=pcol2, transp=50)
+//
+// ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ //
+// ALERTAS
+// ------------------------------------------------------------------------------------------------------------------
+Compra = crossover(BBMacd, banda_supe)
+Venta = crossunder(BBMacd, banda_inf)
+alertcondition(Compra or Venta,title="Compra/Venta",message="Compra/Venta")
+alertcondition(Compra,title="Compra",message="Compra")
+alertcondition(Venta,title="Venta",message="Venta")

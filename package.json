@@ -1,0 +1,14 @@
+{
+  "name": "aegis-risk-terminal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Deterministic risk intelligence terminal for Base AMM pools and Morpho Blue lending. Read-only: no keys, no transactions.",
+  "scripts": {
+    "test": "./run_tests.sh",
+    "test:ui": "node tests/test_table.cjs && node tests/test_ui.cjs && node tests/test_visual.cjs && node tests/test_lookup.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.2"
+  }
+}

@@ -1,0 +1,18 @@
+### eth1h_auto: 174 candidates
+  positive (full)        67 (39%)
+  positive BOTH halves    3 (2%)
+  adequate sample        72
+  KEEP (both + powered)   3
+  median trades 8   median net $-5.55
+  median fee drag 25000000000% of gross gain
+
+=== SURVIVORS ===
+                 name  n    net   win  bars      dd     H1     H2  fee_drag_pct
+keltner/100/100/4/ema 17 59.767 0.882  44.5 -12.805 25.965 33.803           3.4
+keltner/100/200/4/ema 17 59.011 0.882  43.2 -12.206 23.025 35.986           3.5
+ keltner/100/50/4/ema 17 58.687 0.882  43.7 -13.467 26.513 32.174           3.5
+
+=== transfer test of survivors -> BTC ===
+  keltner/100/50/4/ema               eth1h_auto $  +58.69 -> BTC $  +31.30 ( 18 trades, H1 +11.49 H2 +19.81)  TRANSFERS
+  keltner/100/100/4/ema              eth1h_auto $  +59.77 -> BTC $  +35.46 ( 18 trades, H1 +15.12 H2 +20.34)  TRANSFERS
+  keltner/100/200/4/ema              eth1h_auto $  +59.01 -> BTC $  +37.42 ( 18 trades, H1 +16.15 H2 +21.27)  TRANSFERS

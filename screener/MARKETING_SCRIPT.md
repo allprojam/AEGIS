@@ -1,0 +1,1 @@
+../MARKETING_SCRIPT.md

@@ -1,0 +1,72 @@
+page0: +300 total 300
+page1: +300 total 600
+page2: +300 total 900
+  page3 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page3: +300 total 1200
+  page4 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page4: +300 total 1500
+page5: +300 total 1800
+  page6 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page6: +300 total 2100
+  page7 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page7: +300 total 2400
+page8: +300 total 2700
+  page9 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page9: +300 total 3000
+  page10 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page10: +300 total 3300
+page11: +300 total 3600
+  page12 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page12: +300 total 3900
+  page13 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page13: +300 total 4200
+  page14 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page14: +300 total 4500
+page15: +300 total 4800
+  page16 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page16: +300 total 5100
+  page17 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page17: +300 total 5400
+page18: +300 total 5700
+  page19 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page19: +300 total 6000
+  page20 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+  page20 retry1 (HTTP Error 429: Too Many Reque) sleep 16s
+page20: +300 total 6300
+  page21 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page21: +300 total 6600
+  page22 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page22: +300 total 6900
+  page23 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+  page23 retry1 (HTTP Error 429: Too Many Reque) sleep 16s
+  page23 retry2 (HTTP Error 429: Too Many Reque) sleep 24s
+page23: +300 total 7200
+page24: +300 total 7500
+  page25 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page25: +300 total 7800
+page26: +300 total 8100
+  page27 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page27: +300 total 8400
+  page28 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page28: +300 total 8700
+page29: +300 total 9000
+  page30 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page30: +300 total 9300
+  page31 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page31: +300 total 9600
+page32: +300 total 9900
+  page33 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page33: +300 total 10200
+  page34 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page34: +300 total 10500
+  page35 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page35: +300 total 10800
+page36: +300 total 11100
+  page37 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page37: +300 total 11400
+  page38 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+  page38 retry1 (HTTP Error 429: Too Many Reque) sleep 16s
+page38: +300 total 11700
+  page39 retry0 (HTTP Error 429: Too Many Reque) sleep 8s
+page39: +300 total 12000
+DONE 12000

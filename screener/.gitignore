@@ -1,0 +1,23 @@
+# JavaScript tooling. Dev-only; never part of a published artifact.
+node_modules/
+package-lock.json
+
+# Secrets. The wallet keys are NOT in this repo and must never be.
+.env
+*.env
+!*.env.example
+
+# Aegis wallet execution receipts (planned, not implemented)
+runs/execution_receipt.json
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Generated artifacts are COMMITTED deliberately: report.html, audits/, runs/ are the
+# deliverable and its provenance. Do not add them here.
+
+# Licensing HMAC secret + issued-token ledger — never publish
+screener/token_secret.key
+screener/token_ledger.json
+screener/token_ledger.lock

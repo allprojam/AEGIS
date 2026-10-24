@@ -1,0 +1,25 @@
+discovered 540 records -> 14 with readable source
+passed structural screen: 9/14
+
+=== SHORTLIST ===
+      id                                                       name            author  likes  keep why churn  max_len  atr_stop   htf  len
+PUB;2811 Golden Cross, SMA 200 Moving Average Strategy (by ChartArt          ChartArt  11429  True       MED        0     False False 2055
+PUB;2553                    Fractal Breakout Strategy (by ChartArt)          ChartArt   8858  True       MED        0     False False 2881
+PUB;1844                      [STRATEGY][RS]MicuRobert EMA cross V2        MicuRobert   4214  True       MED        0     False False 3554
+PUB;2119  Moving Average Consecutive Up/Down Strategy (by ChartArt)          ChartArt   2223  True       MED        0     False False 2598
+PUB;3066  Keltner bounce from border. No repaint. V2 (by Zelibobla)         zelibobla   2005  True       LOW        0      True False 2157
+PUB;2505                             Simple Moving Average Strategy            Dr.Pip   1466  True       MED        0     False False  458
+PUB;2358 MA Cross -  ***Programmers*** Please help with alertcondit pAulseperformance    550  True       MED        0     False False 1405
+PUB;2627                              Moving Average Crossover 0001          pbergden    422  True       LOW        0      True False 1219
+PUB;3032     Keltner bounce from border. No repaint. (by Zelibobla)         zelibobla    395  True       MED        0     False False 1277
+
+=== DISCARDED (top 10 by likes) ===
+                                                      name  likes churn                                      why
+Daily Close Comparison Strategy (by ChartArt via sirolf200   6376   MED security() w/o lookahead guard (repaint)
+  CamarillaStrategy -V1 - H4 and L4 breakout - exits added   2309   LOW security() w/o lookahead guard (repaint)
+     MULTIPLE TIME-FRAME STRATEGY(TREND, MOMENTUM, ENTRY)    1736   MED security() w/o lookahead guard (repaint)
+                                        Daily Candle Cross   1391   MED security() w/o lookahead guard (repaint)
+               Camarilla Strategy - breakouts of H4 and L4    838   MED security() w/o lookahead guard (repaint)
+
+manifest -> pine/library/manifest_ETH_1h.csv
+sources  -> pine/library/src/*.pine

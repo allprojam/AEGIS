@@ -1,0 +1,10 @@
+=== the CDP/USDt0 pool (where you'd actually buy) ===
+  name                       CDP / USD₮0 0.05%
+  base_token_price_usd       0.993894648725993
+  quote_token_price_usd      0.99978208455616
+  reserve_in_usd             1236979.1255
+  pool_created_at            2025-12-10T09:29:34Z
+  volume 24h                 $71,112
+  volume 6h                  $17,752
+  volume 1h                  $0
+  txns 24h                   {'buys': 123, 'sells': 203, 'buyers': 23, 'sellers': 27}

@@ -1,0 +1,20 @@
+  pool att0 HTTP Error 429: Too Many Requests
+  pool att1 HTTP Error 429: Too Many Requests
+  pool att2 HTTP Error 429: Too Many Requests
+POOL: USD₮0 / APS 0.3%
+  reserve_usd: 85163.3412
+  vol: {'m5': '0.0', 'm15': '0.0', 'm30': '0.0', 'h1': '131.003206542', 'h6': '1752.3686403436', 'h24': '2925.1134910133'}
+  created: 2025-05-02T11:01:23Z
+  base_token: 0x0xe7cd86e13ac4309349f30b3435a9d337750fc82d
+  quote_token: 0x0xff56eb5b1a7faa972291117e5e9565da29bc808d
+
+=== base_token 0x0xe7cd86e13ac4309349f30b3435a9d337750fc82d ===
+  symbol()         ERR invalid literal for int() with base 16: 
+  decimals()       None
+  totalSupply()    None
+
+=== quote_token 0x0xff56eb5b1a7faa972291117e5e9565da29bc808d ===
+  symbol()         ERR invalid literal for int() with base 16: 
+  decimals()       None
+  totalSupply()    None
+DONE

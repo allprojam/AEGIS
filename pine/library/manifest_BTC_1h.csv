@@ -1,0 +1,27 @@
+id,name,author,likes,keep,why,churn,max_len,atr_stop,htf,len
+PUB;2811,"Golden Cross, SMA 200 Moving Average Strategy (by ChartArt",ChartArt,11429,True,,MED,0,False,False,2055
+PUB;2553,Fractal Breakout Strategy (by ChartArt),ChartArt,8858,True,,MED,0,False,False,2881
+PUB;2304,"MACD + Stochastic, Double Strategy (by ChartArt)",ChartArt,7964,True,,MED,0,False,False,2800
+PUB;1897,"Stochastic + RSI, Double Strategy (by ChartArt)",ChartArt,7010,True,,MED,0,False,False,2023
+PUB;2008,20 years old Turtles strategy still work!!,tmr0,6518,True,,MED,0,False,False,1639
+PUB;1844,[STRATEGY][RS]MicuRobert EMA cross V2,MicuRobert,4214,True,,MED,0,False,False,3554
+PUB;2119,Moving Average Consecutive Up/Down Strategy (by ChartArt),ChartArt,2223,True,,MED,0,False,False,2598
+PUB;3066,Keltner bounce from border. No repaint. V2 (by Zelibobla),zelibobla,2005,True,,LOW,0,True,False,2157
+PUB;2505,Simple Moving Average Strategy,Dr.Pip,1466,True,,MED,0,False,False,458
+PUB;2358,MA Cross -  ***Programmers*** Please help with alertcondit,pAulseperformance,550,True,,MED,0,False,False,1405
+PUB;2627,Moving Average Crossover 0001,pbergden,422,True,,LOW,0,True,False,1219
+PUB;3032,Keltner bounce from border. No repaint. (by Zelibobla),zelibobla,395,True,,MED,0,False,False,1277
+PUB;2007,[ZL] ADX+RSI (Long Entries and Exits only),ZLu,351,True,,LOW,0,True,False,1952
+PUB;2456,ICHIMOKU LAG LINE STRATEGY ,greatwolf,349,True,,MED,0,False,False,4053
+PUB;2634,Everyday 0002 _ MAC 1st Trading Hour Walkover,pbergden,233,True,,LOW,0,True,False,1818
+PUB;2095,Active trader turtles strategy modified,adrian.tan.7568596,196,True,,MED,0,False,False,737
+PUB;2076,Active trader turtle trading modified version,adrian.tan.7568596,164,True,,MED,0,False,False,1097
+PUB;2132,RSI Long Term,naqib.hakimi.cgi,99,True,,MED,0,False,False,883
+PUB;2330,Daily Close Comparison Strategy (by ChartArt via sirolf200,ChartArt,6376,False,security() w/o lookahead guard (repaint),MED,0,False,True,1861
+PUB;2694,Strategy Code Example - Risk Management,JayRogers,3716,False,no long entry,LOW,0,True,False,3238
+PUB;2765,Forex Master v4.0 (EUR/USD Mean-Reversion Algorithm),Stable_Camel,3350,False,no long entry,LOW,0,True,False,1656
+PUB;1913,CamarillaStrategy -V1 - H4 and L4 breakout - exits added,cristian.d,2309,False,security() w/o lookahead guard (repaint),LOW,0,True,True,3292
+PUB;3128,"MULTIPLE TIME-FRAME STRATEGY(TREND, MOMENTUM, ENTRY) ",tux,1736,False,security() w/o lookahead guard (repaint),MED,0,False,True,2343
+PUB;2837,Daily Candle Cross,SeaSide420,1391,False,security() w/o lookahead guard (repaint),MED,0,False,True,454
+PUB;1883,Camarilla Strategy - breakouts of H4 and L4,cristian.d,838,False,security() w/o lookahead guard (repaint),MED,0,False,True,3014
+PUB;2635,Everyday 0003 _ MAC Pullback ,pbergden,469,False,no long entry,LOW,0,True,False,2165

@@ -1,0 +1,1600 @@
+{
+ "capital_usd": 1000000.0,
+ "allocated_usd": 850000.0,
+ "unallocated_usd": 150000.0,
+ "unallocated_pct": 15.0,
+ "reserve_usd": 150000.0,
+ "reserve_pct": 15.0,
+ "deployable_usd": 850000.0,
+ "params": {
+  "borrow_depth_pct": 0.2,
+  "sigma_floor": 2.0,
+  "min_alloc_usd": 1000,
+  "accepted_oracle_types": [
+   "ChainlinkOracle",
+   "ChainlinkOracleV2"
+  ],
+  "max_collateral_concentration": 0.3,
+  "reserve_buffer": 0.15,
+  "sigma_weight_cap": 10.0,
+  "min_position_usd": 150.0
+ },
+ "n_collateral_groups": 11,
+ "n_selected": 13,
+ "max_positions_affordable": 5666,
+ "n_capacity_eligible": 13,
+ "effective_collateral_cap_usd": 255000.0,
+ "nominal_collateral_cap_usd": 255000.0,
+ "cash_due_to_floor_usd": 0.0,
+ "group_utilisation": [
+  {
+   "collateral": "SOL",
+   "reason": "total capital scaled by 0.5192",
+   "group_usd": 101679.08
+  },
+  {
+   "collateral": "cbADA",
+   "reason": "total capital scaled by 0.5192",
+   "group_usd": 82700.84
+  },
+  {
+   "collateral": "cbBTC",
+   "reason": "total capital scaled by 0.5192",
+   "group_usd": 132394.34
+  },
+  {
+   "collateral": "cbDOGE",
+   "reason": "total capital scaled by 0.5192",
+   "group_usd": 22126.99
+  },
+  {
+   "collateral": "cbETH",
+   "reason": "total capital scaled by 0.5192",
+   "group_usd": 132394.34
+  },
+  {
+   "collateral": "cbLTC",
+   "reason": "total capital scaled by 0.5192",
+   "group_usd": 9498.61
+  },
+  {
+   "collateral": "cbXRP",
+   "reason": "total capital scaled by 0.5192",
+   "group_usd": 132394.34
+  },
+  {
+   "collateral": "cbZEC",
+   "reason": "total capital scaled by 0.5192",
+   "group_usd": 15653.18
+  },
+  {
+   "collateral": "mGLO",
+   "reason": "total capital scaled by 0.5192",
+   "group_usd": 132394.34
+  },
+  {
+   "collateral": "sUSN",
+   "reason": "total capital scaled by 0.5192",
+   "group_usd": 49217.8
+  },
+  {
+   "collateral": "savUSD",
+   "reason": "total capital scaled by 0.5192",
+   "group_usd": 39546.15
+  }
+ ],
+ "total_scaled_by": 0.519193,
+ "n_evaluated": 60,
+ "n_eligible": 13,
+ "markets": [
+  {
+   "market_id": "0x29ae7ac08be3a58e11151fed74701fb8e6ffd8e76b1870cf17ad70f332752d0b",
+   "collateral": "mGLO",
+   "lltv": 0.915,
+   "tvl_usd": 38694903.21,
+   "borrow_usd": 34779632.22,
+   "capacity_usd": 1042382.02,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 1.1,
+   "daily_vol_pct": 0.057,
+   "sigma_to_breach": 147.91,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $1,042,382: 50% of the $2,084,764 runway to the 95% lock (utilisation 89.9%)"
+   ],
+   "unconstrained_usd": 1000000.0,
+   "target_usd": 132394.34,
+   "target_pct": 13.2394
+  },
+  {
+   "market_id": "0x0ca10126f6c94cbd9cf0a48cc9516ae5e3dec5aa68303e6d988ee37c5149bf0d",
+   "collateral": "cbETH",
+   "lltv": 0.77,
+   "tvl_usd": 16044403.54,
+   "borrow_usd": 14427930.98,
+   "capacity_usd": 428553.89,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 178.54,
+   "daily_vol_pct": 9.345,
+   "sigma_to_breach": 2.46,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $428,553: 50% of the $857,107 runway to the 95% lock (utilisation 89.9%)"
+   ],
+   "unconstrained_usd": 428553.89,
+   "target_usd": 132394.34,
+   "target_pct": 13.2394
+  },
+  {
+   "market_id": "0x9103c3b4e834476c9a62ea009ba2c884ee42e94e6e314a26f04d312434191836",
+   "collateral": "cbBTC",
+   "lltv": 0.86,
+   "tvl_usd": 1704497631.77,
+   "borrow_usd": 1534988644.14,
+   "capacity_usd": 44360055.81,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 108.65,
+   "daily_vol_pct": 5.687,
+   "sigma_to_breach": 2.46,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $44,360,055: 50% of the $88,720,111 runway to the 95% lock (utilisation 90.1%)"
+   ],
+   "unconstrained_usd": 1000000.0,
+   "target_usd": 132394.33,
+   "target_pct": 13.2394
+  },
+  {
+   "market_id": "0x7dc02ff6c536b1d49d7fba770438d79f5bd1f1c78884629b7d1aaee19675782b",
+   "collateral": "SOL",
+   "lltv": 0.625,
+   "tvl_usd": 7421133.83,
+   "borrow_usd": 6677980.3,
+   "capacity_usd": 195840.44,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 151.32,
+   "daily_vol_pct": 7.92,
+   "sigma_to_breach": 4.73,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $195,840: 50% of the $391,680 runway to the 95% lock (utilisation 90.0%)"
+   ],
+   "unconstrained_usd": 195840.44,
+   "target_usd": 101679.08,
+   "target_pct": 10.1679
+  },
+  {
+   "market_id": "0xd4a903dc6d949519060c7707f9604fdc9772c046e05c2e3a8fce0bd7196e4109",
+   "collateral": "cbXRP",
+   "lltv": 0.625,
+   "tvl_usd": 63427602.33,
+   "borrow_usd": 57472114.42,
+   "capacity_usd": 1465319.89,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 150.45,
+   "daily_vol_pct": 7.875,
+   "sigma_to_breach": 4.76,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $1,465,319: 50% of the $2,930,639 runway to the 95% lock (utilisation 90.6%)"
+   ],
+   "unconstrained_usd": 1000000.0,
+   "target_usd": 82056.91,
+   "target_pct": 8.2057
+  },
+  {
+   "market_id": "0xfdfecf85a4dd90a7637ae2aaf28b35061166f0e62bfc714c565eed9f7e959783",
+   "collateral": "cbXRP",
+   "lltv": 0.77,
+   "tvl_usd": 1725979.24,
+   "borrow_usd": 1245481.09,
+   "capacity_usd": 207473.26,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 150.45,
+   "daily_vol_pct": 7.875,
+   "sigma_to_breach": 2.92,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $207,473: 50% of the $414,946 runway to the 95% lock (utilisation 72.2%)"
+   ],
+   "unconstrained_usd": 207473.26,
+   "target_usd": 50337.43,
+   "target_pct": 5.0337
+  },
+  {
+   "market_id": "0x2e26ecfe44dd56f2e6b0257e421e69474e838397b7194e2c934195c6d975af62",
+   "collateral": "sUSN",
+   "lltv": 0.915,
+   "tvl_usd": 3572296.74,
+   "borrow_usd": 3213568.28,
+   "capacity_usd": 94796.64,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 0.54,
+   "daily_vol_pct": 0.028,
+   "sigma_to_breach": 299.07,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $94,796: 50% of the $189,593 runway to the 95% lock (utilisation 90.0%)"
+   ],
+   "unconstrained_usd": 94796.64,
+   "target_usd": 49217.8,
+   "target_pct": 4.9218
+  },
+  {
+   "market_id": "0xf2a59ad1aec67664c564cb33c33538ab41372363204ce2bdcf00900b7d28c6ab",
+   "collateral": "cbADA",
+   "lltv": 0.77,
+   "tvl_usd": 1056514.42,
+   "borrow_usd": 834854.66,
+   "capacity_usd": 88860.02,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 185.98,
+   "daily_vol_pct": 9.734,
+   "sigma_to_breach": 2.36,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $88,860: 50% of the $177,720 runway to the 95% lock (utilisation 79.0%)"
+   ],
+   "unconstrained_usd": 88860.02,
+   "target_usd": 46135.54,
+   "target_pct": 4.6136
+  },
+  {
+   "market_id": "0x4217fed63c853537fb818f4ba4416bc708c3d7534913532feb34c3511ce2aba6",
+   "collateral": "savUSD",
+   "lltv": 0.915,
+   "tvl_usd": 3500513.34,
+   "borrow_usd": 3180767.65,
+   "capacity_usd": 76168.43,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 1.48,
+   "daily_vol_pct": 0.077,
+   "sigma_to_breach": 109.85,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $76,168: 50% of the $152,336 runway to the 95% lock (utilisation 90.9%)"
+   ],
+   "unconstrained_usd": 76168.43,
+   "target_usd": 39546.15,
+   "target_pct": 3.9546
+  },
+  {
+   "market_id": "0xd7520ad198b497b6eb75bc690268f4597630dbc12e305e9d4105843bab36e41d",
+   "collateral": "cbADA",
+   "lltv": 0.625,
+   "tvl_usd": 2676231.6,
+   "borrow_usd": 2408608.51,
+   "capacity_usd": 70427.11,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 185.98,
+   "daily_vol_pct": 9.734,
+   "sigma_to_breach": 3.85,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $70,427: 50% of the $140,854 runway to the 95% lock (utilisation 90.0%)"
+   ],
+   "unconstrained_usd": 70427.11,
+   "target_usd": 36565.3,
+   "target_pct": 3.6565
+  },
+  {
+   "market_id": "0x73527ddd796e6d4f48387adaae36f6f3d49d606d7f2a15eb0c931416a58875d8",
+   "collateral": "cbDOGE",
+   "lltv": 0.625,
+   "tvl_usd": 2701015.53,
+   "borrow_usd": 2484990.54,
+   "capacity_usd": 42618.01,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 153.01,
+   "daily_vol_pct": 8.009,
+   "sigma_to_breach": 4.68,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $42,618: 50% of the $85,236 runway to the 95% lock (utilisation 92.0%)"
+   ],
+   "unconstrained_usd": 42618.01,
+   "target_usd": 22126.99,
+   "target_pct": 2.2127
+  },
+  {
+   "market_id": "0xe458a501c1103ca3b256f2bcb45d223263fb34b6349d82675494ce3a94ce1327",
+   "collateral": "cbZEC",
+   "lltv": 0.625,
+   "tvl_usd": 1554921.13,
+   "borrow_usd": 1419891.9,
+   "capacity_usd": 30149.04,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 140.21,
+   "daily_vol_pct": 7.339,
+   "sigma_to_breach": 5.11,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $30,149: 50% of the $60,298 runway to the 95% lock (utilisation 91.3%)"
+   ],
+   "unconstrained_usd": 30149.04,
+   "target_usd": 15653.18,
+   "target_pct": 1.5653
+  },
+  {
+   "market_id": "0x9125d0fa03c3137166df68bcc72283477830de2a4a5536512374c573ad4583c3",
+   "collateral": "cbLTC",
+   "lltv": 0.625,
+   "tvl_usd": 1175383.74,
+   "borrow_usd": 1081854.18,
+   "capacity_usd": 18294.93,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 126.84,
+   "daily_vol_pct": 6.639,
+   "sigma_to_breach": 5.65,
+   "eligible": true,
+   "fails": [],
+   "reasons": [
+    "position capped to $18,294: 50% of the $36,589 runway to the 95% lock (utilisation 92.0%)"
+   ],
+   "unconstrained_usd": 18294.93,
+   "target_usd": 9498.61,
+   "target_pct": 0.9499
+  },
+  {
+   "market_id": "0x54cf9be57fdfa6457a660991907434ff9d295c465a603a50126ff647d50b7354",
+   "collateral": "USDe",
+   "lltv": 0.915,
+   "tvl_usd": 390309862.29,
+   "borrow_usd": 351452553.88,
+   "capacity_usd": 10179902.79,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": 0.4,
+   "daily_vol_pct": 0.021,
+   "sigma_to_breach": 402.05,
+   "eligible": false,
+   "fails": [
+    "ORACLE_UNVERIFIED"
+   ],
+   "reasons": [
+    "position capped to $10,179,902: 50% of the $20,359,805 runway to the 95% lock (utilisation 90.0%)",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xe1986e80099257c65dd18091ec7e34752ae2336870a5649f20c450c9c4931fb8",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 230304320.41,
+   "borrow_usd": 230304238.79,
+   "capacity_usd": 46060847.76,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x8793cf302b8ffd655ab97bd1c695dbd967807e8367a65cb2f4edaf1380ba1bda",
+   "collateral": "WETH",
+   "lltv": 0.86,
+   "tvl_usd": 104532057.46,
+   "borrow_usd": 94172844.53,
+   "capacity_usd": 2701373.71,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 171.56,
+   "daily_vol_pct": 8.98,
+   "sigma_to_breach": 1.56,
+   "eligible": false,
+   "fails": [
+    "LIQUIDATION_THIN"
+   ],
+   "reasons": [
+    "position capped to $2,701,373: 50% of the $5,402,747 runway to the 95% lock (utilisation 90.1%)",
+    "margin 14.0% is only 1.6 daily sigmas (daily vol 8.98%); a routine move breaches the position"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xdc0d7ca7438bc13dea6c8f602b355caae93a0838a0d297c98f0ccc9367ee00f7",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84427010.84,
+   "borrow_usd": 84427010.84,
+   "capacity_usd": 16885402.17,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x171d5a09ac5ba88b623bdff785c0534094c7c94ff63d84f7c65dcb973afb4f06",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84426814.6,
+   "borrow_usd": 84426814.6,
+   "capacity_usd": 16885362.92,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xd119d5d4d5c725c6304b233fdc7e64492dbfb515046cdce1dd6724be32dcd45e",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84426794.97,
+   "borrow_usd": 84426794.97,
+   "capacity_usd": 16885358.99,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x482b79373e56cc2ebb41fac67218eb48058561145c6fd09c399dd4e50f4fed1a",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84426755.73,
+   "borrow_usd": 84426755.73,
+   "capacity_usd": 16885351.15,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xb2d1ee708fac379a89f53d77c781cf06db228e30bbb838b7adb969d653ab5baa",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84426618.36,
+   "borrow_usd": 84426618.36,
+   "capacity_usd": 16885323.67,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x1daadd2c05d51846ce8f974fc228e8b97c4c82f352f4e7e5800311bbce3b9f55",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84426480.99,
+   "borrow_usd": 84426480.99,
+   "capacity_usd": 16885296.2,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xdd7b21be447900cc2340ab1674690717d66321aef611dc47534f81d6117690f3",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84426461.37,
+   "borrow_usd": 84426461.37,
+   "capacity_usd": 16885292.27,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xcbaf950a0ba12f0cbe6e645772f978f868b2677d9cb35b3adf5926a250b478e5",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84426225.89,
+   "borrow_usd": 84426225.89,
+   "capacity_usd": 16885245.18,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x0ccbb1270451e6a7b9a9904cefe0da750a7f800cb2144b2c04c4d958437f3e41",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84426186.64,
+   "borrow_usd": 84426186.64,
+   "capacity_usd": 16885237.33,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x14e52bfc7b0af05e7886954adb76790d7df16994789f527cf813ec15e2d3920f",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84426108.14,
+   "borrow_usd": 84426108.14,
+   "capacity_usd": 16885221.63,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x6a2d168c1538f881a46ebeda99ac7f3b5f7131d9af2a6e9b0b51d17a06a5dd3a",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84426088.52,
+   "borrow_usd": 84426088.52,
+   "capacity_usd": 16885217.7,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xa76a6374ecf479215385f26c3c928f7802c12268b6346cd645fcd1bb1a353894",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84425853.04,
+   "borrow_usd": 84425853.04,
+   "capacity_usd": 16885170.61,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x3bd6ad3c84176a3224b33397d277a54a128d938bec19adf6ee1f22cc8859c342",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84425813.79,
+   "borrow_usd": 84425813.79,
+   "capacity_usd": 16885162.76,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x4b18b6847eca450fc40306e398d78af415686f645e8e8d346d40b0d9150b2841",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84425754.92,
+   "borrow_usd": 84425754.92,
+   "capacity_usd": 16885150.98,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x9bd75c5551e05eb11e8642fc3bc6df49c513bbb7b592482102ef0b79c13a14a3",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84425754.92,
+   "borrow_usd": 84425754.92,
+   "capacity_usd": 16885150.98,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xf6bbfcc1acfbda9d4cbeb02ad7ba34d5c0daeba3b2f357d97fbf5482bb06e4d1",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84425696.05,
+   "borrow_usd": 84425696.05,
+   "capacity_usd": 16885139.21,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xc005e686f1ddc1b6b35115bc49eb8f026485f1246b08d40367e1b8cfce6cf224",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84425656.8,
+   "borrow_usd": 84425656.8,
+   "capacity_usd": 16885131.36,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x9941872115a1be9b9b9d8cb4c8e1ef0b7836516018342bdcca952cd3f8b843c7",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 84425637.18,
+   "borrow_usd": 84425637.18,
+   "capacity_usd": 16885127.44,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xff0f2bd52ca786a4f8149f96622885e880222d8bed12bbbf5950296be8d03f89",
+   "collateral": "USR",
+   "lltv": 0.915,
+   "tvl_usd": 36780632.48,
+   "borrow_usd": 36780632.48,
+   "capacity_usd": 7356126.5,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 514.74,
+   "daily_vol_pct": 26.943,
+   "sigma_to_breach": 0.32,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "LIQUIDATION_THIN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: BAD_DEBT, PROTOCOL_RED, LOCKED, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "margin 8.5% is only 0.3 daily sigmas (daily vol 26.94%); a routine move breaches the position"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xed83a5d173a4434d64581e81be23bf4b86595aacfc33766eeb48ab5e0764c02e",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 16886230.31,
+   "borrow_usd": 16886230.31,
+   "capacity_usd": 3377246.06,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x69a25d6c5dc10dbacf440629664cd3d18bfbd9fa08ed594671332189c282c773",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 16886202.83,
+   "borrow_usd": 16886202.83,
+   "capacity_usd": 3377240.57,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x918015b2549bd1c094e7cab39682d07fb14625fdc808ce670fb81f3cfcaf44c7",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 16886202.83,
+   "borrow_usd": 16886202.83,
+   "capacity_usd": 3377240.57,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x491ceb59aa75ca607ac3a04f588c52f3d5f8bcb782a43a5615ba23409712c39b",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 16886136.11,
+   "borrow_usd": 16886136.11,
+   "capacity_usd": 3377227.22,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x64fc8c1bad8f4bdc3f94b4f4f3865d66fbd69f7d5ee28dc0c0f809f882fb51d9",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 16886132.19,
+   "borrow_usd": 16886132.19,
+   "capacity_usd": 3377226.44,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x09276541cfecb6920a80679a1deced4dde3ae64bf5fc2c9c1f9c21e0c152e1a5",
+   "collateral": "JitoSOL",
+   "lltv": 0.625,
+   "tvl_usd": 3871875.5,
+   "borrow_usd": 3488244.36,
+   "capacity_usd": 100019.67,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": 58.53,
+   "daily_vol_pct": 3.064,
+   "sigma_to_breach": 12.24,
+   "eligible": false,
+   "fails": [
+    "ORACLE_UNVERIFIED"
+   ],
+   "reasons": [
+    "position capped to $100,019: 50% of the $200,039 runway to the 95% lock (utilisation 90.1%)",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x1293c4e7708c2fd0239b093a9f43ef7792d66691c1216b106f6cfc270edb2f7b",
+   "collateral": "RSS",
+   "lltv": 0.77,
+   "tvl_usd": 3002319.58,
+   "borrow_usd": 3002319.58,
+   "capacity_usd": 600463.92,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: LOCKED",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x40ac09f34c5bc0b0b6d9b5f1ec1b97a6a149ff6278104797c9cb740453a2b794",
+   "collateral": "RSS",
+   "lltv": 0.77,
+   "tvl_usd": 2481842.38,
+   "borrow_usd": 2481842.38,
+   "capacity_usd": 496368.48,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: BAD_DEBT, PROTOCOL_RED, LOCKED, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x13c42741a359ac4a8aa8287d2be109dcf28344484f91185f9a79bd5a805a55ae",
+   "collateral": "wstETH",
+   "lltv": 0.86,
+   "tvl_usd": 2379608.83,
+   "borrow_usd": 2135018.86,
+   "capacity_usd": 66110.28,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 178.56,
+   "daily_vol_pct": 9.346,
+   "sigma_to_breach": 1.5,
+   "eligible": false,
+   "fails": [
+    "LIQUIDATION_THIN"
+   ],
+   "reasons": [
+    "position capped to $66,110: 50% of the $132,220 runway to the 95% lock (utilisation 89.7%)",
+    "margin 14.0% is only 1.5 daily sigmas (daily vol 9.35%); a routine move breaches the position"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x124d76e138d7cbabd169de44e1f3c011d4e3e0ee7062642f69c071fa3dfd57d6",
+   "collateral": "FUSD",
+   "lltv": 0.77,
+   "tvl_usd": 1925457.14,
+   "borrow_usd": 1925452.64,
+   "capacity_usd": 385090.53,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x1c21c59df9db44bf6f645d854ee710a8ca17b479451447e9f56758aee10a2fad",
+   "collateral": "cbETH",
+   "lltv": 0.86,
+   "tvl_usd": 1749732.02,
+   "borrow_usd": 1452385.85,
+   "capacity_usd": 110452.4,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 178.54,
+   "daily_vol_pct": 9.345,
+   "sigma_to_breach": 1.5,
+   "eligible": false,
+   "fails": [
+    "LIQUIDATION_THIN"
+   ],
+   "reasons": [
+    "position capped to $110,452: 50% of the $220,904 runway to the 95% lock (utilisation 83.0%)",
+    "margin 14.0% is only 1.5 daily sigmas (daily vol 9.35%); a routine move breaches the position"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xf0b0922f2634c8d75c92d95097fbc718d37c1efe534b258eb0ab8cd1191b1e8a",
+   "collateral": "HERMES",
+   "lltv": 0.98,
+   "tvl_usd": 1688665.81,
+   "borrow_usd": 1688665.81,
+   "capacity_usd": 337733.16,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, HIGH_LLTV, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xdba352d93a64b17c71104cbddc6aef85cd432322a1446b5b65163cbbc615cd0c",
+   "collateral": "cbETH",
+   "lltv": 0.86,
+   "tvl_usd": 840958.3,
+   "borrow_usd": 632359.46,
+   "capacity_usd": 87658.38,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 178.54,
+   "daily_vol_pct": 9.345,
+   "sigma_to_breach": 1.5,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "LIQUIDATION_THIN"
+   ],
+   "reasons": [
+    "screen verdict is CAUTION: THIN",
+    "position capped to $87,658: 50% of the $175,316 runway to the 95% lock (utilisation 75.2%)",
+    "margin 14.0% is only 1.5 daily sigmas (daily vol 9.35%); a routine move breaches the position"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x1478d70d1fde3fd5b8eb5766e82b03aa56a1df72a54fc8cd33aad666b0bd5008",
+   "collateral": "RLP",
+   "lltv": 0.86,
+   "tvl_usd": 558871.98,
+   "borrow_usd": 558871.98,
+   "capacity_usd": 111774.4,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 296.61,
+   "daily_vol_pct": 15.525,
+   "sigma_to_breach": 0.9,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "LIQUIDATION_THIN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: BAD_DEBT, PROTOCOL_RED, LOCKED, THIN, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "margin 14.0% is only 0.9 daily sigmas (daily vol 15.53%); a routine move breaches the position"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x38c846197ac32a752a60c25d4536ebb0c3920c532e9a859c38c91efb7b8c2abb",
+   "collateral": null,
+   "lltv": 0.0,
+   "tvl_usd": 503235.45,
+   "borrow_usd": 0.0,
+   "capacity_usd": 0.0,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_DEPTH",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: THIN, NO_YIELD",
+    "20% of borrow volume ($0) is below the $1,000 floor",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x4e5f9f668b947ade2ec08a90c814ed40a3bb34a30c2b688d106bb20426cf61c6",
+   "collateral": "HOME",
+   "lltv": 0.965,
+   "tvl_usd": 499865.93,
+   "borrow_usd": 0.0,
+   "capacity_usd": 0.0,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_DEPTH",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: HIGH_LLTV, THIN, NO_YIELD",
+    "20% of borrow volume ($0) is below the $1,000 floor",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x67a66cbacb2fe48ec4326932d4528215ad11656a86135f2795f5b90e501eb538",
+   "collateral": "superOETHb",
+   "lltv": 0.77,
+   "tvl_usd": 465156.61,
+   "borrow_usd": 420943.02,
+   "capacity_usd": 11029.35,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 159.2,
+   "daily_vol_pct": 8.333,
+   "sigma_to_breach": 2.76,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL"
+   ],
+   "reasons": [
+    "screen verdict is CAUTION: THIN",
+    "position capped to $11,029: 50% of the $22,058 runway to the 95% lock (utilisation 90.5%)"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x2e2548390b8894d2ffaaababebc2b5f2501920e03a4c611b63b46e19bfc6b75d",
+   "collateral": "uniBTC",
+   "lltv": 0.77,
+   "tvl_usd": 367083.72,
+   "borrow_usd": 332431.43,
+   "capacity_usd": 8577.95,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 135.92,
+   "daily_vol_pct": 7.114,
+   "sigma_to_breach": 3.23,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL"
+   ],
+   "reasons": [
+    "screen verdict is CAUTION: THIN",
+    "position capped to $8,577: 50% of the $17,155 runway to the 95% lock (utilisation 90.6%)"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x1a3e69d0109bb1be42b80e11034bb6ee98fc466721f26845dc83b2aa8d979137",
+   "collateral": "yoUSD",
+   "lltv": 0.915,
+   "tvl_usd": 356166.4,
+   "borrow_usd": 273368.18,
+   "capacity_usd": 34205.21,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 1507.18,
+   "daily_vol_pct": 78.89,
+   "sigma_to_breach": 0.11,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "LIQUIDATION_THIN"
+   ],
+   "reasons": [
+    "screen verdict is CAUTION: THIN",
+    "position capped to $34,205: 50% of the $68,410 runway to the 95% lock (utilisation 76.8%)",
+    "margin 8.5% is only 0.1 daily sigmas (daily vol 78.89%); a routine move breaches the position"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xdaa04f6819210b11fe4e3b65300c725c32e55755e3598671559b9ae3bac453d7",
+   "collateral": "AERO",
+   "lltv": 0.625,
+   "tvl_usd": 320948.27,
+   "borrow_usd": 288499.8,
+   "capacity_usd": 8632.14,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 305.94,
+   "daily_vol_pct": 16.014,
+   "sigma_to_breach": 2.34,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL"
+   ],
+   "reasons": [
+    "screen verdict is CAUTION: THIN",
+    "position capped to $8,632: 50% of the $17,264 runway to the 95% lock (utilisation 89.9%)"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x76629002c9fdb20fb2092053a4f22c5c65e04a81887218b9546f2a2d82b4c0a8",
+   "collateral": "cbHYPE",
+   "lltv": 0.625,
+   "tvl_usd": 319465.25,
+   "borrow_usd": 294684.57,
+   "capacity_usd": 4635.48,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 66.62,
+   "daily_vol_pct": 3.487,
+   "sigma_to_breach": 10.75,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL"
+   ],
+   "reasons": [
+    "screen verdict is CAUTION: THIN",
+    "position capped to $4,635: 50% of the $9,270 runway to the 95% lock (utilisation 92.2%)"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x1dcd83ecf78e8edd76648c59201b3641e1f87860f7a2bbeab8a1171f99aeb87f",
+   "collateral": "kk",
+   "lltv": 0.945,
+   "tvl_usd": 317794.28,
+   "borrow_usd": 317794.28,
+   "capacity_usd": 63558.86,
+   "oracle_type": "Unknown",
+   "ann_vol_pct": null,
+   "daily_vol_pct": null,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY",
+    "ORACLE_UNVERIFIED",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: PROTOCOL_RED, LOCKED, THIN, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size",
+    "oracle type 'Unknown' is not a recognised Chainlink feed; feed heartbeat is not exposed by the API, so latency cannot be checked",
+    "no usable price history (0 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0xb609f1d824d70a2127092333f591080be01555535c61d93252dd778e1fa88920",
+   "collateral": "yUSD",
+   "lltv": 0.915,
+   "tvl_usd": 117147.65,
+   "borrow_usd": 117147.65,
+   "capacity_usd": 23429.53,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 38.6,
+   "daily_vol_pct": 2.02,
+   "sigma_to_breach": 4.21,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "NO_RUNWAY"
+   ],
+   "reasons": [
+    "screen verdict is AVOID: BAD_DEBT, PROTOCOL_RED, LOCKED, THIN, OUTLIER",
+    "utilisation 100.0% is at or past the 95% withdrawal lock: a depositor cannot exit at any size"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x093279173e34dd4589a83f10a1cae316f6227efe8ac51342fec9e29d78b68d4e",
+   "collateral": "GRO",
+   "lltv": 0.625,
+   "tvl_usd": 92893.01,
+   "borrow_usd": 83708.16,
+   "capacity_usd": 2389.58,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 0.0,
+   "daily_vol_pct": 0.0,
+   "sigma_to_breach": null,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL",
+    "VOL_UNKNOWN"
+   ],
+   "reasons": [
+    "screen verdict is CAUTION: THIN",
+    "position capped to $2,389: 50% of the $4,779 runway to the 95% lock (utilisation 90.1%)",
+    "no usable price history (43 points); cannot compute sigma-to-breach"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  },
+  {
+   "market_id": "0x52a2a376586d0775e3e80621facc464f6e96d81c8cb70fd461527dde195a079f",
+   "collateral": "LBTC",
+   "lltv": 0.86,
+   "tvl_usd": 50423.14,
+   "borrow_usd": 44516.55,
+   "capacity_usd": 1781.81,
+   "oracle_type": "ChainlinkOracleV2",
+   "ann_vol_pct": 104.11,
+   "daily_vol_pct": 5.449,
+   "sigma_to_breach": 2.57,
+   "eligible": false,
+   "fails": [
+    "NOT_REAL"
+   ],
+   "reasons": [
+    "screen verdict is CAUTION: THIN",
+    "position capped to $1,781: 50% of the $3,563 runway to the 95% lock (utilisation 88.3%)"
+   ],
+   "unconstrained_usd": 0.0,
+   "target_usd": 0.0,
+   "target_pct": 0.0
+  }
+ ]
+}

@@ -1,0 +1,903 @@
+[
+ {
+  "market_id": "0x9103c3b4e834476c9a62ea009ba2c884ee42e94e6e314a26f04d312434191836",
+  "collateral": "cbBTC",
+  "lltv": 0.86,
+  "t_tvl": 1704130064.306599,
+  "t_util": 0.9060297978562135,
+  "t_apy": 0.04501784105443529,
+  "t_liq": 107044020.25980526,
+  "fails": [],
+  "flagged": false,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xe1986e80099257c65dd18091ec7e34752ae2336870a5649f20c450c9c4931fb8",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 229883260.68734416,
+  "t_util": 0.9999992705843552,
+  "t_apy": 6.511263314281928,
+  "t_liq": 4.026296071034898,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x8793cf302b8ffd655ab97bd1c695dbd967807e8367a65cb2f4edaf1380ba1bda",
+  "collateral": "WETH",
+  "lltv": 0.86,
+  "t_tvl": 104458006.53896956,
+  "t_util": 0.9060327813163976,
+  "t_apy": 0.044936004555419344,
+  "t_liq": 5741839.529949235,
+  "fails": [],
+  "flagged": false,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xdc0d7ca7438bc13dea6c8f602b355caae93a0838a0d297c98f0ccc9367ee00f7",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84355720.08688875,
+  "t_util": 1.0,
+  "t_apy": 4.128890788230489,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x171d5a09ac5ba88b623bdff785c0534094c7c94ff63d84f7c65dcb973afb4f06",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84355523.96686406,
+  "t_util": 1.0,
+  "t_apy": 4.129179811508163,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xd119d5d4d5c725c6304b233fdc7e64492dbfb515046cdce1dd6724be32dcd45e",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84355504.3548794,
+  "t_util": 1.0,
+  "t_apy": 4.12869071135138,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x482b79373e56cc2ebb41fac67218eb48058561145c6fd09c399dd4e50f4fed1a",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84355465.13092005,
+  "t_util": 1.0,
+  "t_apy": 4.129001947509595,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xb2d1ee708fac379a89f53d77c781cf06db228e30bbb838b7adb969d653ab5baa",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84355327.84716329,
+  "t_util": 1.0,
+  "t_apy": 4.128579563346176,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x1daadd2c05d51846ce8f974fc228e8b97c4c82f352f4e7e5800311bbce3b9f55",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84355190.56356552,
+  "t_util": 1.0,
+  "t_apy": 4.128779632654435,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xdd7b21be447900cc2340ab1674690717d66321aef611dc47534f81d6117690f3",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84355170.95163582,
+  "t_util": 1.0,
+  "t_apy": 4.128268371579025,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xcbaf950a0ba12f0cbe6e645772f978f868b2677d9cb35b3adf5926a250b478e5",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84354935.6087325,
+  "t_util": 1.0,
+  "t_apy": 4.128068337092751,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x0ccbb1270451e6a7b9a9904cefe0da750a7f800cb2144b2c04c4d958437f3e41",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84354896.3849611,
+  "t_util": 1.0,
+  "t_apy": 4.128490648099579,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x14e52bfc7b0af05e7886954adb76790d7df16994789f527cf813ec15e2d3920f",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84354817.9374563,
+  "t_util": 1.0,
+  "t_apy": 4.12837950766468,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x6a2d168c1538f881a46ebeda99ac7f3b5f7131d9af2a6e9b0b51d17a06a5dd3a",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84354798.3255886,
+  "t_util": 1.0,
+  "t_apy": 4.128157239195551,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xa76a6374ecf479215385f26c3c928f7802c12268b6346cd645fcd1bb1a353894",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84354562.98342405,
+  "t_util": 1.0,
+  "t_apy": 4.127734975695456,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x3bd6ad3c84176a3224b33397d277a54a128d938bec19adf6ee1f22cc8859c342",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84354523.75977562,
+  "t_util": 1.0,
+  "t_apy": 4.127957212278439,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x4b18b6847eca450fc40306e398d78af415686f645e8e8d346d40b0d9150b2841",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84354464.92432646,
+  "t_util": 1.0,
+  "t_apy": 4.127846091812733,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x9bd75c5551e05eb11e8642fc3bc6df49c513bbb7b592482102ef0b79c13a14a3",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84354464.92432646,
+  "t_util": 1.0,
+  "t_apy": 4.127646085440799,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xf6bbfcc1acfbda9d4cbeb02ad7ba34d5c0daeba3b2f357d97fbf5482bb06e4d1",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84354406.0889063,
+  "t_util": 1.0,
+  "t_apy": 4.127334991709269,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xc005e686f1ddc1b6b35115bc49eb8f026485f1246b08d40367e1b8cfce6cf224",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84354366.86530985,
+  "t_util": 1.0,
+  "t_apy": 4.127446092691075,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x9941872115a1be9b9b9d8cb4c8e1ef0b7836516018342bdcca952cd3f8b843c7",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 84354347.25351612,
+  "t_util": 1.0,
+  "t_apy": 4.12753497689153,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xd4a903dc6d949519060c7707f9604fdc9772c046e05c2e3a8fce0bd7196e4109",
+  "collateral": "cbXRP",
+  "lltv": 0.625,
+  "t_tvl": 63830564.35691088,
+  "t_util": 0.9010165310890453,
+  "t_apy": 0.050320058363521825,
+  "t_liq": 1757418.8819091697,
+  "fails": [],
+  "flagged": false,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xff0f2bd52ca786a4f8149f96622885e880222d8bed12bbbf5950296be8d03f89",
+  "collateral": "USR",
+  "lltv": 0.915,
+  "t_tvl": 36713316.61057068,
+  "t_util": 0.9999998121703448,
+  "t_apy": 0.078397797305889,
+  "t_liq": 0.23385725674470356,
+  "fails": [
+   "LOCKED"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "COLLAPSE",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 34821390.080331296
+ },
+ {
+  "market_id": "0xed83a5d173a4434d64581e81be23bf4b86595aacfc33766eeb48ab5e0764c02e",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 16871971.658978157,
+  "t_util": 1.0,
+  "t_apy": 4.133540807404282,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x69a25d6c5dc10dbacf440629664cd3d18bfbd9fa08ed594671332189c282c773",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 16871944.201211687,
+  "t_util": 1.0,
+  "t_apy": 4.133741211428739,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x918015b2549bd1c094e7cab39682d07fb14625fdc808ce670fb81f3cfcaf44c7",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 16871944.201211687,
+  "t_util": 1.0,
+  "t_apy": 4.13362987431814,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x491ceb59aa75ca607ac3a04f588c52f3d5f8bcb782a43a5615ba23409712c39b",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 16871877.518196225,
+  "t_util": 1.0,
+  "t_apy": 4.133429477877666,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x64fc8c1bad8f4bdc3f94b4f4f3865d66fbd69f7d5ee28dc0c0f809f882fb51d9",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 16871873.59567173,
+  "t_util": 1.0,
+  "t_apy": 4.133340417678327,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x0ca10126f6c94cbd9cf0a48cc9516ae5e3dec5aa68303e6d988ee37c5149bf0d",
+  "collateral": "cbETH",
+  "lltv": 0.77,
+  "t_tvl": 16022865.452530537,
+  "t_util": 0.9058759781883678,
+  "t_apy": 0.044943681766616575,
+  "t_liq": 189899.07448393217,
+  "fails": [],
+  "flagged": false,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x7dc02ff6c536b1d49d7fba770438d79f5bd1f1c78884629b7d1aaee19675782b",
+  "collateral": "SOL",
+  "lltv": 0.625,
+  "t_tvl": 7357273.067007617,
+  "t_util": 0.8451083698594057,
+  "t_apy": 0.04012362878518513,
+  "t_liq": 0.16407728497433113,
+  "fails": [],
+  "flagged": false,
+  "outcome": [
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x73527ddd796e6d4f48387adaae36f6f3d49d606d7f2a15eb0c931416a58875d8",
+  "collateral": "cbDOGE",
+  "lltv": 0.625,
+  "t_tvl": 2850785.7955974177,
+  "t_util": 0.9019626828873407,
+  "t_apy": 0.05064115826781404,
+  "t_liq": 139264.18040288598,
+  "fails": [],
+  "flagged": false,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xd7520ad198b497b6eb75bc690268f4597630dbc12e305e9d4105843bab36e41d",
+  "collateral": "cbADA",
+  "lltv": 0.625,
+  "t_tvl": 2674964.320946063,
+  "t_util": 0.9044011645809105,
+  "t_apy": 0.05060868572669421,
+  "t_liq": 116321.07046937429,
+  "fails": [],
+  "flagged": false,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x13c42741a359ac4a8aa8287d2be109dcf28344484f91185f9a79bd5a805a55ae",
+  "collateral": "wstETH",
+  "lltv": 0.86,
+  "t_tvl": 2379574.6273370245,
+  "t_util": 0.9067857675165113,
+  "t_apy": 0.042321054202135715,
+  "t_liq": 88728.56958447908,
+  "fails": [],
+  "flagged": false,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x1c21c59df9db44bf6f645d854ee710a8ca17b479451447e9f56758aee10a2fad",
+  "collateral": "cbETH",
+  "lltv": 0.86,
+  "t_tvl": 1749708.6700974924,
+  "t_util": 0.9060991577249035,
+  "t_apy": 0.04500751042175078,
+  "t_liq": 172144.00041908497,
+  "fails": [],
+  "flagged": false,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xfdfecf85a4dd90a7637ae2aaf28b35061166f0e62bfc714c565eed9f7e959783",
+  "collateral": "cbXRP",
+  "lltv": 0.77,
+  "t_tvl": 1725953.2852510228,
+  "t_util": 0.901435912526183,
+  "t_apy": 0.0506497579119711,
+  "t_liq": 31060.760220594693,
+  "fails": [],
+  "flagged": false,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xf0b0922f2634c8d75c92d95097fbc718d37c1efe534b258eb0ab8cd1191b1e8a",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "t_tvl": 1687239.9219714045,
+  "t_util": 1.0,
+  "t_apy": 4.135968826835697,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x9125d0fa03c3137166df68bcc72283477830de2a4a5536512374c573ad4583c3",
+  "collateral": "cbLTC",
+  "lltv": 0.625,
+  "t_tvl": 1243254.5824918852,
+  "t_util": 0.900646407435053,
+  "t_apy": 0.04913715870009851,
+  "t_liq": 43688.25134765745,
+  "fails": [],
+  "flagged": false,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xf2a59ad1aec67664c564cb33c33538ab41372363204ce2bdcf00900b7d28c6ab",
+  "collateral": "cbADA",
+  "lltv": 0.77,
+  "t_tvl": 1056501.3896482314,
+  "t_util": 0.9015406597103941,
+  "t_apy": 0.0506503819445547,
+  "t_liq": 97348.7048692725,
+  "fails": [],
+  "flagged": false,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xdba352d93a64b17c71104cbddc6aef85cd432322a1446b5b65163cbbc615cd0c",
+  "collateral": "cbETH",
+  "lltv": 0.86,
+  "t_tvl": 840946.7606224123,
+  "t_util": 0.9055238571035943,
+  "t_apy": 0.044987628644096646,
+  "t_liq": 63755.592077610214,
+  "fails": [
+   "THIN"
+  ],
+  "flagged": true,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x1478d70d1fde3fd5b8eb5766e82b03aa56a1df72a54fc8cd33aad666b0bd5008",
+  "collateral": "RLP",
+  "lltv": 0.86,
+  "t_tvl": 557849.1369100452,
+  "t_util": 0.999968169889499,
+  "t_apy": 0.4286021640625437,
+  "t_liq": 0.4580543789603683,
+  "fails": [
+   "LOCKED",
+   "THIN"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "COLLAPSE",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 530852.9979871144
+ },
+ {
+  "market_id": "0x38c846197ac32a752a60c25d4536ebb0c3920c532e9a859c38c91efb7b8c2abb",
+  "collateral": null,
+  "lltv": 0.0,
+  "t_tvl": 503232.47861568304,
+  "t_util": 0.0,
+  "t_apy": 0.0,
+  "t_liq": 168836.05892900508,
+  "fails": [
+   "THIN"
+  ],
+  "flagged": true,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x67a66cbacb2fe48ec4326932d4528215ad11656a86135f2795f5b90e501eb538",
+  "collateral": "superOETHb",
+  "lltv": 0.77,
+  "t_tvl": 463480.8678623381,
+  "t_util": 0.905015697047545,
+  "t_apy": 0.0384249905619871,
+  "t_liq": 29704.425808000102,
+  "fails": [
+   "THIN"
+  ],
+  "flagged": true,
+  "outcome": [
+   "COLLAPSE"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x2e2548390b8894d2ffaaababebc2b5f2501920e03a4c611b63b46e19bfc6b75d",
+  "collateral": "uniBTC",
+  "lltv": 0.77,
+  "t_tvl": 367071.6610123928,
+  "t_util": 0.9122083871923364,
+  "t_apy": 0.07743161396742748,
+  "t_liq": 42097.654528675965,
+  "fails": [
+   "THIN"
+  ],
+  "flagged": true,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x1a3e69d0109bb1be42b80e11034bb6ee98fc466721f26845dc83b2aa8d979137",
+  "collateral": "yoUSD",
+  "lltv": 0.915,
+  "t_tvl": 356080.21227918315,
+  "t_util": 0.8661558254311074,
+  "t_apy": 0.05980293819903961,
+  "t_liq": 429591.6351722898,
+  "fails": [
+   "THIN"
+  ],
+  "flagged": true,
+  "outcome": [
+   "COLLAPSE"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xdaa04f6819210b11fe4e3b65300c725c32e55755e3598671559b9ae3bac453d7",
+  "collateral": "AERO",
+  "lltv": 0.625,
+  "t_tvl": 320707.21657535684,
+  "t_util": 0.9000000722275426,
+  "t_apy": 0.03770807991907321,
+  "t_liq": 5556.264052686615,
+  "fails": [
+   "THIN"
+  ],
+  "flagged": true,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0xb609f1d824d70a2127092333f591080be01555535c61d93252dd778e1fa88920",
+  "collateral": "yUSD",
+  "lltv": 0.915,
+  "t_tvl": 116934.45383738047,
+  "t_util": 1.0,
+  "t_apy": 2979.9579868427436,
+  "t_liq": 0.0,
+  "fails": [
+   "LOCKED",
+   "THIN",
+   "OUTLIER"
+  ],
+  "flagged": true,
+  "outcome": [
+   "LOCKUP",
+   "BLOWOUT",
+   "FROZEN"
+  ],
+  "stressed": true,
+  "bad_debt_now": 0.0
+ },
+ {
+  "market_id": "0x52a2a376586d0775e3e80621facc464f6e96d81c8cb70fd461527dde195a079f",
+  "collateral": "LBTC",
+  "lltv": 0.86,
+  "t_tvl": 50422.25073306532,
+  "t_util": 0.9036791988468631,
+  "t_apy": 0.042367916621455524,
+  "t_liq": 3770.9877545582845,
+  "fails": [
+   "THIN"
+  ],
+  "flagged": true,
+  "outcome": [],
+  "stressed": false,
+  "bad_debt_now": 0.0
+ }
+]

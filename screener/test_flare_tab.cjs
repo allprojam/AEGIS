@@ -1,0 +1,1 @@
+../tests/test_flare_tab.cjs

@@ -1,0 +1,20 @@
+########################################################################
+# LIVE StabilityPool (proxy) 0x2c817F7159c08d94f09764086330c96Bb3265A2f
+########################################################################
+  NAME                     
+  getTotalBoldDeposits     3,485,123.1342 CDP
+  getCollBalance           2287416811
+  boldToken                0x6cd3a5ba46fa254d4d2e3c2b37350ae337e94a0f
+  collToken                0xad552a648c74d49e10027ab8a618a3ad4901c5be
+  activePool               0x65c378bf4a68491436c84d8da020b14fefe03d17
+  getTroveManager          0xc46e7d0538494feb82b460b9723daba0508c8fb1
+  priceFeed                0xfc35d431ce1445b9c79ff38594ef454618d2ec49
+  owner                    0xdedda08961216adb9ca09b88986d110127b24270
+  P                        922511161592150565369428681705665880
+  currentScale             0
+  getEntireBranchColl      4861569378042
+  getEntireBranchDebt      4,072,072.7135 CDP
+
+[ ActivePool via proxy? ]
+  ActivePool.SP_YIELD_SPLIT       no such fn
+DONE

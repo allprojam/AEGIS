@@ -1,0 +1,26 @@
+APS pools: 20
+  USD₮0 / APS 0.3%             reserve $85163.3412  vol24 2925.1134910133
+  FXRP / APS 0.3%              reserve $29234.1943  vol24 2430.0098211906
+  APS / WFLR 0.3%              reserve $21585.0712  vol24 1548.4072096282
+  HLN / APS 0.3%               reserve $32598.1253  vol24 154.2795407637
+  eQNT / APS                   reserve $14806.3361  vol24 271.3695488091
+  eUSDT / APS                  reserve $11409.8555  vol24 19.5578143602
+  APS / WFLR                   reserve $6777.1415  vol24 10.2617512359
+  eQNT / APS 0.3%              reserve $890.5879  vol24 1.721851253
+  APS / eUSDT 0.3%             reserve $305.667  vol24 0.3346341064
+  HLN / APS                    reserve $5253.23  vol24 0.0
+  eETH / APS                   reserve $4608.1236  vol24 0.0
+  sFLR / APS                   reserve $1217.8692  vol24 0.0
+  APS / WFLR                   reserve $122.6971  vol24 0.0
+  eETH / APS 0.3%              reserve $75.9971  vol24 0.0
+  HLN / APS 0.01%              reserve $40.5571  vol24 0.0
+  DIJ / APS                    reserve $45.2089  vol24 0.0
+  sFLR / APS 0.3%              reserve $38.0572  vol24 0.0
+  APS / WFLR 1%                reserve $17.6919  vol24 0.0
+  APS / WFLR                   reserve $12.988  vol24 0.0
+  HLN / APS 0.05%              reserve $5.2452  vol24 0.0
+  ds att0 'NoneType' object is not iterable
+  ds att1 'NoneType' object is not iterable
+  ds att2 'NoneType' object is not iterable
+  ds att3 'NoneType' object is not iterable
+DONE

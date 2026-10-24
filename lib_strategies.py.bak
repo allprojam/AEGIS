@@ -1,0 +1,103 @@
+"""Faithful pandas ports of three public TradingView strategies.
+Pine v2 semantics. Same honest fill model: signal on closed bar, fill next open."""
+import numpy as np, pandas as pd
+from pine_port import pine_ema
+
+
+def pine_sma(x, n): return x.rolling(n).mean()
+def pine_stdev(x, n): return x.rolling(n).std(ddof=0)
+
+
+def pine_rma(x: pd.Series, n: int) -> pd.Series:
+    """Pine ta.rma (Wilder): alpha = 1/n, seeded with SMA."""
+    v = x.to_numpy(dtype=float); out = np.full(len(v), np.nan)
+    if len(v) < n: return pd.Series(out, index=x.index)
+    out[n-1] = np.nanmean(v[:n])
+    for i in range(n, len(v)):
+        out[i] = (out[i-1] * (n - 1) + v[i]) / n
+    return pd.Series(out, index=x.index)
+
+
+def pine_atr(df, n):
+    pc = df["close"].shift()
+    tr = pd.concat([df["high"] - df["low"], (df["high"] - pc).abs(), (df["low"] - pc).abs()], axis=1).max(axis=1)
+    return pine_rma(tr, n)
+
+
+def pine_rsi(x: pd.Series, n: int) -> pd.Series:
+    d = x.diff()
+    up = d.clip(lower=0); dn = (-d).clip(lower=0)
+    ru, rd = pine_rma(up, n), pine_rma(dn, n)
+    return 100 - 100 / (1 + ru / rd)
+
+
+# ---------------- 1. Keltner bounce (Zelibobla) ----------------
+def keltner_signals(df, klen=200, atrlen=200, dev=8.0, exit_on_ema=True):
+    d = df.copy()
+    ema = pine_sma(d["close"], klen)
+    a = pine_atr(d, atrlen)
+    top, bot = ema + a * dev, ema - a * dev
+    c = d["close"]
+    d["k_entry"] = (c > bot) & (c.shift() <= bot.shift())
+    d["k_exit_tp"] = (c > ema) & (c.shift() <= ema.shift())      # "close on EMA touch"
+    d["k_exit_band"] = (c < top) & (c.shift() >= top.shift())
+    return d
+
+
+# ---------------- 2. Bollinger + RSI v1.1 (ChartArt) ----------------
+def bbrsi_signals(df, rsi_len=6, bb_len=200, bb_mult=2.0):
+    d = df.copy()
+    c = d["close"]
+    basis = pine_sma(c, bb_len); sd = pine_stdev(c, bb_len)
+    up, lo = basis + bb_mult * sd, basis - bb_mult * sd
+    d["b_entry"] = (c > lo) & (c.shift() <= lo.shift())
+    d["b_exit"] = (c < up) & (c.shift() >= up.shift())
+    d["rsi"] = pine_rsi(c, rsi_len)
+    return d
+
+
+# ---------------- 3. Fractal Breakout (ChartArt) ----------------
+def fractal_signals(df, n_time=3, avg3=True):
+    d = df.copy()
+    h, l = d["high"], d["low"]; price = (h + l) / 2
+    ft = (h.shift(2) > h.shift(3)) & (h.shift(2) > h.shift(4)) & (h.shift(2) > h.shift(1)) & (h.shift(2) > h)
+    # valuewhen(ft, price, 1): the most recent fractal price, evaluated 1 bar ago
+    fp = pd.Series(np.nan, index=d.index)
+    fp[ft.fillna(False)] = price[ft.fillna(False)]
+    fp_prev = fp.ffill().shift(1)          # valuewhen(...,1) -> previous occurrence
+    fa = (fp_prev.shift(1) + fp_prev.shift(2) + fp_prev.shift(3)) / 3 if avg3 else (fp_prev.shift(1) + fp_prev.shift(2)) / 2
+    d["f_entry"] = price.shift(1) > fp_prev    # no_repainting default true
+    d["f_trend"] = fa > fa.shift(1)
+    d["f_ntime"] = n_time
+    return d
+
+
+def simulate_events(d, entry_col, exit_col, max_bars=None, size_usd=250.0,
+                    fee_bps_rt=5.0, gas_usd=0.02):
+    """Shared honest engine: fill at next bar open, one position at a time."""
+    o = d["open"].to_numpy(); cl = d["close"].to_numpy()
+    en = d[entry_col].fillna(False).to_numpy(); ex = d[exit_col].fillna(False).to_numpy()
+    cum = 0.0; pos = 0.0; epx = None; ebar = None; trades = []; curve = []
+    for i in range(len(d) - 1):
+        if pos == 0.0:
+            if en[i]:
+                pos, epx, ebar = size_usd / o[i+1], o[i+1], i+1
+                cum -= size_usd * fee_bps_rt / 10000.0 + gas_usd
+        else:
+            hold = (i - ebar) if ebar is not None else 0
+            timeup = (max_bars is not None) and (hold >= max_bars)
+            if ex[i] or timeup:
+                px = o[i+1]
+                pnl = pos * (px - epx) - size_usd * fee_bps_rt / 10000.0 - gas_usd
+                cum += pnl
+                trades.append({"t": int(d["time"].iloc[i]), "in": epx, "out": px, "usd": pnl, "bars": hold})
+                pos, epx, ebar = 0.0, None, None
+        curve.append(cum)
+    eq = np.array(curve); peak = np.maximum.accumulate(eq)
+    wins = [t for t in trades if t["usd"] > 0]
+    return {"trades": len(trades), "net_usd": round(cum, 3),
+            "win_rate": round(len(wins)/len(trades), 3) if trades else None,
+            "avg_win_bps": round(float(np.mean([ (t["out"]/t["in"]-1)*10000 for t in wins])) if wins else 0, 1),
+            "avg_loss_bps": round(float(np.mean([ (t["out"]/t["in"]-1)*10000 for t in trades if t["usd"]<=0])) if len(wins)<len(trades) else 0, 1),
+            "avg_bars": round(float(np.mean([t["bars"] for t in trades])), 1) if trades else None,
+            "max_dd_usd": round(float((eq - peak).min()), 3), "_trades": trades}

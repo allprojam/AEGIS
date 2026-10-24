@@ -1,0 +1,102 @@
+{
+ "coverage_started": "2026-10-07T18:39:02Z",
+ "days": [
+  {
+   "day": "2026-10-07",
+   "covered": 14,
+   "avoid": 0,
+   "caution": 0,
+   "real": 14,
+   "bad_debt_events": 0,
+   "bad_debt_usd": 0.0,
+   "runs_seen": [
+    "20261007T213703Z"
+   ],
+   "first_flag_run": "20261007T213703Z"
+  },
+  {
+   "day": "2026-10-08",
+   "covered": 1247,
+   "avoid": 0,
+   "caution": 4,
+   "real": 1243,
+   "bad_debt_events": 0,
+   "bad_debt_usd": 0.0,
+   "runs_seen": [
+    "20261008T041220Z",
+    "20261008T042731Z",
+    "20261008T055910Z",
+    "20261008T061430Z",
+    "20261008T091740Z",
+    "20261008T103345Z",
+    "20261008T110409Z",
+    "20261008T114939Z",
+    "20261008T120445Z",
+    "20261008T123513Z",
+    "20261008T125022Z",
+    "20261008T133547Z",
+    "20261008T145140Z",
+    "20261008T150645Z",
+    "20261008T152202Z",
+    "20261008T153709Z",
+    "20261008T155239Z",
+    "20261008T160801Z",
+    "20261008T163817Z",
+    "20261008T165320Z",
+    "20261008T170829Z",
+    "20261008T172336Z",
+    "20261008T173844Z"
+   ],
+   "first_flag_run": "20261008T041220Z"
+  },
+  {
+   "day": "2026-10-09",
+   "covered": 1,
+   "avoid": 1,
+   "caution": 0,
+   "real": 0,
+   "bad_debt_events": 0,
+   "bad_debt_usd": 0.0,
+   "runs_seen": [
+    "20261009T003044Z"
+   ],
+   "first_flag_run": "20261009T003044Z"
+  },
+  {
+   "day": "2026-10-12",
+   "covered": 1,
+   "avoid": 0,
+   "caution": 0,
+   "real": 1,
+   "bad_debt_events": 0,
+   "bad_debt_usd": 0.0,
+   "runs_seen": [
+    "20261012T214300Z"
+   ],
+   "first_flag_run": "20261012T214300Z"
+  },
+  {
+   "day": "2026-10-13",
+   "covered": 74,
+   "avoid": 0,
+   "caution": 5,
+   "real": 69,
+   "bad_debt_events": 0,
+   "bad_debt_usd": 0.0,
+   "runs_seen": [
+    "20261012T235959Z"
+   ],
+   "first_flag_run": "20261012T235959Z"
+  }
+ ],
+ "totals": {
+  "covered": 1337,
+  "avoid": 1,
+  "caution": 9,
+  "real": 1327,
+  "bad_debt_events": 0,
+  "bad_debt_usd": 0.0
+ },
+ "as_of": "2026-10-13T18:15:41Z",
+ "events_total": 31123
+}

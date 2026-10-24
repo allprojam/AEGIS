@@ -1,0 +1,9 @@
+FAIL USD The read operation timed out
+FAIL JPY The read operation timed out
+FAIL EUR The read operation timed out
+FAIL GBP The read operation timed out
+FAIL AUD The read operation timed out
+FAIL CAD The read operation timed out
+FAIL CHF The read operation timed out
+FAIL NZD The read operation timed out
+DONE

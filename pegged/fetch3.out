@@ -1,0 +1,15 @@
+META USDTUSDC_v4: name=USDT / USDC fee=None
+     vol24={'m5': '275873.001714627', 'm15': '543844.11447172', 'm30': '688361.88740107', 'h1': '1096281.85303572', 'h6': '16764574.3434964', 'h24': '23840763.7035184'}
+  USDTUSDC_uni_A att0 HTTP Error 429: Too Many Requests
+OK USDTUSDC_uni_A 100
+  USDTUSDC_uni_B att0 HTTP Error 429: Too Many Requests
+  USDTUSDC_uni_B att1 HTTP Error 429: Too Many Requests
+  USDTUSDC_uni_B att2 HTTP Error 429: Too Many Requests
+  USDTUSDC_uni_B att3 HTTP Error 429: Too Many Requests
+OK USDTUSDC_uni_B 100
+OK USDTUSDC_quick 100
+  USDTUSDC_uni_C att0 HTTP Error 429: Too Many Requests
+  USDTUSDC_uni_C att1 HTTP Error 429: Too Many Requests
+  USDTUSDC_uni_C att2 HTTP Error 429: Too Many Requests
+OK USDTUSDC_uni_C 100
+DONE

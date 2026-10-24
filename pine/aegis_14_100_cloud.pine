@@ -1,0 +1,76 @@
+//@version=5
+// Aegis 14/100 Cloud -- the "trend reversal" exit idea, measured.
+//
+// Entry  : 14 SMA crosses UP over the 100 SMA.
+// Exit   : candle closes ABOVE the 14 AND above the upper Bollinger band drawn around
+//          the 100. That is "extended far from the 100" = exhaustion = take the money.
+//
+// MEASURED, BTC 1h, 3 years (buy & hold +215.1%):
+//   cross-in / cross-out, longs only     +92.4%   win  33%   t 1.56
+//   cross-in / BB(100,2.0) exhaustion    +53.5%   win  78%   t 1.85
+//   cross-in / BB(100,3.0) exhaustion    +54.1%   win  75%   t 1.43
+//
+// WHAT THIS EXIT ACTUALLY DOES: it lifts the win rate from 33% to 78% and cuts the worst
+// single trade from about -36% to about -20%. That is a real, consistent improvement in
+// how the strategy FEELS and how easy it is to hold. It does NOT beat buy & hold, and
+// t = 1.85 is still below the ~2.0 needed for statistical significance.
+//
+// WARNING ON SHORTS: enabling them lost -88.5% on BTC over 3 years (worst trade -62.3%).
+// They helped on ETH (+18.8%) but that does NOT transfer. Default OFF, for good reason.
+strategy("Aegis 14/100 Cloud", overlay=true,
+     initial_capital=1000,
+     default_qty_type=strategy.percent_of_equity, default_qty_value=100,
+     commission_type=strategy.commission.percent, commission_value=0.02,
+     slippage=2, pyramiding=0, calc_on_every_tick=false, process_orders_on_close=false)
+
+fastLen = input.int(14,  "Fast SMA", minval=1)
+slowLen = input.int(100, "Slow SMA", minval=2)
+bbK     = input.float(2.0, "Bollinger k around the 100", minval=0.5, step=0.5)
+exitMode= input.string("Exhaustion", "Exit mode", options=["Exhaustion","Cross"])
+allowShorts = input.bool(false, "Allow shorts (LOST -88% on BTC -- off by default)")
+
+fast = ta.sma(close, fastLen)
+slow = ta.sma(close, slowLen)
+basis = ta.sma(close, slowLen)
+dev  = bbK * ta.stdev(close, slowLen)
+upper = basis + dev
+lower = basis - dev
+
+goldenCross = ta.crossover(fast, slow)
+deathCross  = ta.crossunder(fast, slow)
+
+// "far away from the 100, with the candle beyond the 14" = exhaustion
+longExhaust  = close > fast and close > upper
+shortExhaust = close < fast and close < lower
+
+if goldenCross and strategy.position_size == 0
+    strategy.entry("Long", strategy.long)
+if allowShorts and deathCross and strategy.position_size == 0
+    strategy.entry("Short", strategy.short)
+
+if strategy.position_size > 0
+    if exitMode == "Exhaustion"
+        if longExhaust
+            strategy.close("Long")
+    else
+        if deathCross
+            strategy.close("Long")
+if strategy.position_size < 0
+    if exitMode == "Exhaustion"
+        if shortExhaust
+            strategy.close("Short")
+    else
+        if goldenCross
+            strategy.close("Short")
+
+// ---- the "cloud" around the 100 ----
+pUp = plot(upper, "BB upper", color=color.new(color.purple, 55), linewidth=1)
+pDn = plot(lower, "BB lower", color=color.new(color.purple, 55), linewidth=1)
+fill(pUp, pDn, color=color.new(color.purple, 92), title="Cloud around the 100")
+plot(fast, "Fast 14",  color=color.new(color.orange, 0), linewidth=2)
+plot(slow, "Slow 100", color=color.new(color.blue, 0),   linewidth=2)
+plotshape(goldenCross, "Golden cross", style=shape.triangleup,
+     location=location.belowbar, color=color.new(color.lime, 0), size=size.small)
+plotshape(strategy.position_size > 0 and longExhaust and exitMode == "Exhaustion",
+     "Exhaustion exit", style=shape.triangledown,
+     location=location.abovebar, color=color.new(color.fuchsia, 0), size=size.small)

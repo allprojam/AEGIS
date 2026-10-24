@@ -1,0 +1,1610 @@
+{
+ "run": "20261008T163817Z",
+ "paths": 10000,
+ "seed": 20261008,
+ "horizons_days": [
+  1,
+  7,
+  30
+ ],
+ "independent_markets": true,
+ "limitations": [
+  "Markets are simulated INDEPENDENTLY: no cross-market correlation, so cascade risk is understated.",
+  "Debt is held constant: interest accrual is ignored, so breach is slightly understated.",
+  "A breach is counted as a liquidation: no liquidator-profitability delay, so realised liquidations are an upper bound.",
+  "Terminal-value breach only: a path that breaches and recovers mid-window is not counted, so the probability understates first-passage risk.",
+  "Lognormal returns, from the market's own scalar daily volatility."
+ ],
+ "counts": {
+  "markets": 60,
+  "simulated": 25,
+  "already_past_lltv": 3,
+  "insufficient_state": 32,
+  "risky_5pct_or_more_30d": 2,
+  "low_vol_trust": 0
+ },
+ "risky": [
+  {
+   "market_id": "0x1a3e69d0109bb1be42b80e11034bb6ee98fc466721f26845dc83b2aa8d979137",
+   "collateral": "yoUSD",
+   "loan": "USDC",
+   "lltv": 0.915,
+   "daily_vol_pct": 29.817,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 603118.1602901993,
+   "borrow_usd": 273399.25279443676,
+   "liquidity_usd": 83057.6608669813,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0097,
+     "closed_form": 0.00924812279844156,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.1875,
+     "closed_form": 0.18665050641617909,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.33,
+     "closed_form": 0.33357629479795736,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.4533096013273529,
+   "margin": 0.5045796706804887,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.7670245769604069,
+    "util_p75": 0.7673824741913768,
+    "util_swing": 0.0003578972309699058,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0xe458a501c1103ca3b256f2bcb45d223263fb34b6349d82675494ce3a94ce1327",
+   "collateral": "cbZEC",
+   "loan": "USDC",
+   "lltv": 0.625,
+   "daily_vol_pct": 7.339,
+   "vol_source": "recomputed (cadence 1.0d)",
+   "collateral_usd": 4106295.779948009,
+   "borrow_usd": 1465077.7057688662,
+   "liquidity_usd": 138080.62610635994,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 1.099120794378905e-14,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0018,
+     "closed_form": 0.0019435326993009205,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0839,
+     "closed_form": 0.08156183808030093,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.3567881575709132,
+   "margin": 0.42913894788653884,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.9120204633193858,
+    "util_p75": 0.9127046221026287,
+    "util_swing": 0.0006841587832429052,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  }
+ ],
+ "all": [
+  {
+   "market_id": "0x9103c3b4e834476c9a62ea009ba2c884ee42e94e6e314a26f04d312434191836",
+   "collateral": "cbBTC",
+   "loan": "USDC",
+   "lltv": 0.86,
+   "daily_vol_pct": 2.149,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 3163162571.3762407,
+   "borrow_usd": 1537746651.1721315,
+   "liquidity_usd": 167891437.15245914,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 6.290668935760024e-07,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.4861421493436181,
+   "margin": 0.4347184309957929,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.9003301809734444,
+    "util_p75": 0.9005804035058318,
+    "util_swing": 0.00025022253238737857,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x54cf9be57fdfa6457a660991907434ff9d295c465a603a50126ff647d50b7354",
+   "collateral": "USDe",
+   "loan": "USDC",
+   "lltv": 0.915,
+   "daily_vol_pct": 0.021,
+   "vol_source": "recomputed (cadence 1.0d)",
+   "collateral_usd": 391752427.5879166,
+   "borrow_usd": 350982919.67973924,
+   "liquidity_usd": 38297458.6374316,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.8959304268790321,
+   "margin": 0.020841063520183556,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.9000513271465744,
+    "util_p75": 0.9005127926921013,
+    "util_swing": 0.00046146554552684016,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0xe1986e80099257c65dd18091ec7e34752ae2336870a5649f20c450c9c4931fb8",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 234736011.15061602,
+   "liquidity_usd": 81.6136763083923,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x8793cf302b8ffd655ab97bd1c695dbd967807e8367a65cb2f4edaf1380ba1bda",
+   "collateral": "WETH",
+   "loan": "USDC",
+   "lltv": 0.86,
+   "daily_vol_pct": 3.394,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 194818441.11940074,
+   "borrow_usd": 92444163.28246592,
+   "liquidity_usd": 10355844.348851899,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 1.7710610755727885e-11,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0002,
+     "closed_form": 0.0006900957154933884,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.4745144389375775,
+   "margin": 0.4482390244911889,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.9001227612494307,
+    "util_p75": 0.9010949331502042,
+    "util_swing": 0.0009721719007734775,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0xdc0d7ca7438bc13dea6c8f602b355caae93a0838a0d297c98f0ccc9367ee00f7",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85165525.12939095,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x171d5a09ac5ba88b623bdff785c0534094c7c94ff63d84f7c65dcb973afb4f06",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85165327.6779747,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0xd119d5d4d5c725c6304b233fdc7e64492dbfb515046cdce1dd6724be32dcd45e",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85165307.93285057,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x482b79373e56cc2ebb41fac67218eb48058561145c6fd09c399dd4e50f4fed1a",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85165288.18773043,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0xb2d1ee708fac379a89f53d77c781cf06db228e30bbb838b7adb969d653ab5baa",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85165149.97197747,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x1daadd2c05d51846ce8f974fc228e8b97c4c82f352f4e7e5800311bbce3b9f55",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164972.26624417,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0xdd7b21be447900cc2340ab1674690717d66321aef611dc47534f81d6117690f3",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164972.26624417,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0xcbaf950a0ba12f0cbe6e645772f978f868b2677d9cb35b3adf5926a250b478e5",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164755.07070546,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x0ccbb1270451e6a7b9a9904cefe0da750a7f800cb2144b2c04c4d958437f3e41",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164676.09060681,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x6a2d168c1538f881a46ebeda99ac7f3b5f7131d9af2a6e9b0b51d17a06a5dd3a",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164616.8555673,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x14e52bfc7b0af05e7886954adb76790d7df16994789f527cf813ec15e2d3920f",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164597.11056013,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0xa76a6374ecf479215385f26c3c928f7802c12268b6346cd645fcd1bb1a353894",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164360.170732,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x3bd6ad3c84176a3224b33397d277a54a128d938bec19adf6ee1f22cc8859c342",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164320.68080664,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x4b18b6847eca450fc40306e398d78af415686f645e8e8d346d40b0d9150b2841",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164261.44594209,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x9bd75c5551e05eb11e8642fc3bc6df49c513bbb7b592482102ef0b79c13a14a3",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164261.44594209,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0xf6bbfcc1acfbda9d4cbeb02ad7ba34d5c0daeba3b2f357d97fbf5482bb06e4d1",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164202.2111065,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x9941872115a1be9b9b9d8cb4c8e1ef0b7836516018342bdcca952cd3f8b843c7",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164162.72123311,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0xc005e686f1ddc1b6b35115bc49eb8f026485f1246b08d40367e1b8cfce6cf224",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 85164162.72123311,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0xd4a903dc6d949519060c7707f9604fdc9772c046e05c2e3a8fce0bd7196e4109",
+   "collateral": "cbXRP",
+   "loan": "USDC",
+   "lltv": 0.625,
+   "daily_vol_pct": 2.976,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 148376510.24144503,
+   "borrow_usd": 56240360.017235406,
+   "liquidity_usd": 6102611.80925034,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 1.0649703341414352e-10,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0006,
+     "closed_form": 0.0010769544881481519,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.37903816396354467,
+   "margin": 0.3935389376583285,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.8995667690948738,
+    "util_p75": 0.900357357356757,
+    "util_swing": 0.0007905882618832738,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x29ae7ac08be3a58e11151fed74701fb8e6ffd8e76b1870cf17ad70f332752d0b",
+   "collateral": "mGLO",
+   "loan": "USDC",
+   "lltv": 0.915,
+   "daily_vol_pct": 0.057,
+   "vol_source": "recomputed (cadence 1.0d)",
+   "collateral_usd": 42158067.44608687,
+   "borrow_usd": 34781948.49606498,
+   "liquidity_usd": 3953383.5104412087,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.8250365968635847,
+   "margin": 0.09832065916548127,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.8988320997841976,
+    "util_p75": 0.8989402106825998,
+    "util_swing": 0.00010811089840212507,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0xff0f2bd52ca786a4f8149f96622885e880222d8bed12bbbf5950296be8d03f89",
+   "collateral": "USR",
+   "loan": "USDC",
+   "lltv": 0.915,
+   "daily_vol_pct": 10.183,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 111554.64749610098,
+   "borrow_usd": 37489475.27520661,
+   "liquidity_usd": 0.0009996662128590517,
+   "horizons": {
+    "1": {
+     "breach_prob": 1.0,
+     "closed_form": 1.0
+    },
+    "7": {
+     "breach_prob": 1.0,
+     "closed_form": 1.0
+    },
+    "30": {
+     "breach_prob": 1.0,
+     "closed_form": 1.0
+    }
+   },
+   "ltv": 336.06376889422677,
+   "margin": -366.2828075346741,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.9999999999729181,
+    "util_p75": 0.9999999999731884,
+    "util_swing": 2.703393064962256e-13,
+    "already_breached": 100,
+    "vol_trust": "high"
+   },
+   "reason": "already past LLTV: liquidation is not a probability, it is a state"
+  },
+  {
+   "market_id": "0xed83a5d173a4434d64581e81be23bf4b86595aacfc33766eeb48ab5e0764c02e",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 17033938.286004007,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x69a25d6c5dc10dbacf440629664cd3d18bfbd9fa08ed594671332189c282c773",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 17033914.59100374,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x918015b2549bd1c094e7cab39682d07fb14625fdc808ce670fb81f3cfcaf44c7",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 17033910.641839355,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x491ceb59aa75ca607ac3a04f588c52f3d5f8bcb782a43a5615ba23409712c39b",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 17033843.50614287,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x64fc8c1bad8f4bdc3f94b4f4f3865d66fbd69f7d5ee28dc0c0f809f882fb51d9",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 17033839.556990486,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x0ca10126f6c94cbd9cf0a48cc9516ae5e3dec5aa68303e6d988ee37c5149bf0d",
+   "collateral": "cbETH",
+   "loan": "USDC",
+   "lltv": 0.77,
+   "daily_vol_pct": 3.532,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 33398941.09382856,
+   "borrow_usd": 14118443.77317484,
+   "liquidity_usd": 1547708.9201897155,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 6.938560836999841e-11,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0005,
+     "closed_form": 0.0009681937822338949,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.42272129926249785,
+   "margin": 0.4510112996590937,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.8963322619040193,
+    "util_p75": 0.9002080093109146,
+    "util_swing": 0.0038757474068953357,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x7dc02ff6c536b1d49d7fba770438d79f5bd1f1c78884629b7d1aaee19675782b",
+   "collateral": "SOL",
+   "loan": "USDC",
+   "lltv": 0.625,
+   "daily_vol_pct": 2.994,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 18633139.558644067,
+   "borrow_usd": 6718463.024328741,
+   "liquidity_usd": 701492.2218748138,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 1.9027002196025933e-12,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0001,
+     "closed_form": 0.0003977140431382642,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.3605652715251623,
+   "margin": 0.42309556555974026,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.9008130790761236,
+    "util_p75": 0.9037732150816616,
+    "util_swing": 0.0029601360055380166,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x09276541cfecb6920a80679a1deced4dde3ae64bf5fc2c9c1f9c21e0c152e1a5",
+   "collateral": "JitoSOL",
+   "loan": "USDC",
+   "lltv": 0.625,
+   "daily_vol_pct": 3.064,
+   "vol_source": "recomputed (cadence 1.0d)",
+   "collateral_usd": 9331218.12351068,
+   "borrow_usd": 3438646.017845239,
+   "liquidity_usd": 400878.1809418181,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 3.5928038322197153e-11,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0004,
+     "closed_form": 0.0008222955919449104,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.36850987430904886,
+   "margin": 0.4103842011055219,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.9006114650874175,
+    "util_p75": 0.9012428098364841,
+    "util_swing": 0.0006313447490665647,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x4217fed63c853537fb818f4ba4416bc708c3d7534913532feb34c3511ce2aba6",
+   "collateral": "savUSD",
+   "loan": "USDC",
+   "lltv": 0.915,
+   "daily_vol_pct": 0.077,
+   "vol_source": "recomputed (cadence 1.0d)",
+   "collateral_usd": 4314481.901015362,
+   "borrow_usd": 3181090.314462961,
+   "liquidity_usd": 319725.6458260309,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.7373052865778228,
+   "margin": 0.1942018725925434,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.9086568290258429,
+    "util_p75": 0.9086673776788822,
+    "util_swing": 1.0548653039288425e-05,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x2e26ecfe44dd56f2e6b0257e421e69474e838397b7194e2c934195c6d975af62",
+   "collateral": "sUSN",
+   "loan": "USDC",
+   "lltv": 0.915,
+   "daily_vol_pct": 0.028,
+   "vol_source": "recomputed (cadence 1.0d)",
+   "collateral_usd": 5402437.381561141,
+   "borrow_usd": 3129685.825642401,
+   "liquidity_usd": 279637.42438672547,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.5793099678164184,
+   "margin": 0.36687435211320396,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.8986818280619364,
+    "util_p75": 0.906097647470179,
+    "util_swing": 0.007415819408242541,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x1293c4e7708c2fd0239b093a9f43ef7792d66691c1216b106f6cfc270edb2f7b",
+   "collateral": "RSS",
+   "loan": "USDC",
+   "lltv": 0.77,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 3003708.654263549,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x73527ddd796e6d4f48387adaae36f6f3d49d606d7f2a15eb0c931416a58875d8",
+   "collateral": "cbDOGE",
+   "loan": "USDC",
+   "lltv": 0.625,
+   "daily_vol_pct": 3.027,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 6806171.828625636,
+   "borrow_usd": 2457207.362061544,
+   "liquidity_usd": 288218.2950221021,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 3.6268765768454614e-12,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0001,
+     "closed_form": 0.00046630688547844024,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.36102634842789816,
+   "margin": 0.4223578425153629,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.8746829618716538,
+    "util_p75": 0.8960790270022987,
+    "util_swing": 0.021396065130644848,
+    "already_breached": 0,
+    "vol_trust": "medium"
+   }
+  },
+  {
+   "market_id": "0xd7520ad198b497b6eb75bc690268f4597630dbc12e305e9d4105843bab36e41d",
+   "collateral": "cbADA",
+   "loan": "USDC",
+   "lltv": 0.625,
+   "daily_vol_pct": 3.679,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 7384403.104229682,
+   "borrow_usd": 2348999.5698310137,
+   "liquidity_usd": 258038.17974310034,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 1.980970942838667e-12,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0001,
+     "closed_form": 0.0004016894528822146,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.31810283602821465,
+   "margin": 0.4910354623548565,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.8994725888208848,
+    "util_p75": 0.9005818316040017,
+    "util_swing": 0.0011092427831169704,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x40ac09f34c5bc0b0b6d9b5f1ec1b97a6a149ff6278104797c9cb740453a2b794",
+   "collateral": "RSS",
+   "loan": "USDC",
+   "lltv": 0.77,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 2529730.783833127,
+   "liquidity_usd": 0.0006907693530856047,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x13c42741a359ac4a8aa8287d2be109dcf28344484f91185f9a79bd5a805a55ae",
+   "collateral": "wstETH",
+   "loan": "USDC",
+   "lltv": 0.86,
+   "daily_vol_pct": 3.532,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 5282785.0942561915,
+   "borrow_usd": 2132843.8747172663,
+   "liquidity_usd": 232184.2004193942,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 3.3306690738754696e-16,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 4.638278823787534e-05,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.40373474155445793,
+   "margin": 0.5305409981924908,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.8999312156585808,
+    "util_p75": 0.9009557815300647,
+    "util_swing": 0.0010245658714839179,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x124d76e138d7cbabd169de44e1f3c011d4e3e0ee7062642f69c071fa3dfd57d6",
+   "collateral": "FUSD",
+   "loan": "USDC",
+   "lltv": 0.77,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 1947493.9794743157,
+   "liquidity_usd": 4.498497957865732,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0xfdfecf85a4dd90a7637ae2aaf28b35061166f0e62bfc714c565eed9f7e959783",
+   "collateral": "cbXRP",
+   "loan": "USDC",
+   "lltv": 0.77,
+   "daily_vol_pct": 2.976,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 3100915.402306124,
+   "borrow_usd": 1232767.1946394402,
+   "liquidity_usd": 493226.3967425881,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 2.500331677612877e-05,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.39754944418110916,
+   "margin": 0.4837020205440141,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.7201240369873827,
+    "util_p75": 0.7216123486827264,
+    "util_swing": 0.0014883116953436915,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0xf0b0922f2634c8d75c92d95097fbc718d37c1efe534b258eb0ab8cd1191b1e8a",
+   "collateral": "HERMES",
+   "loan": "USDC",
+   "lltv": 0.98,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 1703436.8749248935,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x1c21c59df9db44bf6f645d854ee710a8ca17b479451447e9f56758aee10a2fad",
+   "collateral": "cbETH",
+   "loan": "USDC",
+   "lltv": 0.86,
+   "daily_vol_pct": 3.532,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 3406558.7134849415,
+   "borrow_usd": 1451499.4028520922,
+   "liquidity_usd": 230844.0275112413,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 2.842170943040401e-14,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0001416006250075652,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.42608964792131665,
+   "margin": 0.5045469210217248,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.8490409927538081,
+    "util_p75": 0.8491815735981765,
+    "util_swing": 0.00014058084436840979,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0xe458a501c1103ca3b256f2bcb45d223263fb34b6349d82675494ce3a94ce1327",
+   "collateral": "cbZEC",
+   "loan": "USDC",
+   "lltv": 0.625,
+   "daily_vol_pct": 7.339,
+   "vol_source": "recomputed (cadence 1.0d)",
+   "collateral_usd": 4106295.779948009,
+   "borrow_usd": 1465077.7057688662,
+   "liquidity_usd": 138080.62610635994,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 1.099120794378905e-14,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0018,
+     "closed_form": 0.0019435326993009205,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0839,
+     "closed_form": 0.08156183808030093,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.3567881575709132,
+   "margin": 0.42913894788653884,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.9120204633193858,
+    "util_p75": 0.9127046221026287,
+    "util_swing": 0.0006841587832429052,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x9125d0fa03c3137166df68bcc72283477830de2a4a5536512374c573ad4583c3",
+   "collateral": "cbLTC",
+   "loan": "USDC",
+   "lltv": 0.625,
+   "daily_vol_pct": 2.509,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 2705634.3408462238,
+   "borrow_usd": 972761.2004648079,
+   "liquidity_usd": 107962.70454696275,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 2.8647110964841183e-05,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.35953165798470893,
+   "margin": 0.42474934722446567,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.8630817694582684,
+    "util_p75": 0.8939743521013226,
+    "util_swing": 0.030892582643054167,
+    "already_breached": 0,
+    "vol_trust": "medium"
+   }
+  },
+  {
+   "market_id": "0xf2a59ad1aec67664c564cb33c33538ab41372363204ce2bdcf00900b7d28c6ab",
+   "collateral": "cbADA",
+   "loan": "USDC",
+   "lltv": 0.77,
+   "daily_vol_pct": 3.679,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 3044434.827524259,
+   "borrow_usd": 833359.66036677,
+   "liquidity_usd": 223174.89458392764,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 1.4293998917835893e-07,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.27373213997964274,
+   "margin": 0.6445037143121524,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.7887591958716653,
+    "util_p75": 0.7888276253598226,
+    "util_swing": 6.842948815732885e-05,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0xdba352d93a64b17c71104cbddc6aef85cd432322a1446b5b65163cbbc615cd0c",
+   "collateral": "cbETH",
+   "loan": "USDC",
+   "lltv": 0.86,
+   "daily_vol_pct": 3.532,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 1345665.6950401042,
+   "borrow_usd": 627429.6996656996,
+   "liquidity_usd": 213524.3366626296,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 2.855160552428515e-11,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0004,
+     "closed_form": 0.0007767577103597878,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.46625971218431084,
+   "margin": 0.4578375439717316,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.7519532063292509,
+    "util_p75": 0.751961074312891,
+    "util_swing": 7.867983640164056e-06,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x1478d70d1fde3fd5b8eb5766e82b03aa56a1df72a54fc8cd33aad666b0bd5008",
+   "collateral": "RLP",
+   "loan": "USDC",
+   "lltv": 0.86,
+   "daily_vol_pct": 5.868,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 1310.7260516132521,
+   "borrow_usd": 569642.3715631888,
+   "liquidity_usd": 0.0,
+   "horizons": {
+    "1": {
+     "breach_prob": 1.0,
+     "closed_form": 1.0
+    },
+    "7": {
+     "breach_prob": 1.0,
+     "closed_form": 1.0
+    },
+    "30": {
+     "breach_prob": 1.0,
+     "closed_form": 1.0
+    }
+   },
+   "ltv": 434.60063287982143,
+   "margin": -504.34957311607144,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 1.0,
+    "util_p75": 1.0,
+    "util_swing": 0.0,
+    "already_breached": 100,
+    "vol_trust": "high"
+   },
+   "reason": "already past LLTV: liquidation is not a probability, it is a state"
+  },
+  {
+   "market_id": "0x38c846197ac32a752a60c25d4536ebb0c3920c532e9a859c38c91efb7b8c2abb",
+   "collateral": null,
+   "loan": "USDC",
+   "lltv": 0.0,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 0.0,
+   "liquidity_usd": 506407.3492161159,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x4e5f9f668b947ade2ec08a90c814ed40a3bb34a30c2b688d106bb20426cf61c6",
+   "collateral": "HOME",
+   "loan": "USDC",
+   "lltv": 0.965,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 0.0,
+   "liquidity_usd": 499833.16828087374,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x67a66cbacb2fe48ec4326932d4528215ad11656a86135f2795f5b90e501eb538",
+   "collateral": "superOETHb",
+   "loan": "USDC",
+   "lltv": 0.77,
+   "daily_vol_pct": 3.15,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 909076.1111278632,
+   "borrow_usd": 421468.8621313605,
+   "liquidity_usd": 42043.91594966204,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 5.743481246156534e-10,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0014,
+     "closed_form": 0.0016388432877760817,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.4636232950929234,
+   "margin": 0.397891824554645,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.9049459227467901,
+    "util_p75": 0.9082041190370909,
+    "util_swing": 0.0032581962903007744,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x2e2548390b8894d2ffaaababebc2b5f2501920e03a4c611b63b46e19bfc6b75d",
+   "collateral": "uniBTC",
+   "loan": "USDC",
+   "lltv": 0.77,
+   "daily_vol_pct": 2.689,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 1287132.92765062,
+   "borrow_usd": 332493.0726731831,
+   "liquidity_usd": 36736.76026147388,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 6.050715484207103e-14,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.2583206951904156,
+   "margin": 0.6645185776747848,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.8804262340286546,
+    "util_p75": 0.9005000643434622,
+    "util_swing": 0.020073830314807584,
+    "already_breached": 0,
+    "vol_trust": "medium"
+   }
+  },
+  {
+   "market_id": "0x76629002c9fdb20fb2092053a4f22c5c65e04a81887218b9546f2a2d82b4c0a8",
+   "collateral": "cbHYPE",
+   "loan": "USDC",
+   "lltv": 0.625,
+   "daily_vol_pct": 3.487,
+   "vol_source": "recomputed (cadence 1.0d)",
+   "collateral_usd": 937945.9293865054,
+   "borrow_usd": 327841.43711074797,
+   "liquidity_usd": 30091.041746528877,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 1.4947665327724735e-10,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0007,
+     "closed_form": 0.0011717031797363608,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.3495312755663682,
+   "margin": 0.4407499590938109,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.9211421483283215,
+    "util_p75": 0.9221878577995347,
+    "util_swing": 0.0010457094712131854,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x1a3e69d0109bb1be42b80e11034bb6ee98fc466721f26845dc83b2aa8d979137",
+   "collateral": "yoUSD",
+   "loan": "USDC",
+   "lltv": 0.915,
+   "daily_vol_pct": 29.817,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 603118.1602901993,
+   "borrow_usd": 273399.25279443676,
+   "liquidity_usd": 83057.6608669813,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0097,
+     "closed_form": 0.00924812279844156,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.1875,
+     "closed_form": 0.18665050641617909,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.33,
+     "closed_form": 0.33357629479795736,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.4533096013273529,
+   "margin": 0.5045796706804887,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.7670245769604069,
+    "util_p75": 0.7673824741913768,
+    "util_swing": 0.0003578972309699058,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0x1dcd83ecf78e8edd76648c59201b3641e1f87860f7a2bbeab8a1171f99aeb87f",
+   "collateral": "kk",
+   "loan": "USDC",
+   "lltv": 0.945,
+   "daily_vol_pct": null,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 0.0,
+   "borrow_usd": 321388.6715910695,
+   "liquidity_usd": 0.0,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0xdaa04f6819210b11fe4e3b65300c725c32e55755e3598671559b9ae3bac453d7",
+   "collateral": "AERO",
+   "loan": "USDC",
+   "lltv": 0.625,
+   "daily_vol_pct": 6.053,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 1049370.7719883365,
+   "borrow_usd": 288910.87485767016,
+   "liquidity_usd": 31704.08061312247,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 1.5342775805393671e-07,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0072,
+     "closed_form": 0.006702914623969547,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.27531820265037965,
+   "margin": 0.5594908757593926,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 0.8962214050142286,
+    "util_p75": 0.9005213757200412,
+    "util_swing": 0.004299970705812561,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  },
+  {
+   "market_id": "0xb609f1d824d70a2127092333f591080be01555535c61d93252dd778e1fa88920",
+   "collateral": "yUSD",
+   "loan": "USDC",
+   "lltv": 0.915,
+   "daily_vol_pct": 0.764,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 328.7610384890413,
+   "borrow_usd": 119391.0147822662,
+   "liquidity_usd": 0.0,
+   "horizons": {
+    "1": {
+     "breach_prob": 1.0,
+     "closed_form": 1.0
+    },
+    "7": {
+     "breach_prob": 1.0,
+     "closed_form": 1.0
+    },
+    "30": {
+     "breach_prob": 1.0,
+     "closed_form": 1.0
+    }
+   },
+   "ltv": 363.15439119847497,
+   "margin": -395.8900450256557,
+   "calibration": {
+    "runs": 100,
+    "util_n": 100,
+    "util_p25": 1.0,
+    "util_p75": 1.0,
+    "util_swing": 0.0,
+    "already_breached": 100,
+    "vol_trust": "high"
+   },
+   "reason": "already past LLTV: liquidation is not a probability, it is a state"
+  },
+  {
+   "market_id": "0x093279173e34dd4589a83f10a1cae316f6227efe8ac51342fec9e29d78b68d4e",
+   "collateral": "GRO",
+   "loan": "USDC",
+   "lltv": 0.625,
+   "daily_vol_pct": 0.0,
+   "vol_source": "stored (cadence uncorrected)",
+   "collateral_usd": 187815.15608606001,
+   "borrow_usd": 83714.02748409202,
+   "liquidity_usd": 9184.246446043042,
+   "horizons": {},
+   "reason": "insufficient state to simulate"
+  },
+  {
+   "market_id": "0x5301093aee39723022f4d3c5b69ccca16f18642d35f5c07dab3e061d79b9328e",
+   "collateral": "sjEUR",
+   "loan": "USDC",
+   "lltv": 0.86,
+   "daily_vol_pct": 0.231,
+   "vol_source": "recomputed (cadence 7.0d)",
+   "collateral_usd": 25422.407344732397,
+   "borrow_usd": 17871.24855227103,
+   "liquidity_usd": 28988.334066070776,
+   "horizons": {
+    "1": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "7": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    },
+    "30": {
+     "breach_prob": 0.0,
+     "closed_form": 0.0,
+     "paths": 10000
+    }
+   },
+   "ltv": 0.7029723153253623,
+   "margin": 0.1825903310170206,
+   "calibration": {
+    "runs": 5,
+    "util_n": 5,
+    "util_p25": 0.3813784142374619,
+    "util_p75": 0.3813787394955553,
+    "util_swing": 3.2525809340322454e-07,
+    "already_breached": 0,
+    "vol_trust": "high"
+   }
+  }
+ ]
+}

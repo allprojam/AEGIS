@@ -1,0 +1,36 @@
+//@version=2
+strategy("Forex Master v4.0", overlay=true)
+
+Price = close
+
+Length = input(20)
+Mult = input(1.5)
+Basis = sma(Price, Length)
+StdDev = Mult * stdev(Price, Length)
+Upper = Basis + StdDev
+Lower = Basis - StdDev
+
+ADX_Length = input(50)
+TrueRange = max(max(high-low, abs(high-nz(close[1]))), abs(low-nz(close[1])))
+DirectionalMovementPlus = high-nz(high[1]) > nz(low[1])-low ? max(high-nz(high[1]), 0): 0
+DirectionalMovementMinus = nz(low[1])-low > high-nz(high[1]) ? max(nz(low[1])-low, 0): 0
+SmoothedTrueRange = nz(SmoothedTrueRange[1]) - (nz(SmoothedTrueRange[1])/ADX_Length) + TrueRange
+SmoothedDirectionalMovementPlus = nz(SmoothedDirectionalMovementPlus[1]) - (nz(SmoothedDirectionalMovementPlus[1])/ADX_Length) + DirectionalMovementPlus
+SmoothedDirectionalMovementMinus = nz(SmoothedDirectionalMovementMinus[1]) - (nz(SmoothedDirectionalMovementMinus[1])/ADX_Length) + DirectionalMovementMinus
+DIPlus = SmoothedDirectionalMovementPlus / SmoothedTrueRange * 100
+DIMinus = SmoothedDirectionalMovementMinus / SmoothedTrueRange * 100
+DX = abs(DIPlus - DIMinus) / (DIPlus + DIMinus)*100
+SmoothedADX1 = ema(DX, input(6))
+SmoothedADX2 = ema(DX, input(12))
+
+Condition1 = crossover(Price, Lower) and SmoothedADX1 < SmoothedADX2
+Condition2 = crossunder(Price, Upper) and SmoothedADX1 < SmoothedADX2
+
+Take_Profit = input(500)
+Stop_Loss = input(500)
+
+strategy.entry("LongEntry", true, when = Condition1)
+strategy.exit("LongExit", "LongEntry", profit = Take_Profit, loss = Stop_Loss)
+
+strategy.entry("ShortEntry", false, when = Condition2)
+strategy.exit("ShortExit", "ShortEntry", profit = Take_Profit, loss = Stop_Loss)

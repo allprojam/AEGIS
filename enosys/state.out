@@ -1,0 +1,56 @@
+==================================================================
+ENOSYS LOANS — LIVE PROTOCOL STATE (Flare mainnet)
+==================================================================
+
+--- StabilityPool (where the 75% yield goes) ---
+  getTotalBoldDeposits       ENCODE_ERR type object 'Contract' has no attribute 
+  getCollBalance             ENCODE_ERR type object 'Contract' has no attribute 
+  getEntireBranchColl        ENCODE_ERR type object 'Contract' has no attribute 
+  getEntireBranchDebt        ENCODE_ERR type object 'Contract' has no attribute 
+  NAME                       ENCODE_ERR type object 'Contract' has no attribute 
+  boldToken                  ENCODE_ERR type object 'Contract' has no attribute 
+  collToken                  ENCODE_ERR type object 'Contract' has no attribute 
+  getTroveManager            ENCODE_ERR type object 'Contract' has no attribute 
+  priceFeed                  ENCODE_ERR type object 'Contract' has no attribute 
+  activePool                 ENCODE_ERR type object 'Contract' has no attribute 
+
+--- ActivePool (yield routing) ---
+  SP_YIELD_SPLIT             ENCODE_ERR type object 'Contract' has no attribute 
+  getBoldDebt                ENCODE_ERR type object 'Contract' has no attribute 
+  getCollBalance             ENCODE_ERR type object 'Contract' has no attribute 
+  getEntireBranchColl        ENCODE_ERR type object 'Contract' has no attribute 
+  getEntireBranchDebt        ENCODE_ERR type object 'Contract' has no attribute 
+  interestRouter             ENCODE_ERR type object 'Contract' has no attribute 
+  stabilityPool              ENCODE_ERR type object 'Contract' has no attribute 
+  hasBeenShutDown            ENCODE_ERR type object 'Contract' has no attribute 
+
+--- TroveManager (risk parameters) ---
+  CCR                                ENCODE_ERR type object 'Contract' has no attribute 
+  MCR                                ENCODE_ERR type object 'Contract' has no attribute 
+  SCR                                ENCODE_ERR type object 'Contract' has no attribute 
+  MIN_DEBT                           ENCODE_ERR type object 'Contract' has no attribute 
+  LIQUIDATION_PENALTY_SP             ENCODE_ERR type object 'Contract' has no attribute 
+  LIQUIDATION_PENALTY_REDISTRIBUTION ENCODE_ERR type object 'Contract' has no attribute 
+  URGENT_REDEMPTION_BONUS            ENCODE_ERR type object 'Contract' has no attribute 
+  getEntireBranchColl                ENCODE_ERR type object 'Contract' has no attribute 
+  getEntireBranchDebt                ENCODE_ERR type object 'Contract' has no attribute 
+  isPaused                           ENCODE_ERR type object 'Contract' has no attribute 
+
+--- BorrowerOperations (limits) ---
+  CCR                            ENCODE_ERR type object 'Contract' has no attribute 
+  MCR                            ENCODE_ERR type object 'Contract' has no attribute 
+  SCR                            ENCODE_ERR type object 'Contract' has no attribute 
+  BCR                            ENCODE_ERR type object 'Contract' has no attribute 
+  MIN_ANNUAL_INTEREST_RATE       ENCODE_ERR type object 'Contract' has no attribute 
+  MAX_ANNUAL_INTEREST_RATE       ENCODE_ERR type object 'Contract' has no attribute 
+  MAX_DEBT_CAP                   ENCODE_ERR type object 'Contract' has no attribute 
+  MAX_BRANCH_CAP                 ENCODE_ERR type object 'Contract' has no attribute 
+  MIN_INTEREST_RATE_CHANGE_PERIOD ENCODE_ERR type object 'Contract' has no attribute 
+  hasBeenShutDown                ENCODE_ERR type object 'Contract' has no attribute 
+
+--- CollateralRegistry (fees) ---
+  REDEMPTION_FEE_FLOOR       ENCODE_ERR type object 'Contract' has no attribute 
+  baseRate                   ENCODE_ERR type object 'Contract' has no attribute 
+  totalCollaterals           ENCODE_ERR type object 'Contract' has no attribute 
+  boldToken                  ENCODE_ERR type object 'Contract' has no attribute 
+DONE

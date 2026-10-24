@@ -1,0 +1,89 @@
+//@version=3
+study(title = "Hull MA v420", shorttitle="HMAv420", overlay = true)
+length1 = input(14, minval=1)
+length2 = input(100, minval=1)
+length3 = input(200, minval=1)
+src = input(open, title="Source")
+//Thanks ChrisMoody and TheLark...AKA...The Coding Genius's   (For the pivot thingy)
+pf = input(false,title="Show Filtered Pivots")
+sa = input(false,title="Show Pivot Average")
+sh = input(true, title="Show 1 Hour Pivots?")
+sf = input(false, title="Show 4 Hour Pivots?")
+sd = input(false, title="Show Daily Pivots?")
+sh3 = input(false, title="Show R3 & S3 Only On 1 Hour & 4 Hour?")
+// Classic Pivot
+pivot = (high + low + close ) / 3.0
+// Filter Cr
+bull= pivot > (pivot + pivot[1]) / 2 + .0025
+bear= pivot < (pivot + pivot[1]) / 2 - .0025
+// Classic Pivots
+r1 = pf and bear ? pivot + (pivot - low) : pf and bull ? pivot + (high - low) : pivot + (pivot - low)
+s1 = pf and bull ? pivot - (high - pivot) : pf and bear ? pivot - (high - low) : pivot - (high - pivot)
+r2 = pf ? na : pivot + (high - low)
+s2 = pf ? na : pivot - (high - low)
+r3 = sh3 and r1 + (high - low) ? r1 + (high - low) : na
+s3 = sh3 and s1 - (high - low) ? s1 - (high - low) : na
+//Pivot Average Calculation
+smaP = sma(pivot, 3)
+//1 Hour Pivots
+htime_pivot = security(tickerid, '60', pivot[1])
+htime_pivotAvg = security(tickerid, '60', smaP[1])
+htime_R1 = security(tickerid, '60', r1[1])
+htime_S1 = security(tickerid, '60', s1[1])
+htime_R2 = security(tickerid, '60', r2[1])
+htime_S2 = security(tickerid, '60', s2[1])
+htime_R3 = security(tickerid, '60', r3[1])
+htime_S3 = security(tickerid, '60', s3[1])
+plot(sa and sh and htime_pivotAvg ? htime_pivotAvg : na, title="Hourly Pivot Average",style=cross, color=orange,linewidth=1,trackprice=true)
+plot(sh and htime_pivot ? htime_pivot : na, title="Hourly Pivot",style=cross, color=fuchsia,linewidth=1,trackprice=true) 
+plot(sh and htime_R1 ? htime_R1 : na, title="Hourly R1",style=cross, color=#DC143C,linewidth=1,trackprice=true)
+plot(sh and htime_S1 ? htime_S1 : na, title="Hourly S1",style=cross, color=lime,linewidth=1,trackprice=true)
+plot(sh and htime_R2 ? htime_R2 : na, title="Hourly R2",style=cross, color=maroon,linewidth=1,trackprice=true)
+plot(sh and htime_S2 ? htime_S2 : na, title="Hourly S2",style=cross, color=#228B22,linewidth=1,trackprice=true)
+plot(sh and htime_R3 ? htime_R3 : na, title="Hourly R3",style=cross, color=#FA8072,linewidth=1,trackprice=true)
+plot(sh and htime_S3 ? htime_S3 : na, title="Hourly S3",style=cross, color=#CD5C5C,linewidth=1,trackprice=true)
+//4 Hour Pivots
+ftime_pivot = security(tickerid, '240', pivot[1])
+ftime_pivotAvg = security(tickerid, '240', smaP[1])
+ftime_R1 = security(tickerid, '240', r1[1]) 
+ftime_S1 = security(tickerid, '240', s1[1])
+ftime_R2 = security(tickerid, '240', r2[1]) 
+ftime_S2 = security(tickerid, '240', s2[1])
+ftime_R3 = security(tickerid, '240', r3[1]) 
+ftime_S3 = security(tickerid, '240', s3[1])
+plot(sa and sf and ftime_pivotAvg ? ftime_pivotAvg : na, title="4 Hour Pivot Average",style=cross, color=orange,linewidth=1,trackprice=true)
+plot(sf and ftime_pivot ? ftime_pivot : na, title="4 Hour Pivot",style=cross, color=fuchsia,linewidth=1,trackprice=true) 
+plot(sf and ftime_R1 ? ftime_R1 : na, title="4 Hour R1",style=cross, color=#DC143C,linewidth=1,trackprice=true) 
+plot(sf and ftime_S1 ? ftime_S1 : na, title="4 Hour S1",style=cross, color=lime,linewidth=1,trackprice=true) 
+plot(sf and ftime_R2 ? ftime_R2 : na, title="4 Hour R2",style=cross, color=maroon,linewidth=1,trackprice=true) 
+plot(sf and ftime_S2 ? ftime_S2 : na, title="4 Hour S2",style=cross, color=#228B22,linewidth=1,trackprice=true) 
+plot(sf and ftime_R3 ? ftime_R3 : na, title="4 Hour R3",style=cross, color=#FA8072,linewidth=1,trackprice=true) 
+//Daily Pivots 
+dtime_pivot = security(tickerid, 'D', pivot[1])
+dtime_pivotAvg = security(tickerid, 'D', smaP[1])
+dtime_r1 = security(tickerid, 'D', r1[1]) 
+dtime_s1 = security(tickerid, 'D', s1[1]) 
+dtime_r2 = security(tickerid, 'D', r2[1]) 
+dtime_s2 = security(tickerid, 'D', s2[1])
+offs_daily = 0
+plot(sa and sd and dtime_pivotAvg ? dtime_pivotAvg : na, title="Daily Pivot Average",style=cross, color=orange,linewidth=1,trackprice=true)
+plot(sd and dtime_pivot ? dtime_pivot : na, title="Daily Pivot",style=cross, color=fuchsia,linewidth=1,trackprice=true) 
+plot(sd and dtime_r1 ? dtime_r1 : na, title="Daily R1",style=cross, color=#DC143C,linewidth=1,trackprice=true) 
+plot(sd and dtime_s1 ? dtime_s1 : na, title="Daily S1",style=cross, color=lime,linewidth=1,trackprice=true) 
+plot(sd and dtime_r2 ? dtime_r2 : na, title="Daily R2",style=cross, color=maroon,linewidth=1,trackprice=true) 
+plot(sd and dtime_s2 ? dtime_s2 : na, title="Daily S2",style=cross, color=#228B22,linewidth=1,trackprice=true) 
+//-end of pivot code
+hullma = wma(2*wma(src,length1/2)-wma(src,length1),round(sqrt(length1)))
+hullma2 =wma(2*wma(src,length2/2)-wma(src,length2),round(sqrt(length2)))
+hullma3 =wma(2*wma(src,length3/2)-wma(src,length3),round(sqrt(length3)))
+a=hullma>hullma2?lime:red
+b=hullma>hullma3?green:red
+c=hullma>hullma2?green:red
+d=plot(hullma,style=line,color=c,linewidth=2,title='HMA1')
+e=plot(hullma2,style=line,color=black, linewidth=2,title='HMA2')
+f=plot(hullma3,style=line,color=black,linewidth=2,trackprice=true, title='HMA3')
+fill(d,e,color=b,transp=75,title='cloud')
+fill(e,f,color=black,transp=75,title='cloud')
+plot(cross(hullma,hullma2)?hullma:na,style=circles,color=a,linewidth=7)
+plot(cross(hullma,hullma2)?hullma:na,style=circles,color=a,linewidth=7)
+plotshape(cross(hullma,hullma2)?hullma:na,color=a,text="order",style= shape.xcross,location=location.bottom)

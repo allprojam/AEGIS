@@ -1,0 +1,109 @@
+{
+ "total": 50,
+ "valid": 45,
+ "beats": 11,
+ "loses": 34,
+ "sat_out": 0,
+ "ruined": 18,
+ "corr": -0.996,
+ "bull_runs": 25,
+ "bull_beats": 1,
+ "flat_runs": 20,
+ "flat_beats": 10,
+ "strategies": [
+  {
+   "name": "Keltner bounce 200/200/8 exit=EMA touc",
+   "beat": 4,
+   "n": 9,
+   "med_alpha": -14.5
+  },
+  {
+   "name": "BB+RSI v1.1 BB200 RSI6 long only",
+   "beat": 4,
+   "n": 9,
+   "med_alpha": -71.9
+  },
+  {
+   "name": "Keltner bounce 200/200/8 exit=top band",
+   "beat": 3,
+   "n": 9,
+   "med_alpha": -92.2
+  },
+  {
+   "name": "Fractal breakout n_time=3",
+   "beat": 0,
+   "n": 9,
+   "med_alpha": -153.1
+  },
+  {
+   "name": "Fractal breakout n_time=12",
+   "beat": 0,
+   "n": 9,
+   "med_alpha": -153.1
+  }
+ ],
+ "assets": [
+  {
+   "sym": "SOL_USD",
+   "hodl": 772.5,
+   "beat": 0,
+   "n": 5
+  },
+  {
+   "sym": "BTC",
+   "hodl": 214.6,
+   "beat": 0,
+   "n": 5
+  },
+  {
+   "sym": "XRP_USD",
+   "hodl": 190.7,
+   "beat": 0,
+   "n": 5
+  },
+  {
+   "sym": "LINK_USD",
+   "hodl": 72.9,
+   "beat": 1,
+   "n": 5
+  },
+  {
+   "sym": "DOGE_USD",
+   "hodl": 53.1,
+   "beat": 0,
+   "n": 5
+  },
+  {
+   "sym": "AVAX_USD",
+   "hodl": 13.8,
+   "beat": 1,
+   "n": 5
+  },
+  {
+   "sym": "LTC_USD",
+   "hodl": 5.5,
+   "beat": 3,
+   "n": 5
+  },
+  {
+   "sym": "ADA_USD",
+   "hodl": 4.1,
+   "beat": 3,
+   "n": 5
+  },
+  {
+   "sym": "DOT_USD",
+   "hodl": -71.0,
+   "beat": 3,
+   "n": 5
+  }
+ ],
+ "excluded": {
+  "file": "bars_eth_usd_1d_9y.csv",
+  "bars": 3254,
+  "span": "2017-11-09 -> 2026-10-06",
+  "median_gap_h": 24.0,
+  "was_named": "bars_eth_usd_1h_3y.csv",
+  "actual_granularity": "1d (1 row per day, 100% of gaps == 24h)"
+ }
+}

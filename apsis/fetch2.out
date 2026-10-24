@@ -1,0 +1,17 @@
+TOKEN APS:
+  name                     Apsis
+  symbol                   APS
+  decimals                 18
+  total_supply             14999999999959013607887.0
+  price_usd                557.5971077784
+  fdv_usd                  8363956.46675285
+  total_reserve_in_usd     126820.79937565680415501036934929433110798906422303044
+  ohlcv att0 HTTP Error 401: Unauthorized
+  ohlcv att1 HTTP Error 401: Unauthorized
+  ohlcv att2 HTTP Error 401: Unauthorized
+  ohlcv att3 HTTP Error 401: Unauthorized
+  ohlcv att4 HTTP Error 429: Too Many Requests
+  ohlcv att5 HTTP Error 401: Unauthorized
+  ohlcv att6 HTTP Error 401: Unauthorized
+  ohlcv att7 HTTP Error 401: Unauthorized
+DONE

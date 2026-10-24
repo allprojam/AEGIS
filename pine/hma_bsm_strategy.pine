@@ -1,0 +1,65 @@
+//@version=5
+// Faithful port of two public indicators, combined into one strategy.
+//   Hull MA v420            (v3, overlay)  : HMA(open,14/100/200) + hourly pivots
+//   Bollinguer sobre Macd   (v4, "BSM")    : ema(close,8)-ema(close,26), bands = ema(.,9) +/- 0.8*stdev(.,9)
+// Source of truth: aegis/pine/hull.pine and aegis/pine/macdbb.pine (fetched from pine-facade).
+strategy("HMA420 + BSM", overlay=true,
+     initial_capital=1000,
+     default_qty_type=strategy.percent_of_equity, default_qty_value=100,
+     commission_type=strategy.commission.percent, commission_value=0.02,  // per side: 1bp venue fee + ~1bp gas
+     slippage=2,
+     pyramiding=0, calc_on_every_tick=false)
+
+// ---------------- inputs (defaults = live chart values) ----------------
+len1   = input.int(14,  "HMA1 length")
+len2   = input.int(100, "HMA2 length")
+len3   = input.int(200, "HMA3 length")
+src    = input.source(open, "HMA source")
+rapida = input.int(8,   "BSM Media Rapida")
+lenta  = input.int(26,  "BSM Media Lenta")
+stdv   = input.float(0.8, "BSM Stdv")
+avgLen = input.int(9,   "BSM Avg/SDev length")
+
+entryMode  = input.string("BSM compra", "Entry", options=["BSM compra","HMA cross"])
+requireHma = input.bool(true,  "Require HMA1 > HMA2 to enter")
+exitOnHma  = input.bool(true,  "Exit on HMA1 crossunder HMA2")
+exitOnVenta= input.bool(true,  "Exit on BSM venta (MACD-BB under lower band)")
+
+// ---------------- Hull MA (v3 -> v5) ----------------
+hma(s, n) =>
+    ta.wma(2 * ta.wma(s, n / 2) - ta.wma(s, n), math.round(math.sqrt(n)))
+
+hma1 = hma(src, len1)
+hma2 = hma(src, len2)
+hma3 = hma(src, len3)
+
+// ---------------- BSM: Bollinger-on-MACD (v4 -> v5) ----------------
+bbmacd     = ta.ema(close, rapida) - ta.ema(close, lenta)
+bsmAvg     = ta.ema(bbmacd, avgLen)
+bsmSdev    = ta.stdev(bbmacd, avgLen)
+bandaSupe  = bsmAvg + stdv * bsmSdev
+bandaInf   = bsmAvg - stdv * bsmSdev
+
+compra = ta.crossover(bbmacd, bandaSupe)    // BSM buy (author's alert)
+venta  = ta.crossunder(bbmacd, bandaInf)    // BSM sell (author's alert)
+
+// ---------------- signals ----------------
+hmaBull = ta.crossover(hma1, hma2)
+hmaBear = ta.crossunder(hma1, hma2)
+trendOk = not requireHma or hma1 > hma2
+
+enter = ((entryMode == "BSM compra") ? compra : hmaBull) and trendOk and strategy.position_size == 0
+exit  = (exitOnHma and hmaBear) or (exitOnVenta and venta)
+
+if enter
+    strategy.entry("Long", strategy.long)
+if exit and strategy.position_size > 0
+    strategy.close("Long")
+
+// ---------------- plots ----------------
+plot(hma1, "HMA1", color.new(color.lime, 0),  2)
+plot(hma2, "HMA2", color.new(color.black, 0), 2)
+plot(hma3, "HMA3", color.new(color.orange, 0), 1)
+plotshape(enter, "Entry", shape.triangleup,   location.belowbar, color.new(color.green, 0), size=size.small)
+plotshape(exit and strategy.position_size > 0, "Exit", shape.triangledown, location.abovebar, color.new(color.red, 0), size=size.small)
+

@@ -1,0 +1,24 @@
+=== BAND SENSITIVITY: does LP ever win? ===
+    band    apr  LP win%  mean LP mean spot
+     10%  24.0%     6.3%    0.985     1.006
+     10%  50.0%    17.1%    0.994     1.006
+     10% 100.0%    47.3%    1.011     1.006
+     20%  24.0%    47.9%    0.986     1.000
+     20%  50.0%    56.5%    1.003     1.000
+     20% 100.0%    67.6%    1.035     1.000
+     30%  24.0%    59.4%    0.984     0.996
+     30%  50.0%    72.4%    1.003     0.996
+     30% 100.0%    76.8%    1.040     0.996
+     50%  24.0%    70.8%    0.997     0.995
+     50%  50.0%    84.4%    1.018     0.995
+     50% 100.0%    98.1%    1.059     0.995
+
+=== BEST-CASE: if we PERFECTLY knew the best windows (upper bound) ===
+  LP wins 47.9% of windows
+  mean LP 0.986  mean spot 1.000  -> LP underperforms by 1.4%
+
+=== WALK-FORWARD: train a rule, test out of sample ===
+  best in-sample rule: LP when vol in [0.00729,0.00873]  (win rate 64.1% on 78 obs)
+  OUT-OF-SAMPLE: 5 obs, LP win rate 20.0%
+    mean LP 1.053 vs spot 1.084
+  baseline OOS LP win rate (all obs): 44.9%

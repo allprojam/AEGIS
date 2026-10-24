@@ -1,0 +1,1 @@
+{"ts": "2026-10-03T22:25:19", "symbol": "COINBASE:ETHUSD", "tf": "5", "hull": {"Pivot": 2685.27, "R1": 2687.56, "S1": 2682.75, "R2": 2690.08, "S2": 2680.46, "HMA1": 2687.43, "HMA2": 2686.72, "HMA3": 2685.99}, "macd_bb": {"line": 0.81, "upper": 0.75, "lower": 0.14}, "events": ["MACD_BB_ABOVE_UPPER"]}

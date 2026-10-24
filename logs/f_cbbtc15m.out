@@ -1,0 +1,64 @@
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+err HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/agency_bot/workspace/aegis/fetch_any.py", line 26, in <module>
+    print(f"wrote {len(rows)} bars to {out}: {dt.datetime.fromtimestamp(rows[0][0],dt.timezone.utc)} -> {dt.datetime.fromtimestamp(rows[-1][0],dt.timezone.utc)}")
+                                                                        ~~~~^^^
+IndexError: list index out of range
+ex out of range

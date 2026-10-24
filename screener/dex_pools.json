@@ -1,0 +1,478 @@
+{
+ "source": "geckoterminal /networks/base/pools",
+ "fetched_at": 1791742072.5911846,
+ "note": "fee_24h_usd = 24h volume * fee tier; an LP swap-fee estimate, not depositor yield",
+ "count": 46,
+ "top_fee_pool": {
+  "name": "xdp / USDC 2%",
+  "address": "0x1ef035205f94c7734827961c438474d089a334a0",
+  "dex_id": "aerodrome-slipstream-3",
+  "fee_tier": 0.02,
+  "volume_24h_usd": 6734427.14185261,
+  "fee_24h_usd": 134688.5428370522,
+  "reserve_usd": 803082.7355,
+  "target_dex": false
+ },
+ "pools": [
+  {
+   "name": "xdp / USDC 2%",
+   "address": "0x1ef035205f94c7734827961c438474d089a334a0",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 0.02,
+   "volume_24h_usd": 6734427.14185261,
+   "fee_24h_usd": 134688.5428370522,
+   "reserve_usd": 803082.7355,
+   "target_dex": false
+  },
+  {
+   "name": "AERO / cbBTC 0.6%",
+   "address": "0xdfe5f275020def30993f042174fc2d335678b626",
+   "dex_id": "aerodrome-slipstream",
+   "fee_tier": 0.006,
+   "volume_24h_usd": 10837015.7005154,
+   "fee_24h_usd": 65022.094203092405,
+   "reserve_usd": 2286309.4034,
+   "target_dex": true
+  },
+  {
+   "name": "AERO / WETH 0.3%",
+   "address": "0x4e506648d493c8870f55e870480f92f2f33ece51",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 0.003,
+   "volume_24h_usd": 9401098.38129252,
+   "fee_24h_usd": 28203.29514387756,
+   "reserve_usd": 4373119.8173,
+   "target_dex": false
+  },
+  {
+   "name": "xdp / USDC 0.01%",
+   "address": "0x2df380544b88adb3ad0a94100dcc45fd705aae2d",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 180842138.120294,
+   "fee_24h_usd": 18084.2138120294,
+   "reserve_usd": 1930398.7672,
+   "target_dex": false
+  },
+  {
+   "name": "WETH / USDC 0.05%",
+   "address": "0x3fe04a59ebd38cf06080a6f60a98d124eb59392a",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 0.0005,
+   "volume_24h_usd": 31599192.9056602,
+   "fee_24h_usd": 15799.596452830101,
+   "reserve_usd": 11161197.3876,
+   "target_dex": false
+  },
+  {
+   "name": "WETH / USDC 0.05%",
+   "address": "0xb2cc224c1c9fee385f8ad6a55b4d94e92359dc59",
+   "dex_id": "aerodrome-slipstream",
+   "fee_tier": 0.0005,
+   "volume_24h_usd": 29992205.8869882,
+   "fee_24h_usd": 14996.102943494101,
+   "reserve_usd": 7898936.1861,
+   "target_dex": true
+  },
+  {
+   "name": "cbBTC / USDC 0.05%",
+   "address": "0x160d7e9d948b16c163332a277b393c288408eb12",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 0.0005,
+   "volume_24h_usd": 23406894.3277912,
+   "fee_24h_usd": 11703.4471638956,
+   "reserve_usd": 5116692.9761,
+   "target_dex": false
+  },
+  {
+   "name": "cbBTC / WETH 0.009%",
+   "address": "0x7c7420dd105e2779316423ba3e973f434315efa9",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 8.999999999999999e-05,
+   "volume_24h_usd": 47346296.6090399,
+   "fee_24h_usd": 4261.166694813591,
+   "reserve_usd": 2345254.8431,
+   "target_dex": false
+  },
+  {
+   "name": "AERO / WETH 0.3%",
+   "address": "0x3d5d143381916280ff91407febeb52f2b60f33cf",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.003,
+   "volume_24h_usd": 1250991.83987729,
+   "fee_24h_usd": 3752.97551963187,
+   "reserve_usd": 1600512.476,
+   "target_dex": false
+  },
+  {
+   "name": "USDC / WETH 0.05%",
+   "address": "0xd0b53d9277642d899df5c87a3966a349a798f224",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.0005,
+   "volume_24h_usd": 6208858.91104531,
+   "fee_24h_usd": 3104.429455522655,
+   "reserve_usd": 9615270.6529,
+   "target_dex": false
+  },
+  {
+   "name": "WETH / USDC 0.01%",
+   "address": "0x72ab388e2e2f6facef59e3c3fa2c4e29011c2d38",
+   "dex_id": "pancakeswap-v3-base",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 22148557.6039117,
+   "fee_24h_usd": 2214.8557603911704,
+   "reserve_usd": 4503367.4558,
+   "target_dex": false
+  },
+  {
+   "name": "cbBTC / WETH 0.01%",
+   "address": "0xc211e1f853a898bd1302385ccde55f33a8c4b3f3",
+   "dex_id": "pancakeswap-v3-base",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 17854138.3204757,
+   "fee_24h_usd": 1785.4138320475702,
+   "reserve_usd": 5546585.1635,
+   "target_dex": false
+  },
+  {
+   "name": "ZEN / WETH 0.15%",
+   "address": "0x0392b12a1ceb0cd13af5ea448cf5586ea609852d",
+   "dex_id": "aerodrome-slipstream",
+   "fee_tier": 0.0015,
+   "volume_24h_usd": 1122435.62557073,
+   "fee_24h_usd": 1683.6534383560952,
+   "reserve_usd": 2789799.3012,
+   "target_dex": true
+  },
+  {
+   "name": "Basecat / USDC 0.3%",
+   "address": "0x22906596bd81f53f01d700ddbdb3935bac2e1446",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.003,
+   "volume_24h_usd": 534506.843973663,
+   "fee_24h_usd": 1603.5205319209892,
+   "reserve_usd": 133190.3027,
+   "target_dex": false
+  },
+  {
+   "name": "MAGIC / WETH 0.3%",
+   "address": "0x3c0ae164970ab9ec216cf1b7ae3118766ab65e43",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.003,
+   "volume_24h_usd": 466621.2428082,
+   "fee_24h_usd": 1399.8637284246001,
+   "reserve_usd": 445223.8092,
+   "target_dex": false
+  },
+  {
+   "name": "AERO / WETH 0.05%",
+   "address": "0x20cb8f872ae894f7c9e32e621c186e5afce82fd0",
+   "dex_id": "pancakeswap-v3-base",
+   "fee_tier": 0.0005,
+   "volume_24h_usd": 2155115.12528759,
+   "fee_24h_usd": 1077.557562643795,
+   "reserve_usd": 173989.7419,
+   "target_dex": false
+  },
+  {
+   "name": "AERO / USDC 0.05%",
+   "address": "0xa4fdd479eda160671636e2ecf8f993cbf86258a8",
+   "dex_id": "aerodrome-slipstream",
+   "fee_tier": 0.0005,
+   "volume_24h_usd": 2097430.66886578,
+   "fee_24h_usd": 1048.71533443289,
+   "reserve_usd": 866735.0148,
+   "target_dex": true
+  },
+  {
+   "name": "ZRO / WETH 0.048%",
+   "address": "0x717e174d5dae280802d1a2c15c1c0976561a3f61",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 0.00048,
+   "volume_24h_usd": 2016746.98516206,
+   "fee_24h_usd": 968.0385528777888,
+   "reserve_usd": 202100.7909,
+   "target_dex": false
+  },
+  {
+   "name": "VIRTUAL / WETH 0.05%",
+   "address": "0x3f0296bf652e19bca772ec3df08b32732f93014a",
+   "dex_id": "aerodrome-slipstream",
+   "fee_tier": 0.0005,
+   "volume_24h_usd": 1480458.69097646,
+   "fee_24h_usd": 740.22934548823,
+   "reserve_usd": 323677.9142,
+   "target_dex": true
+  },
+  {
+   "name": "AERO / USDC 0.05%",
+   "address": "0xe5b5f522e98b5a2baae212d4da66b865b781db97",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.0005,
+   "volume_24h_usd": 1074742.50063762,
+   "fee_24h_usd": 537.37125031881,
+   "reserve_usd": 257823.8033,
+   "target_dex": false
+  },
+  {
+   "name": "TEVA / WETH 0.3%",
+   "address": "0x5d75edb390ca5f88d58bafae5d9fcde3c622e365",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.003,
+   "volume_24h_usd": 165886.611909254,
+   "fee_24h_usd": 497.65983572776196,
+   "reserve_usd": 58143.2912,
+   "target_dex": false
+  },
+  {
+   "name": "USDT / USDC 0.01%",
+   "address": "0xa41bc0affba7fd420d186b84899d7ab2ac57fcd1",
+   "dex_id": "aerodrome-slipstream",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 4904311.84925178,
+   "fee_24h_usd": 490.431184925178,
+   "reserve_usd": 913079.7623,
+   "target_dex": true
+  },
+  {
+   "name": "VIRTUAL / WETH 0.05%",
+   "address": "0x9c087eb773291e50cf6c6a90ef0f4500e349b903",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.0005,
+   "volume_24h_usd": 902200.906397631,
+   "fee_24h_usd": 451.10045319881556,
+   "reserve_usd": 595602.0381,
+   "target_dex": false
+  },
+  {
+   "name": "VCNT / WETH 0.3%",
+   "address": "0x5ec8fd9b09454e7e2662a2c4c0432f95e896ea79",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.003,
+   "volume_24h_usd": 125560.678169771,
+   "fee_24h_usd": 376.682034509313,
+   "reserve_usd": 70949.6134,
+   "target_dex": false
+  },
+  {
+   "name": "PROS / USDC 0.01%",
+   "address": "0x8a8e4170c09074b109352190d47e54d7c1f61e4e",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 2869010.79141048,
+   "fee_24h_usd": 286.90107914104806,
+   "reserve_usd": 975725.1792,
+   "target_dex": false
+  },
+  {
+   "name": "WETH / USDC 0.01%",
+   "address": "0xb4cb800910b228ed3d0834cf79d697127bbb00e5",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 2816202.98597332,
+   "fee_24h_usd": 281.620298597332,
+   "reserve_usd": 510098.0857,
+   "target_dex": false
+  },
+  {
+   "name": "VCNT / USDC 0.3%",
+   "address": "0xe8f16fbf4eafec04bcf0c06d768e7ba325f9d6de",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.003,
+   "volume_24h_usd": 91992.7003450282,
+   "fee_24h_usd": 275.97810103508465,
+   "reserve_usd": 174149.7216,
+   "target_dex": false
+  },
+  {
+   "name": "USMS / ETH 0.01%",
+   "address": "0xcd5006eda0796eed8709f70a367ecdd2e87c0ad19925334a6df4c5ae04d628ad",
+   "dex_id": "uniswap-v4-base",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 2567185.1923739,
+   "fee_24h_usd": 256.71851923739,
+   "reserve_usd": 0.0,
+   "target_dex": false
+  },
+  {
+   "name": "CHIP / USDC 0.018%",
+   "address": "0x592e01edeb601016a20a3e6cd5bf533ebbadbc8b",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 0.00017999999999999998,
+   "volume_24h_usd": 1353778.02900854,
+   "fee_24h_usd": 243.6800452215372,
+   "reserve_usd": 244079.4791,
+   "target_dex": false
+  },
+  {
+   "name": "SOL / USDC 0.008%",
+   "address": "0x1131db5977242a03ebead1acd18f80a9a29e5922",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 8e-05,
+   "volume_24h_usd": 2767131.51387021,
+   "fee_24h_usd": 221.37052110961682,
+   "reserve_usd": 669533.8368,
+   "target_dex": false
+  },
+  {
+   "name": "cbBTC / USDC 0.01%",
+   "address": "0xb94b22332abf5f89877a14cc88f2abc48c34b3df",
+   "dex_id": "pancakeswap-v3-base",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 2063015.77586933,
+   "fee_24h_usd": 206.301577586933,
+   "reserve_usd": 1709860.1513,
+   "target_dex": false
+  },
+  {
+   "name": "VIRTUAL / USDC 0.05%",
+   "address": "0x7cb770d0513c30e0cb45e4899e4a2cbeed6f9830",
+   "dex_id": "pancakeswap-v3-base",
+   "fee_tier": 0.0005,
+   "volume_24h_usd": 323653.220711768,
+   "fee_24h_usd": 161.82661035588401,
+   "reserve_usd": 192215.6716,
+   "target_dex": false
+  },
+  {
+   "name": "WETH / USDC 0.008%",
+   "address": "0x4e392fbfe4d0557c82d2f97f02ec39daa31516dd",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 8e-05,
+   "volume_24h_usd": 1723762.01431983,
+   "fee_24h_usd": 137.90096114558642,
+   "reserve_usd": 133675.2467,
+   "target_dex": false
+  },
+  {
+   "name": "SOSO / USDC 0.01%",
+   "address": "0x29183f918920a2aef0115a9c7374945589968aea",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 676146.130994942,
+   "fee_24h_usd": 67.6146130994942,
+   "reserve_usd": 94066.7284,
+   "target_dex": false
+  },
+  {
+   "name": "VIRTUAL / WETH 0.004%",
+   "address": "0x9520e1a3bfd86da6c1e9e5ee4b9c2f11c413358f",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 4e-05,
+   "volume_24h_usd": 1123496.99189489,
+   "fee_24h_usd": 44.93987967579561,
+   "reserve_usd": 257454.7398,
+   "target_dex": false
+  },
+  {
+   "name": "xdp / USDT 0.01%",
+   "address": "0xf411dbf5978ce4089cf40ef7b83f813efd312fb0",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 423040.872083948,
+   "fee_24h_usd": 42.304087208394805,
+   "reserve_usd": 7737.9459,
+   "target_dex": false
+  },
+  {
+   "name": "ZEST / USDC 0.015%",
+   "address": "0x3693022bd390e147d8dd89a05403c80ff21dd64b",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 0.00015,
+   "volume_24h_usd": 261839.087310138,
+   "fee_24h_usd": 39.2758630965207,
+   "reserve_usd": 185294.0897,
+   "target_dex": false
+  },
+  {
+   "name": "Basecat / ETH 0.2%",
+   "address": "0x18816b0a9ffba7fae928ed0315c756ffe9fba1eb6eaf18236ce82c700ddd20d7",
+   "dex_id": "uniswap-v4-base",
+   "fee_tier": 0.002,
+   "volume_24h_usd": 15627.16072934,
+   "fee_24h_usd": 31.25432145868,
+   "reserve_usd": 26218.8797,
+   "target_dex": false
+  },
+  {
+   "name": "CTR / USDC 0.005%",
+   "address": "0x0ab02e160f0df68dc049b012c514857306960eae",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 5e-05,
+   "volume_24h_usd": 500685.399653649,
+   "fee_24h_usd": 25.034269982682453,
+   "reserve_usd": 586484.673,
+   "target_dex": false
+  },
+  {
+   "name": "VELVET / USDC 0.01%",
+   "address": "0x6b0f53cbd9272d8117e9535fe25371dedf39a1be",
+   "dex_id": "aerodrome-slipstream",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 237009.087230062,
+   "fee_24h_usd": 23.7009087230062,
+   "reserve_usd": 1120556.9894,
+   "target_dex": true
+  },
+  {
+   "name": "ZRO / WETH 0.03%",
+   "address": "0xdeac3451b21038b89476ea60c8bb21bdfe97995e",
+   "dex_id": "maverick-v2-base",
+   "fee_tier": 0.0003,
+   "volume_24h_usd": 64878.526035953,
+   "fee_24h_usd": 19.463557810785897,
+   "reserve_usd": 24542.4993,
+   "target_dex": false
+  },
+  {
+   "name": "WETH / USDC 0.02%",
+   "address": "0x331c12605938d2a9ab893c495cfd5f4e875e3313",
+   "dex_id": "alien-base-v3",
+   "fee_tier": 0.0002,
+   "volume_24h_usd": 59271.5490163114,
+   "fee_24h_usd": 11.85430980326228,
+   "reserve_usd": 144996.6387,
+   "target_dex": false
+  },
+  {
+   "name": "Basecat / WETH 0.001%",
+   "address": "0xfba22a6b7629a2fec052cc2a6eddd2c9d6da5ea5",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 1e-05,
+   "volume_24h_usd": 697242.999652826,
+   "fee_24h_usd": 6.972429996528261,
+   "reserve_usd": 97724.0533,
+   "target_dex": false
+  },
+  {
+   "name": "ETD / USDC 0.01%",
+   "address": "0xb7350890b00e6f12e532b5f9bd4a200fbdd991c3",
+   "dex_id": "uniswap-v3-base",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 20685.4048825184,
+   "fee_24h_usd": 2.06854048825184,
+   "reserve_usd": 5377.2952,
+   "target_dex": false
+  },
+  {
+   "name": "MOCA / MENTE 0.004%",
+   "address": "0x2a5eeea4d91042f779ee6014f4f6fd41f375262d",
+   "dex_id": "aerodrome-slipstream-3",
+   "fee_tier": 4e-05,
+   "volume_24h_usd": 18127.7669089283,
+   "fee_24h_usd": 0.7251106763571321,
+   "reserve_usd": 145620.6388,
+   "target_dex": false
+  },
+  {
+   "name": "WETH / USDC 0.01%",
+   "address": "0xdf033790907c60c9b81ae355f76f74f52f92114a",
+   "dex_id": "maverick-v2-base",
+   "fee_tier": 0.0001,
+   "volume_24h_usd": 3633.3970993989,
+   "fee_24h_usd": 0.36333970993989,
+   "reserve_usd": 24887.0195,
+   "target_dex": false
+  }
+ ]
+}

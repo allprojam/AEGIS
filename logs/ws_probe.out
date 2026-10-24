@@ -1,0 +1,3 @@
+{"url": "wss://base-rpc.publicnode.com", "heads": 8, "pending_txs": 0, "block_s": 2.0, "head_sub": true, "pend_sub": true, "err": null}
+{"url": "wss://base.drpc.org", "heads": 8, "pending_txs": 0, "block_s": 2.0, "head_sub": true, "pend_sub": false, "err": null}
+{"url": "wss://mainnet.base.org", "err": "InvalidStatus: server rejected WebSocket connection: HTTP 405"}

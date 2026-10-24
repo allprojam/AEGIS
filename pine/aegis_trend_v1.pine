@@ -1,0 +1,71 @@
+//@version=5
+// Aegis Trend v1 — the synthesis of everything the research established.
+//
+// WHAT THIS IS: a regime-gated trend-continuation system with an ATR trailing stop.
+// WHAT THIS IS NOT: a money printer. Measured on BTC 1h over 3 years it returns
+// ~+61% against +215% for simply holding BTC. Treat it as a RISK-REDUCTION overlay
+// (less drawdown, less time exposed), not as alpha. The research in
+// aegis/README.md shows that no public or custom rule tested here beat buy & hold.
+//
+// The four design rules, each fixing a specific measured failure:
+//  1. REGIME GATE  - long only when price > SMA(regime) AND that SMA is rising.
+//                    Fixes the #1 killer found: long-only systems bleed in bear
+//                    markets (BTC lost 39.7% and ETH 50.5% in one tested half).
+//                    "Flat" is the only short available, since a plain AMM swap
+//                    cannot short.
+//  2. LONG HOLDS   - ATR chandelier trail, never a fixed target. Trades lasting
+//                    hundreds of bars clear ~5bps round-trip cost; anything holding
+//                    <15 bars pays friction until dead (Fractal: 1871 trades, -$528).
+//  3. LOW CHURN    - entry needs a fresh breakout in the trend direction, not a
+//                    crossover, which fires constantly.
+//  4. NO DIP-BUYING - buy strength after a pause, never a dip into weakness. Every
+//                    mean-reversion candidate tested failed for exactly that reason.
+strategy("Aegis Trend v1", overlay=true,
+     initial_capital=1000,
+     default_qty_type=strategy.percent_of_equity, default_qty_value=100,
+     commission_type=strategy.commission.percent, commission_value=0.02,
+     slippage=2, pyramiding=0, calc_on_every_tick=false,
+     process_orders_on_close=false)
+
+// ---------------- inputs ----------------
+regimeLen = input.int(400, "Regime SMA length",  minval=20)
+slopeLen  = input.int(20,  "Regime slope lookback", minval=1)
+entryLen  = input.int(50,  "Breakout lookback", minval=5)
+atrLen    = input.int(14,  "ATR length",        minval=2)
+atrMult   = input.float(10.0, "ATR trail multiple", minval=1.0, step=0.5)
+useSlope  = input.bool(true, "Require regime SMA to be rising")
+allowExit = input.bool(false, "Also exit when the regime gate turns off")
+
+// ---------------- 1. regime gate ----------------
+regime = ta.sma(close, regimeLen)
+rising = regime > regime[slopeLen]
+bull   = close > regime and (not useSlope or rising)
+
+// ---------------- 2/3/4. entry: fresh breakout of strength, inside the regime ----------------
+hh     = ta.highest(high, entryLen)[1]
+enter  = bull and close > hh
+
+// ---------------- exit: ATR chandelier trail ----------------
+atr    = ta.atr(atrLen)
+var float peak = na
+var float stop = na
+if strategy.position_size > 0
+    peak := na(peak) ? high : math.max(peak, high)
+    stop := na(stop) ? peak - atrMult * atr : math.max(stop, peak - atrMult * atr)
+
+regimeOff = allowExit and not bull
+
+if enter and strategy.position_size == 0
+    strategy.entry("Long", strategy.long)
+    peak := high
+    stop := high - atrMult * atr
+
+if strategy.position_size > 0 and (low <= stop or regimeOff)
+    strategy.close("Long")
+
+// ---------------- plots ----------------
+plot(regime, "Regime SMA", color=bull ? color.new(color.green, 0) : color.new(color.red, 0), linewidth=2)
+plot(strategy.position_size > 0 ? stop : na, "ATR trail", color=color.new(color.orange, 0), linewidth=1, style=plot.style_linebr)
+plotshape(enter and strategy.position_size == 0, "Entry", style=shape.triangleup, location=location.belowbar, color=color.new(color.lime, 0), size=size.small)
+plotshape(strategy.position_size > 0 and low <= stop, "Trail exit", style=shape.triangledown, location=location.abovebar, color=color.new(color.red, 0), size=size.small)
+bgcolor(bull ? color.new(color.green, 94) : color.new(color.red, 94))

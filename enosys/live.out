@@ -1,0 +1,35 @@
+##########################################################################
+# ENOSYS LOANS - LIVE FXRP BRANCH (Flare)
+##########################################################################
+
+[ ActivePool ]
+  SP_YIELD_SPLIT                   750000000000000000  (0.7500 e18)
+  getBoldDebt                      4072073012234448811500486  (4,072,073.0122 e18)
+  aggRecordedDebt                  4072067410345174287321044  (4,072,067.4103 e18)
+  aggWeightedDebtSum               310509591770204426250490761982116704786397  (310,509,591,770,204,441,935,872.0000 e18)
+  aggWeightedBatchManagementFeeSum 3554672604138924802380174000000000000000  (3,554,672,604,138,925,195,264.0000 e18)
+  calcPendingSPYield               2488625676050201952  (2.4886 e18)
+  calcPendingAggInterest           3328013762630932778  (3.3280 e18)
+  lastAggUpdateTime                1791311532
+  interestRouter                   0x77528ad2f92c462d01916bca4799036b50a7e612
+  hasBeenShutDown                  False
+  getCollBalance                   4861569378042
+
+[ TroveManager - risk params (FXRP branch) ]
+  CCR                                1500000000000000000  (1.5000)
+  MCR                                1100000000000000000  (1.1000)
+  SCR                                1050000000000000000  (1.0500)
+  MIN_DEBT                           500000000000000000000  (500.0000)
+  LIQUIDATION_PENALTY_SP             50000000000000000  (0.0500)
+  LIQUIDATION_PENALTY_REDISTRIBUTION 100000000000000000  (0.1000)
+  URGENT_REDEMPTION_BONUS            20000000000000000  (0.0200)
+  getEntireBranchColl                4861569378042
+  getEntireBranchDebt                4072073111823573739945233  (4,072,073.1118)
+  isPaused                           False
+
+[ BorrowerOperations - caps & rates ]
+  MIN_ANNUAL_INTEREST_RATE         0
+  MAX_ANNUAL_INTEREST_RATE         0
+  MAX_DEBT_CAP                     0
+  MAX_BRANCH_CAP                   0
+DONE

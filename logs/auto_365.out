@@ -1,0 +1,45 @@
+### eth1h_365: 174 candidates
+  positive (full)        39 (22%)
+  positive BOTH halves   19 (11%)
+  adequate sample       100
+  KEEP (both + powered)  18
+  median trades 20   median net $-66.18
+  median fee drag 3% of gross gain
+
+=== SURVIVORS ===
+                  name   n     net   win  bars      dd     H1     H2  fee_drag_pct
+keltner/100/100/4/band  25 115.152 0.680 188.9 -63.488 25.995 96.616           1.1
+   keltner/50/50/3/ema  64  68.070 0.734  26.8 -35.028 60.488  7.582           3.8
+ keltner/100/50/4/band  26  64.373 0.692 169.1 -62.065 25.540 46.292           1.3
+   hmabsm/6/20/0.8/hma 208  33.175 0.346  10.0 -79.920 32.497  8.231           6.0
+   hmabsm/8/20/0.8/hma 208  32.581 0.365  11.3 -68.767 13.024 22.357           5.8
+   hmabsm/6/34/0.8/hma 208  30.076 0.337  12.4 -70.426 16.783 16.306           5.6
+   hmabsm/6/26/0.6/hma 208  28.905 0.341  10.5 -69.223 15.598 17.206           6.0
+  hmabsm/12/26/0.6/hma 208  26.197 0.356  13.1 -79.872  2.680 25.021           5.5
+   hmabsm/8/20/0.6/hma 208  25.978 0.341  10.6 -71.436 15.305 17.225           5.9
+   hmabsm/6/26/0.8/hma 208  25.902 0.346  11.1 -72.639 17.613 14.840           5.9
+   hmabsm/8/26/0.6/hma 208  22.238 0.351  11.7 -78.936  8.603 13.781           5.8
+  hmabsm/12/20/0.8/hma 208  19.752 0.351  12.9 -73.092  6.504 16.262           5.6
+   hmabsm/8/26/0.8/hma 208  18.931 0.351  12.2 -71.177  9.382 12.562           5.8
+  keltner/50/200/3/ema  64  17.485 0.703  28.0 -42.242  4.516 11.430           4.2
+  hmabsm/12/20/0.6/hma 208  16.069 0.351  12.1 -77.630  4.190 14.892           5.7
+
+=== transfer test of survivors -> BTC ===
+  keltner/50/50/3/ema                eth1h_365 $  +68.07 -> BTC $  -54.02 ( 67 trades, H1 -40.40 H2 -13.62)  FAILS
+  keltner/50/100/3/ema               eth1h_365 $  +14.67 -> BTC $  -26.89 ( 65 trades, H1 -42.19 H2 +12.93)  FAILS
+  keltner/50/200/3/ema               eth1h_365 $  +17.48 -> BTC $  -27.47 ( 63 trades, H1 -46.44 H2 +15.89)  FAILS
+  keltner/100/50/4/band              eth1h_365 $  +64.37 -> BTC $  -29.05 ( 22 trades, H1 -35.88 H2 +13.43)  FAILS
+  keltner/100/100/4/band             eth1h_365 $ +115.15 -> BTC $  -19.71 ( 22 trades, H1 -30.39 H2 +17.28)  FAILS
+  keltner/200/50/3/band              eth1h_365 $  +10.49 -> BTC $  -20.35 ( 22 trades, H1 -5.20 H2 -7.56)  FAILS
+  hmabsm/6/20/0.8/hma                eth1h_365 $  +33.17 -> BTC $  -37.05 (199 trades, H1 -19.51 H2 -15.88)  FAILS
+  hmabsm/6/26/0.6/hma                eth1h_365 $  +28.91 -> BTC $  -43.66 (199 trades, H1 -19.35 H2 -22.65)  FAILS
+  hmabsm/6/26/0.8/hma                eth1h_365 $  +25.90 -> BTC $  -49.11 (199 trades, H1 -40.38 H2 -8.45)  FAILS
+  hmabsm/6/34/0.6/hma                eth1h_365 $  +14.02 -> BTC $  -34.59 (199 trades, H1 -23.46 H2 -9.85)  FAILS
+  hmabsm/6/34/0.8/hma                eth1h_365 $  +30.08 -> BTC $  -32.22 (199 trades, H1 -26.56 H2 -4.38)  FAILS
+  hmabsm/8/20/0.6/hma                eth1h_365 $  +25.98 -> BTC $  -54.05 (199 trades, H1 -31.64 H2 -20.75)  FAILS
+  hmabsm/8/20/0.8/hma                eth1h_365 $  +32.58 -> BTC $  -47.03 (199 trades, H1 -30.04 H2 -12.92)  FAILS
+  hmabsm/8/26/0.6/hma                eth1h_365 $  +22.24 -> BTC $  -29.23 (199 trades, H1 -17.94 H2 -10.02)  FAILS
+  hmabsm/8/26/0.8/hma                eth1h_365 $  +18.93 -> BTC $  -23.68 (199 trades, H1 -26.04 H2 +6.05)  FAILS
+  hmabsm/12/20/0.6/hma               eth1h_365 $  +16.07 -> BTC $  -37.75 (199 trades, H1 -17.93 H2 -16.54)  FAILS
+  hmabsm/12/20/0.8/hma               eth1h_365 $  +19.75 -> BTC $  -41.10 (199 trades, H1 -32.23 H2 -3.17)  FAILS
+  hmabsm/12/26/0.6/hma               eth1h_365 $  +26.20 -> BTC $  -40.68 (199 trades, H1 -26.76 H2 -8.22)  FAILS

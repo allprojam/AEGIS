@@ -1,0 +1,37 @@
+discovered 1426 records -> 26 with readable source
+passed structural screen: 18/26
+
+=== SHORTLIST ===
+      id                                                       name             author  likes  keep why churn  max_len  atr_stop   htf  len
+PUB;2811 Golden Cross, SMA 200 Moving Average Strategy (by ChartArt           ChartArt  11429  True       MED        0     False False 2055
+PUB;2553                    Fractal Breakout Strategy (by ChartArt)           ChartArt   8858  True       MED        0     False False 2881
+PUB;2304           MACD + Stochastic, Double Strategy (by ChartArt)           ChartArt   7964  True       MED        0     False False 2800
+PUB;1897            Stochastic + RSI, Double Strategy (by ChartArt)           ChartArt   7010  True       MED        0     False False 2023
+PUB;2008                 20 years old Turtles strategy still work!!               tmr0   6518  True       MED        0     False False 1639
+PUB;1844                      [STRATEGY][RS]MicuRobert EMA cross V2         MicuRobert   4214  True       MED        0     False False 3554
+PUB;2119  Moving Average Consecutive Up/Down Strategy (by ChartArt)           ChartArt   2223  True       MED        0     False False 2598
+PUB;3066  Keltner bounce from border. No repaint. V2 (by Zelibobla)          zelibobla   2005  True       LOW        0      True False 2157
+PUB;2505                             Simple Moving Average Strategy             Dr.Pip   1466  True       MED        0     False False  458
+PUB;2358 MA Cross -  ***Programmers*** Please help with alertcondit  pAulseperformance    550  True       MED        0     False False 1405
+PUB;2627                              Moving Average Crossover 0001           pbergden    422  True       LOW        0      True False 1219
+PUB;3032     Keltner bounce from border. No repaint. (by Zelibobla)          zelibobla    395  True       MED        0     False False 1277
+PUB;2007                 [ZL] ADX+RSI (Long Entries and Exits only)                ZLu    351  True       LOW        0      True False 1952
+PUB;2456                                ICHIMOKU LAG LINE STRATEGY           greatwolf    349  True       MED        0     False False 4053
+PUB;2634              Everyday 0002 _ MAC 1st Trading Hour Walkover           pbergden    233  True       LOW        0      True False 1818
+PUB;2095                    Active trader turtles strategy modified adrian.tan.7568596    196  True       MED        0     False False  737
+PUB;2076              Active trader turtle trading modified version adrian.tan.7568596    164  True       MED        0     False False 1097
+PUB;2132                                              RSI Long Term   naqib.hakimi.cgi     99  True       MED        0     False False  883
+
+=== DISCARDED (top 10 by likes) ===
+                                                      name  likes churn                                      why
+Daily Close Comparison Strategy (by ChartArt via sirolf200   6376   MED security() w/o lookahead guard (repaint)
+                   Strategy Code Example - Risk Management   3716   LOW                            no long entry
+      Forex Master v4.0 (EUR/USD Mean-Reversion Algorithm)   3350   LOW                            no long entry
+  CamarillaStrategy -V1 - H4 and L4 breakout - exits added   2309   LOW security() w/o lookahead guard (repaint)
+     MULTIPLE TIME-FRAME STRATEGY(TREND, MOMENTUM, ENTRY)    1736   MED security() w/o lookahead guard (repaint)
+                                        Daily Candle Cross   1391   MED security() w/o lookahead guard (repaint)
+               Camarilla Strategy - breakouts of H4 and L4    838   MED security() w/o lookahead guard (repaint)
+                             Everyday 0003 _ MAC Pullback     469   LOW                            no long entry
+
+manifest -> pine/library/manifest_BTC_1h.csv
+sources  -> pine/library/src/*.pine

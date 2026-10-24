@@ -1,0 +1,8 @@
+head 52,266,367
+  0 back  in=0 out=0
+  1500 back  in=0 out=0
+  3000 back  in=0 out=0
+  4500 back  in=0 out=0
+
+  WETH flows over ~6,000 blocks (~3.3h):  IN 0  OUT 0
+  -> HOLDING, not trading

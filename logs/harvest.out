@@ -1,0 +1,25 @@
+harvested 1497 strategy records; 23 include source
+ likes    len  strat   atr name
+ 48592   2801   True False Bollinger + RSI, Double Strategy (by ChartArt) v1.1
+ 31525   3147   True  True MACD + SMA 200 Strategy (by ChartArt)
+  8858   2881   True False Fractal Breakout Strategy (by ChartArt)
+  7964   2800   True False MACD + Stochastic, Double Strategy (by ChartArt)
+  7010   2023   True False Stochastic + RSI, Double Strategy (by ChartArt)
+  6485   2793   True False Bollinger + RSI, Double Strategy (by ChartArt)
+  4214   3554   True False [STRATEGY][RS]MicuRobert EMA cross V2
+  4190   3881   True False RSI versus SMA (no repaint)
+  3485    477   True False Simple RSI-MA Algo Beats DOW By Huge Margin Over Past 100 Years!
+  3350   1656   True False Forex Master v4.0 (EUR/USD Mean-Reversion Algorithm)
+  3257    568   True False HullMA Strategy
+  2309   3292   True False CamarillaStrategy -V1 - H4 and L4 breakout - exits added
+  2005   2157   True  True Keltner bounce from border. No repaint. V2 (by Zelibobla)
+  1736   2343   True False MULTIPLE TIME-FRAME STRATEGY(TREND, MOMENTUM, ENTRY) 
+  1736   1341   True  True yuthavithi volatility based force trade scalper strategy
+   930   2214   True False [AutoView] Trailing Stop Back Testing and alerts + TP and TS
+   838   3014   True False Camarilla Strategy - breakouts of H4 and L4
+   550   1405  False False MA Cross -  ***Programmers*** Please help with alertcondition() 
+   469   2165  False False Everyday 0003 _ MAC Pullback 
+   395   1277   True  True Keltner bounce from border. No repaint. (by Zelibobla)
+   351   1952   True False [ZL] ADX+RSI (Long Entries and Exits only)
+   349   4053   True False ICHIMOKU LAG LINE STRATEGY 
+   149    671   True False EMA Intraday Strategy

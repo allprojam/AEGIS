@@ -1,0 +1,21 @@
+  p0 att0 HTTP Error 429: Too Many Requests
+p0 +300 tot 300
+p1 +300 tot 600
+  p2 att0 HTTP Error 429: Too Many Requests
+p2 +300 tot 900
+p3 +300 tot 1200
+  p4 att0 HTTP Error 429: Too Many Requests
+  p4 att1 HTTP Error 429: Too Many Requests
+p4 +300 tot 1500
+  p5 att0 HTTP Error 429: Too Many Requests
+p5 +300 tot 1800
+p6 +300 tot 2100
+p7 +300 tot 2400
+  p8 att0 HTTP Error 429: Too Many Requests
+p8 +300 tot 2700
+  p9 att0 HTTP Error 429: Too Many Requests
+  p9 att1 HTTP Error 429: Too Many Requests
+p9 +300 tot 3000
+p10 +300 tot 3300
+p11 +300 tot 3600
+DONE 3600
