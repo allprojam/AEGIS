@@ -118,6 +118,109 @@ The value of the screen is the `AVOID` column: 57 markets, each with a specific 
 
 ---
 
+## The other half of the rule: Moonwell
+
+Recall the documented rule again — it names **two** destinations:
+
+> "Mamo allocates your USDC or cbBTC to **Moonwell or Morpho**, automatically selecting the
+> market or vault with the highest available rate."
+
+I had been testing the Morpho half. The Moonwell half deserves attention of its own, because
+on **27 August 2026** Moonwell lost roughly **$8.7 million** to an oracle manipulation — and
+it is worth being exact about what that was and was not.
+
+**Moonwell was not hacked in the sense of a code break.** No overflow, no missing permission
+check, no injected code. The contracts did exactly what they were written to do. What failed
+was an assumption: *that a token's observed market price adequately describes its value as
+collateral.*
+
+An attacker pushed the price of **MAMO** — a thinly traded token — from about **$0.0106 to
+$0.4313**, roughly fortyfold, inside three hours. In the protocol's bookkeeping a holding
+worth low six figures became collateral worth millions. They then borrowed real assets
+against it: **cbBTC, WETH, USDC, wstETH**.
+
+Timeline, from Moonwell's own post-mortem:
+
+| Time (UTC), 27 Aug 2026 | Event |
+|---|---|
+| 06:09:45 | Attack window opens |
+| — | ~$11.03M borrowed against inflated MAMO, across four markets |
+| — | Liquidations fire **32 seconds** after the last loan — too late |
+| 10:53:43 | Borrow caps on **all** Base core markets cut to 1 wei |
+| 11:09:43 | Supply caps for MAMO and WELL cut to 1 wei |
+
+PeckShield and CertiK put the loss near **$8.7M**. The next day Moonwell reported about
+**$9.13M** in open obligations with no solvent debtor — **bad debt**.
+
+### Who pays
+
+This is the part that connects directly to everything above.
+
+The $9.13M shortfall is borne by **depositors in the four plundered markets** — people who
+supplied cbBTC, WETH, USDC or wstETH for yield and **never touched MAMO at all**. MAMO sat in
+a **core market**, a shared pot where any admitted collateral can borrow any other asset. So
+the risk of the weakest collateral in the pot was the risk of every depositor in it.
+
+A USDC supplier who believed they carried "stablecoin risk" was in fact carrying
+**thin-collateral oracle risk**. Nothing in the interface said so.
+
+### Why this belongs in the same argument
+
+The two halves of this post are the same mistake seen from different angles:
+
+- **Morpho half:** a highest-rate rule selects 100%-utilisation markets. You cannot withdraw,
+  because the money is lent out. **The failure mode is exit.**
+- **Moonwell half:** the destination set includes a core market whose collateral can be
+  mispriced. A depositor cannot see which collateral they are implicitly exposed to. **The
+  failure mode is default.**
+
+Both are cases of a number being maximised while the thing that actually matters —
+*can I get my money back, and what am I really lending against* — is hidden one layer down.
+
+The 297,996% markets are not a yield. And a "safe" USDC market inside a shared pot is not
+USDC risk. **Both are the same category error: reading a rate as a promise.**
+
+### And it is a pattern, not an accident
+
+Moonwell's 2026 in sequence:
+
+- **February** — an oracle error priced cbETH at ~$1.12 when it traded near $2,200. Roughly
+  $1.78M of bad debt.
+- **March** — ~$1,800 of MFAM bought enough votes to push a governance proposal through quorum
+  on Moonriver, putting ~$1.08M at risk.
+- **August** — the MAMO manipulation above.
+
+Two of the three centred on the **price source**. That is not bad luck; it is a design
+property, and it is checkable in advance.
+
+### What to actually check
+
+This is the transferable part, and it costs about half an hour per protocol:
+
+1. **What collateral is admitted?** If daily turnover is below what one large buy would move,
+   its price can be pushed.
+2. **Core market or isolated market?** In a shared pot, your risk is the weakest collateral
+   admitted — not the asset you deposited.
+3. **Spot or TWAP oracle?** A spot price can be moved fortyfold for minutes. A 30-minute
+   average cannot, and usually makes the attack unprofitable.
+4. **Are there supply and borrow caps?** Moonwell's response was to set them to 1 wei — the
+   emergency brake existed. A market without caps has no brake.
+5. **Search the governance forum for "bad debt."** How a protocol closed previous holes tells
+   you more than any yield figure.
+
+### The caveat that matters here too
+
+**This is not a claim that Mamo lost user funds, or that Mamo was hacked.** Mamo is an
+allocation layer that names Moonwell as one of two destinations. Whether any given user was
+exposed depends on what the allocator selected at the time, which is **precisely the opacity
+this post is about** — and which I could not verify, because the selection logic is not
+published and Basescan returned 403.
+
+What is verifiable: Moonwell was exploited. Moonwell is in the documented allocation set. The
+rule as written has no utilisation or bad-debt filter.
+
+---
+
 ## The general lesson
 
 Any interface ranking by **rate** instead of **rate ÷ exit-difficulty** is ranking by how
