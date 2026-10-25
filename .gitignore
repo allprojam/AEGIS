@@ -21,3 +21,4 @@ __pycache__/
 screener/token_secret.key
 screener/token_ledger.json
 screener/token_ledger.lock
+screener/snapshots/

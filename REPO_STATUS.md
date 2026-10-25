@@ -834,7 +834,7 @@ So the honest position: **Redis would be correct the day there are replicas, and
 Checking the bind address found something worse than the ledger question.
 
 ```
-host public address : eth0 187.127.255.228
+host public address : eth0 <srv-public-ip>
 MCP bind address    : 0.0.0.0   (hardcoded)
 ```
 

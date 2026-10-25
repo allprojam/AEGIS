@@ -1,0 +1,48 @@
+{
+ "run_dir": "20261025T162902Z",
+ "artefacts": [
+  "allocator.json",
+  "markets.json",
+  "meta.json",
+  "screen.json"
+ ],
+ "written_at": "2026-10-25T16:29:02Z",
+ "note": "reason phase absent",
+ "provenance": {
+  "fetched_at": "2026-10-25T16:29:02Z",
+  "source_endpoint": "https://blue-api.morpho.org/graphql",
+  "chain_id": 8453,
+  "block_number": 53078197,
+  "block_timestamp": null,
+  "row_count": 60,
+  "content_sha256": "e0dda96a4834a8a123680e47fd9ce57a99580626fa2110f79d06e985b9dcebee",
+  "markets_requested": 60,
+  "screen_verdicts": {
+   "REAL": 17,
+   "AVOID": 38,
+   "CAUTION": 5
+  },
+  "flagged_count": 43,
+  "reason": {
+   "requested": false,
+   "model": null,
+   "host": null,
+   "used": false,
+   "note": "not requested"
+  },
+  "orchestrator": {
+   "version": "orchestrator-v2",
+   "sha256": "977ae788aba29f3ec890e83d40aa56307dd377057d3a83689f472e0fb65c1f19",
+   "chars": 1449
+  }
+ },
+ "checksums": {
+  "markets.json": "924441f94186f3295018632a734dd4b6533cabd912d3b373ed9b77a904c06e6b",
+  "screen.json": "a8706d31e74f0225db63c1e055e1935702ea3f163b7dc8762940fb7d0d65d6a8",
+  "allocator.json": "d3f54ed1f48c3d330c37f7f448049b3f85b4cf8cbcfc6562969a7d92d80d2930"
+ },
+ "counts": {
+  "markets": 60,
+  "screen": 60
+ }
+}

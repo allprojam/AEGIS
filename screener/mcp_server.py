@@ -35,7 +35,7 @@ from audit import load_protocols, assess
 PORT=int(os.environ.get("AEGIS_MCP_PORT","8010"))
 
 # BIND ADDRESS. This was hardcoded to 0.0.0.0 while the host has a PUBLIC interface
-# (eth0 187.127.255.228). The token ledger holds signing material and spend state, and before
+# (eth0 <srv-public-ip>). The token ledger holds signing material and spend state, and before
 # this change the endpoint would have answered on the public internet -- reachable by exactly the
 # anonymous callers the gated /purchase exists to keep out.
 #

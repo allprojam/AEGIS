@@ -177,7 +177,7 @@ def main():
         T.LOCK_PATH, T.LEDGER_PATH = old_lock, old_ledger
 
     print("\n=== 8. the bind address defaults to loopback, not the world ===")
-    # This host has a PUBLIC eth0 (187.127.255.228). The server was hardcoded to 0.0.0.0, which
+    # This host has a PUBLIC eth0 (<srv-public-ip>). The server was hardcoded to 0.0.0.0, which
     # would have published the token endpoint to the internet. The safe default is loopback and
     # the tailnet IP is an explicit opt-in -- the pattern the :8080 service on this host uses.
     src = open(os.path.join(SCREENER, "mcp_server.py")).read()

@@ -66,7 +66,7 @@ phone at that URL immediately. **It is tailnet-only** — not on the public inte
 |---|---|---|
 | **tailscale serve** | $0 | **live now.** Private, HTTPS, works on your phone. |
 | Cloudflare Tunnel | $0 | needs `cloudflared` — **not installed.** Public hostname, DDoS cover. |
-| VPS + nginx | $0 software | needs install; **public IP is `187.127.255.228`.** No TLS without a domain + certbot. |
+| VPS + nginx | $0 software | needs install; **public IP is `<srv-public-ip>`.** No TLS without a domain + certbot. |
 | GitHub Pages | $0 | static only — **the API needs a server**, so this cannot host the whole product. |
 | Vercel | $0–20/mo | static + serverless; **the API is stateful (sqlite)**, so it would need a real DB. |
 

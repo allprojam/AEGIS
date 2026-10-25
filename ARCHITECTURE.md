@@ -185,7 +185,7 @@ naming the wrong thing — the orchestrator is `aegis_loop.py` and the prompt co
 ## Public endpoint (2026-10-24)
 
 ```
-internet ──443──> Caddy (bind 187.127.255.228) ──> 127.0.0.1:8051 ──> mcp_http.py
+internet ──443──> Caddy (bind <srv-public-ip>) ──> 127.0.0.1:8051 ──> mcp_http.py
 ```
 
 Host: `https://srv1619135.hstgr.cloud` · cert: Let's Encrypt, auto-renewed · verified `tls_verify=0`.

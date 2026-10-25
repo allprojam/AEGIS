@@ -13,7 +13,7 @@ srv1619135.hstgr.cloud {
 	# BIND IS REQUIRED HERE. Tailscale already holds 0.0.0.0:443 on this host, so Caddy's
 	# default `*:443` fails with 'address already in use'. Binding the public IP explicitly
 	# leaves the tailnet's TLS on tailscale0 untouched.
-	bind 187.127.255.228
+	bind <srv-public-ip>
 	encode zstd gzip
 
 	# Only the MCP surface is proxied. /health is proxied too, deliberately: it exposes
@@ -56,6 +56,6 @@ srv1619135.hstgr.cloud {
 # Port 80 is already occupied by the tailnet's TLS on tailscale0, so this site is explicitly
 # bound to the public interface. Without the bind, Caddy would try to bind *:80 and conflict.
 http://srv1619135.hstgr.cloud:80 {
-	bind 187.127.255.228
+	bind <srv-public-ip>
 	redir https://{host}{uri} permanent
 }
