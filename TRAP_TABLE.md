@@ -70,7 +70,7 @@ CAUTION  26    (26%)
 AVOID    57    (57%)
 ```
 
-The best `REAL` markets still show **2%–7% APY at 69–91% utilisation**. Those numbers
+The best `REAL` markets still show **1.9%–7.4% APY at 69–91% utilisation**. Those numbers
 are also elevated, also depend on incentive emissions, and are not a promise. The screen
 says *"no obvious solvency defect at this timestamp"* — it does not say "safe," and it does
 not predict.

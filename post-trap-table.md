@@ -91,7 +91,7 @@ CAUTION  26    (26%)
 AVOID    57    (57%)
 ```
 
-The best `REAL` markets pay **2%–7% APY at 69%–91% utilisation**. Ordinary lending rates.
+The best `REAL` markets pay **1.9%–7.4% APY at 69%–91% utilisation**. Ordinary lending rates.
 Nothing extraordinary. That is what a functioning market looks like — and what a "highest
 rate" rule will **never** show you, because it is precisely not highest.
 
