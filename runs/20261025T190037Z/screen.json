@@ -1,0 +1,1691 @@
+[
+ {
+  "market_id": "0x9103c3b4e834476c9a62ea009ba2c884ee42e94e6e314a26f04d312434191836",
+  "collateral": "cbBTC",
+  "lltv": 0.86,
+  "tvl_usd": 1786657773.5478,
+  "utilization": 0.901202904399831,
+  "net_apy": 4.706046174609652,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 176511358.36282423,
+  "sigma_to_breach": 6.51,
+  "daily_vol_pct": 2.149,
+  "ann_vol_pct": 41.06
+ },
+ {
+  "market_id": "0x54cf9be57fdfa6457a660991907434ff9d295c465a603a50126ff647d50b7354",
+  "collateral": "USDe",
+  "lltv": 0.915,
+  "tvl_usd": 376864744.4963429,
+  "utilization": 0.901281863890395,
+  "net_apy": 4.0210262139007265,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 37202280.63317061,
+  "sigma_to_breach": 402.05,
+  "daily_vol_pct": 0.021,
+  "ann_vol_pct": 0.4
+ },
+ {
+  "market_id": "0xe1986e80099257c65dd18091ec7e34752ae2336870a5649f20c450c9c4931fb8",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 341108989.8448948,
+  "utilization": 0.9999998781988827,
+  "net_apy": 297993.3297099557,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,993.3% net APY - not a lending rate",
+   "Morpho notes not_whitelisted, unrecognized_collateral_asset (yellow)"
+  ],
+  "warnings_red": [],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 41.54622259633345,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x8793cf302b8ffd655ab97bd1c695dbd967807e8367a65cb2f4edaf1380ba1bda",
+  "collateral": "WETH",
+  "lltv": 0.86,
+  "tvl_usd": 107204655.89120024,
+  "utilization": 0.9007949509586822,
+  "net_apy": 4.661074862595525,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 10634927.401805412,
+  "sigma_to_breach": 4.12,
+  "daily_vol_pct": 3.394,
+  "ann_vol_pct": 64.84
+ },
+ {
+  "market_id": "0xdc0d7ca7438bc13dea6c8f602b355caae93a0838a0d297c98f0ccc9367ee00f7",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100632051.80286966,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x171d5a09ac5ba88b623bdff785c0534094c7c94ff63d84f7c65dcb973afb4f06",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100631829.62831165,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xd119d5d4d5c725c6304b233fdc7e64492dbfb515046cdce1dd6724be32dcd45e",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100631807.41087542,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x482b79373e56cc2ebb41fac67218eb48058561145c6fd09c399dd4e50f4fed1a",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100631785.19344223,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xb2d1ee708fac379a89f53d77c781cf06db228e30bbb838b7adb969d653ab5baa",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100631629.67150569,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x1daadd2c05d51846ce8f974fc228e8b97c4c82f352f4e7e5800311bbce3b9f55",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100631451.93235686,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xdd7b21be447900cc2340ab1674690717d66321aef611dc47534f81d6117690f3",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100631429.71497862,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xcbaf950a0ba12f0cbe6e645772f978f868b2677d9cb35b3adf5926a250b478e5",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100631185.32404794,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x0ccbb1270451e6a7b9a9904cefe0da750a7f800cb2144b2c04c4d958437f3e41",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100631118.6720492,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x14e52bfc7b0af05e7886954adb76790d7df16994789f527cf813ec15e2d3920f",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100631029.80276515,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x6a2d168c1538f881a46ebeda99ac7f3b5f7131d9af2a6e9b0b51d17a06a5dd3a",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100631029.80276515,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xa76a6374ecf479215385f26c3c928f7802c12268b6346cd645fcd1bb1a353894",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100630740.97797361,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x3bd6ad3c84176a3224b33397d277a54a128d938bec19adf6ee1f22cc8859c342",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100630696.54344206,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x4b18b6847eca450fc40306e398d78af415686f645e8e8d346d40b0d9150b2841",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100630629.89167118,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x9bd75c5551e05eb11e8642fc3bc6df49c513bbb7b592482102ef0b79c13a14a3",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100630629.89167118,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xf6bbfcc1acfbda9d4cbeb02ad7ba34d5c0daeba3b2f357d97fbf5482bb06e4d1",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100630563.2399303,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x9941872115a1be9b9b9d8cb4c8e1ef0b7836516018342bdcca952cd3f8b843c7",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100630518.80545472,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xc005e686f1ddc1b6b35115bc49eb8f026485f1246b08d40367e1b8cfce6cf224",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 100630518.80545472,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xd4a903dc6d949519060c7707f9604fdc9772c046e05c2e3a8fce0bd7196e4109",
+  "collateral": "cbXRP",
+  "lltv": 0.625,
+  "tvl_usd": 65513982.79762124,
+  "utilization": 0.9007630296521066,
+  "net_apy": 5.862072770523007,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 6501216.151832477,
+  "sigma_to_breach": 12.6,
+  "daily_vol_pct": 2.976,
+  "ann_vol_pct": 56.87
+ },
+ {
+  "market_id": "0xff0f2bd52ca786a4f8149f96622885e880222d8bed12bbbf5950296be8d03f89",
+  "collateral": "USR",
+  "lltv": 0.915,
+  "tvl_usd": 54501025.9957103,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 52296190.33804843,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "BAD_DEBT",
+   "PROTOCOL_RED",
+   "LOCKED",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "$52,296,190 outstanding bad debt (none realised yet) - solvency depends on recovery",
+   "Morpho flags bad_debt_unrealized, oracle_price_derivation, sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "bad_debt_unrealized",
+   "oracle_price_derivation",
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": 0.83,
+  "daily_vol_pct": 10.183,
+  "ann_vol_pct": 194.55
+ },
+ {
+  "market_id": "0x29ae7ac08be3a58e11151fed74701fb8e6ffd8e76b1870cf17ad70f332752d0b",
+  "collateral": "mGLO",
+  "lltv": 0.915,
+  "tvl_usd": 38762262.9683338,
+  "utilization": 0.9000000358136848,
+  "net_apy": 4.9888766498093045,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 3876109.8297033957,
+  "sigma_to_breach": 147.91,
+  "daily_vol_pct": 0.057,
+  "ann_vol_pct": 1.1
+ },
+ {
+  "market_id": "0xc7acdf59c86d1a2499d9bd32cdb0ff364fc550c980b7d09a9744799bb436bca1",
+  "collateral": "COPS",
+  "lltv": 0.86,
+  "tvl_usd": 25140340.996776473,
+  "utilization": 1.0,
+  "net_apy": 57.664186697773864,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xac26ed5ff27f09a4e1ee83a7ea74caffc81a04824926b0154289b5eec624b535",
+  "collateral": "GUARD",
+  "lltv": 0.86,
+  "tvl_usd": 25133685.108386297,
+  "utilization": 1.0,
+  "net_apy": 54.5395191082942,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xe34f81ce7689b2586bc181acadea54d491ea8b2683ebc5e5f5ca9bd054510160",
+  "collateral": "PROOF",
+  "lltv": 0.86,
+  "tvl_usd": 25127348.88871105,
+  "utilization": 1.0,
+  "net_apy": 51.61925194143729,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x691dc50def3c6c6c02b702f5026f85b0172c742260b10a2400f1e44158f1baba",
+  "collateral": "REMIT",
+  "lltv": 0.86,
+  "tvl_usd": 25127335.840096377,
+  "utilization": 1.0,
+  "net_apy": 51.61661167785427,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x4c8e1349aa58fb02b17347d2e2916ae84a2930744b0a062413d7851aa73cec35",
+  "collateral": "sUSDX",
+  "lltv": 0.86,
+  "tvl_usd": 25126350.97532721,
+  "utilization": 0.9999999960271299,
+  "net_apy": 51.13483602938612,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "LOCKED"
+  ],
+  "reasons": [
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "Morpho notes not_whitelisted, unrecognized_collateral_asset (yellow)"
+  ],
+  "warnings_red": [],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.09982076686125009,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xed83a5d173a4434d64581e81be23bf4b86595aacfc33766eeb48ab5e0764c02e",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 20127347.953324847,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x69a25d6c5dc10dbacf440629664cd3d18bfbd9fa08ed594671332189c282c773",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 20127321.29149358,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x918015b2549bd1c094e7cab39682d07fb14625fdc808ce670fb81f3cfcaf44c7",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 20127316.847858198,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x491ceb59aa75ca607ac3a04f588c52f3d5f8bcb782a43a5615ba23409712c39b",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 20127241.30615271,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x64fc8c1bad8f4bdc3f94b4f4f3865d66fbd69f7d5ee28dc0c0f809f882fb51d9",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 20127236.862529326,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x0ca10126f6c94cbd9cf0a48cc9516ae5e3dec5aa68303e6d988ee37c5149bf0d",
+  "collateral": "cbETH",
+  "lltv": 0.77,
+  "tvl_usd": 17449562.5432184,
+  "utilization": 0.9015483223752492,
+  "net_apy": 4.800758863152341,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 1717887.7033486231,
+  "sigma_to_breach": 6.51,
+  "daily_vol_pct": 3.532,
+  "ann_vol_pct": 67.48
+ },
+ {
+  "market_id": "0x7dc02ff6c536b1d49d7fba770438d79f5bd1f1c78884629b7d1aaee19675782b",
+  "collateral": "SOL",
+  "lltv": 0.625,
+  "tvl_usd": 8160268.664230146,
+  "utilization": 0.8811048108037062,
+  "net_apy": 4.858993975619505,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 970187.8825464159,
+  "sigma_to_breach": 12.53,
+  "daily_vol_pct": 2.994,
+  "ann_vol_pct": 57.19
+ },
+ {
+  "market_id": "0x09276541cfecb6920a80679a1deced4dde3ae64bf5fc2c9c1f9c21e0c152e1a5",
+  "collateral": "JitoSOL",
+  "lltv": 0.625,
+  "tvl_usd": 4416043.682226385,
+  "utilization": 0.8772465225483118,
+  "net_apy": 5.045847242036066,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 542068.6249445957,
+  "sigma_to_breach": 12.24,
+  "daily_vol_pct": 3.064,
+  "ann_vol_pct": 58.53
+ },
+ {
+  "market_id": "0x2e26ecfe44dd56f2e6b0257e421e69474e838397b7194e2c934195c6d975af62",
+  "collateral": "sUSN",
+  "lltv": 0.915,
+  "tvl_usd": 4230057.765018905,
+  "utilization": 0.9024052763260911,
+  "net_apy": 4.826389453743875,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 412819.0624009097,
+  "sigma_to_breach": 299.07,
+  "daily_vol_pct": 0.028,
+  "ann_vol_pct": 0.54
+ },
+ {
+  "market_id": "0x4217fed63c853537fb818f4ba4416bc708c3d7534913532feb34c3511ce2aba6",
+  "collateral": "savUSD",
+  "lltv": 0.915,
+  "tvl_usd": 4032243.3308059988,
+  "utilization": 0.9031207096860899,
+  "net_apy": 7.381492241121693,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 390629.2747595201,
+  "sigma_to_breach": 109.85,
+  "daily_vol_pct": 0.077,
+  "ann_vol_pct": 1.48
+ },
+ {
+  "market_id": "0x40ac09f34c5bc0b0b6d9b5f1ec1b97a6a149ff6278104797c9cb740453a2b794",
+  "collateral": "RSS",
+  "lltv": 0.77,
+  "tvl_usd": 3673964.085828426,
+  "utilization": 0.9999999998119994,
+  "net_apy": 297995.7948675702,
+  "bad_debt_usd": 2218526.9658603277,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "BAD_DEBT",
+   "PROTOCOL_RED",
+   "LOCKED",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "$2,218,527 outstanding bad debt (none realised yet) - solvency depends on recovery",
+   "Morpho flags bad_debt_unrealized at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "bad_debt_unrealized"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0006906870196175256,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x73527ddd796e6d4f48387adaae36f6f3d49d606d7f2a15eb0c931416a58875d8",
+  "collateral": "cbDOGE",
+  "lltv": 0.625,
+  "tvl_usd": 2770557.7350496845,
+  "utilization": 0.900000046352263,
+  "net_apy": 5.876205712214107,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 277047.4197448959,
+  "sigma_to_breach": 12.39,
+  "daily_vol_pct": 3.027,
+  "ann_vol_pct": 57.83
+ },
+ {
+  "market_id": "0xe458a501c1103ca3b256f2bcb45d223263fb34b6349d82675494ce3a94ce1327",
+  "collateral": "cbZEC",
+  "lltv": 0.625,
+  "tvl_usd": 2683120.553633101,
+  "utilization": 0.9054837999259941,
+  "net_apy": 5.8649139837095,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 253590.8301406713,
+  "sigma_to_breach": 5.11,
+  "daily_vol_pct": 7.339,
+  "ann_vol_pct": 140.21
+ },
+ {
+  "market_id": "0xd7520ad198b497b6eb75bc690268f4597630dbc12e305e9d4105843bab36e41d",
+  "collateral": "cbADA",
+  "lltv": 0.625,
+  "tvl_usd": 2576675.791424204,
+  "utilization": 0.8999931048807586,
+  "net_apy": 5.733285661151818,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 257677.69536397007,
+  "sigma_to_breach": 10.19,
+  "daily_vol_pct": 3.679,
+  "ann_vol_pct": 70.29
+ },
+ {
+  "market_id": "0x124d76e138d7cbabd169de44e1f3c011d4e3e0ee7062642f69c071fa3dfd57d6",
+  "collateral": "FUSD",
+  "lltv": 0.77,
+  "tvl_usd": 2419897.303118817,
+  "utilization": 0.999998141204045,
+  "net_apy": 297958.1223741673,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags oracle_unusable at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "297,958.1% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "oracle_unusable"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 4.497961777538155,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x13c42741a359ac4a8aa8287d2be109dcf28344484f91185f9a79bd5a805a55ae",
+  "collateral": "wstETH",
+  "lltv": 0.86,
+  "tvl_usd": 2394669.022951142,
+  "utilization": 0.9011007041935811,
+  "net_apy": 4.69861411937176,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 236824.0489237852,
+  "sigma_to_breach": 3.96,
+  "daily_vol_pct": 3.532,
+  "ann_vol_pct": 67.49
+ },
+ {
+  "market_id": "0xf0b0922f2634c8d75c92d95097fbc718d37c1efe534b258eb0ab8cd1191b1e8a",
+  "collateral": "HERMES",
+  "lltv": 0.98,
+  "tvl_usd": 2012783.2314232232,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "HIGH_LLTV",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "LLTV 98.0% - a small depeg puts the position underwater",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x1c21c59df9db44bf6f645d854ee710a8ca17b479451447e9f56758aee10a2fad",
+  "collateral": "cbETH",
+  "lltv": 0.86,
+  "tvl_usd": 1872402.5725417545,
+  "utilization": 0.9016722331350371,
+  "net_apy": 4.697920828055871,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 184103.6977239893,
+  "sigma_to_breach": 3.96,
+  "daily_vol_pct": 3.532,
+  "ann_vol_pct": 67.48
+ },
+ {
+  "market_id": "0xfdfecf85a4dd90a7637ae2aaf28b35061166f0e62bfc714c565eed9f7e959783",
+  "collateral": "cbXRP",
+  "lltv": 0.77,
+  "tvl_usd": 1741300.0960277934,
+  "utilization": 0.7260112949896019,
+  "net_apy": 1.977091674443113,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 477082.3941122973,
+  "sigma_to_breach": 7.73,
+  "daily_vol_pct": 2.976,
+  "ann_vol_pct": 56.87
+ },
+ {
+  "market_id": "0x6bf5f3fcd34f77763a6ae3273cac41fad37d12b0d51d09ab68c127230e6b1bc4",
+  "collateral": "sUSDX",
+  "lltv": 0.77,
+  "tvl_usd": 1436489.817731048,
+  "utilization": 1.0,
+  "net_apy": 56.29481146570701,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0xf2a59ad1aec67664c564cb33c33538ab41372363204ce2bdcf00900b7d28c6ab",
+  "collateral": "cbADA",
+  "lltv": 0.77,
+  "tvl_usd": 1218526.9383334096,
+  "utilization": 0.6914201900360627,
+  "net_apy": 1.8199014655833203,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "REAL",
+  "fails": [],
+  "reasons": [],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 376001.6478486129,
+  "sigma_to_breach": 6.25,
+  "daily_vol_pct": 3.679,
+  "ann_vol_pct": 70.29
+ },
+ {
+  "market_id": "0x9125d0fa03c3137166df68bcc72283477830de2a4a5536512374c573ad4583c3",
+  "collateral": "cbLTC",
+  "lltv": 0.625,
+  "tvl_usd": 970874.5167435575,
+  "utilization": 0.9000000401239336,
+  "net_apy": 5.929470823129603,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "CAUTION",
+  "fails": [
+   "THIN"
+  ],
+  "reasons": [
+   "$970,875 supplied - below the $1,000,000 floor"
+  ],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 97084.53034923409,
+  "sigma_to_breach": 14.94,
+  "daily_vol_pct": 2.509,
+  "ann_vol_pct": 47.94
+ },
+ {
+  "market_id": "0x1478d70d1fde3fd5b8eb5766e82b03aa56a1df72a54fc8cd33aad666b0bd5008",
+  "collateral": "RLP",
+  "lltv": 0.86,
+  "tvl_usd": 827876.997170079,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 796163.0926564545,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "BAD_DEBT",
+   "PROTOCOL_RED",
+   "LOCKED",
+   "THIN",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "$796,163 outstanding bad debt (none realised yet) - solvency depends on recovery",
+   "Morpho flags bad_debt_unrealized, sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "$827,877 supplied - below the $1,000,000 floor",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "bad_debt_unrealized",
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": 2.39,
+  "daily_vol_pct": 5.868,
+  "ann_vol_pct": 112.11
+ },
+ {
+  "market_id": "0xdba352d93a64b17c71104cbddc6aef85cd432322a1446b5b65163cbbc615cd0c",
+  "collateral": "cbETH",
+  "lltv": 0.86,
+  "tvl_usd": 804999.7624876623,
+  "utilization": 0.7901972615492204,
+  "net_apy": 2.3023885836347455,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "CAUTION",
+  "fails": [
+   "THIN"
+  ],
+  "reasons": [
+   "$805,000 supplied - below the $1,000,000 floor"
+  ],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 168886.1405142044,
+  "sigma_to_breach": 3.96,
+  "daily_vol_pct": 3.532,
+  "ann_vol_pct": 67.48
+ },
+ {
+  "market_id": "0x76629002c9fdb20fb2092053a4f22c5c65e04a81887218b9546f2a2d82b4c0a8",
+  "collateral": "cbHYPE",
+  "lltv": 0.625,
+  "tvl_usd": 715322.5466910871,
+  "utilization": 0.9080364195200364,
+  "net_apy": 5.854460489692082,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "CAUTION",
+  "fails": [
+   "THIN"
+  ],
+  "reasons": [
+   "$715,323 supplied - below the $1,000,000 floor"
+  ],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 65781.66958134323,
+  "sigma_to_breach": 10.75,
+  "daily_vol_pct": 3.487,
+  "ann_vol_pct": 66.62
+ },
+ {
+  "market_id": "0x4e5f9f668b947ade2ec08a90c814ed40a3bb34a30c2b688d106bb20426cf61c6",
+  "collateral": "HOME",
+  "lltv": 0.965,
+  "tvl_usd": 499788.43059973884,
+  "utilization": 0.0,
+  "net_apy": 0.0,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "HIGH_LLTV",
+   "THIN",
+   "NO_YIELD"
+  ],
+  "reasons": [
+   "LLTV 96.5% - a small depeg puts the position underwater",
+   "$499,788 supplied - below the $1,000,000 floor",
+   "0.000% net APY - nothing to earn",
+   "Morpho notes not_whitelisted, unrecognized_collateral_asset (yellow)"
+  ],
+  "warnings_red": [],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 499773.5926815486,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x67a66cbacb2fe48ec4326932d4528215ad11656a86135f2795f5b90e501eb538",
+  "collateral": "superOETHb",
+  "lltv": 0.77,
+  "tvl_usd": 493667.73663491366,
+  "utilization": 0.9043003783768827,
+  "net_apy": 5.650822247362448,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "CAUTION",
+  "fails": [
+   "THIN"
+  ],
+  "reasons": [
+   "$493,668 supplied - below the $1,000,000 floor"
+  ],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 47242.4130102685,
+  "sigma_to_breach": 7.3,
+  "daily_vol_pct": 3.15,
+  "ann_vol_pct": 60.17
+ },
+ {
+  "market_id": "0x38c846197ac32a752a60c25d4536ebb0c3920c532e9a859c38c91efb7b8c2abb",
+  "collateral": null,
+  "lltv": 0.0,
+  "tvl_usd": 457184.1452445725,
+  "utilization": 0.0,
+  "net_apy": 0.0,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "THIN",
+   "NO_YIELD"
+  ],
+  "reasons": [
+   "$457,184 supplied - below the $1,000,000 floor",
+   "0.000% net APY - nothing to earn"
+  ],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 457170.572179392,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x1dcd83ecf78e8edd76648c59201b3641e1f87860f7a2bbeab8a1171f99aeb87f",
+  "collateral": "kk",
+  "lltv": 0.945,
+  "tvl_usd": 398335.8420692378,
+  "utilization": 1.0,
+  "net_apy": 297995.79868427437,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "AVOID",
+  "fails": [
+   "PROTOCOL_RED",
+   "LOCKED",
+   "THIN",
+   "OUTLIER"
+  ],
+  "reasons": [
+   "Morpho flags sustained_low_liquidity at RED",
+   "utilisation 100.0% - depositors cannot withdraw at this level",
+   "$398,336 supplied - below the $1,000,000 floor",
+   "297,995.8% net APY - not a lending rate"
+  ],
+  "warnings_red": [
+   "sustained_low_liquidity"
+  ],
+  "warnings_yellow": [
+   "not_whitelisted",
+   "unrecognized_collateral_asset"
+  ],
+  "liquidity_usd": 0.0,
+  "sigma_to_breach": null,
+  "daily_vol_pct": null,
+  "ann_vol_pct": null
+ },
+ {
+  "market_id": "0x2e2548390b8894d2ffaaababebc2b5f2501920e03a4c611b63b46e19bfc6b75d",
+  "collateral": "uniBTC",
+  "lltv": 0.77,
+  "tvl_usd": 376646.9849771711,
+  "utilization": 0.8974821924820289,
+  "net_apy": 9.100462445127222,
+  "bad_debt_usd": 0.0,
+  "realized_bad_debt_usd": 0.0,
+  "verdict": "CAUTION",
+  "fails": [
+   "THIN"
+  ],
+  "reasons": [
+   "$376,647 supplied - below the $1,000,000 floor"
+  ],
+  "warnings_red": [],
+  "warnings_yellow": [],
+  "liquidity_usd": 38611.87674928897,
+  "sigma_to_breach": 8.55,
+  "daily_vol_pct": 2.689,
+  "ann_vol_pct": 51.37
+ }
+]

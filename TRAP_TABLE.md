@@ -18,26 +18,33 @@ markets:
 
 | # | collateral | net APY | util | LLTV | TVL | verdict | primary reason |
 |---|---|---|---|---|---|---|---|
-| 1 | `HERMES` | 29,799,580% | 100.0% | 98.0% | $99,721,160 | **AVOID** | sustained_low_liquidity at RED |
-| 2 | `USR` | 29,799,580% | 100.0% | 91.5% | $53,373,187 | **AVOID** | bad debt outstanding |
-| 3 | `RLP` | 29,799,580% | 100.0% | 86.0% | $810,790 | **AVOID** | bad debt outstanding |
-| 4 | `kk` | 29,799,580% | 100.0% | 94.5% | $393,709 | **AVOID** | sustained_low_liquidity at RED |
-| 5 | `yUSD` | 29,799,580% | 100.0% | 91.5% | $169,721 | **AVOID** | oracle_unusable |
-| 6 | `PT-USR-25SEP2025` | 29,799,580% | 100.0% | 91.5% | $5,049 | **AVOID** | bad debt outstanding |
-| 7 | `RSS` | 29,799,579% | 100.0% | 77.0% | $3,598,498 | **AVOID** | bad debt outstanding |
-| 8 | `FUSD` | 29,795,767% | 100.0% | 77.0% | $2,391,464 | **AVOID** | oracle_unusable at RED |
-| 9 | `COPS` | 4,848% | 100.0% | 86.0% | $25,112,173 | **AVOID** | sustained_low_liquidity at RED |
-| 10 | `sUSDX` | 4,816% | 100.0% | 77.0% | $1,434,938 | **AVOID** | sustained_low_liquidity at RED |
-| 11 | `GUARD` | 4,593% | 100.0% | 86.0% | $25,106,828 | **AVOID** | sustained_low_liquidity at RED |
-| 12 | `PROOF` | 4,353% | 100.0% | 86.0% | $25,101,740 | **AVOID** | sustained_low_liquidity at RED |
+| 1 | `HERMES` | 297,996% | 100.0% | 98.0% | $99,721,160 | **AVOID** | sustained_low_liquidity at RED |
+| 2 | `USR` | 297,996% | 100.0% | 91.5% | $53,373,187 | **AVOID** | bad debt outstanding |
+| 3 | `RLP` | 297,996% | 100.0% | 86.0% | $810,790 | **AVOID** | bad debt outstanding |
+| 4 | `kk` | 297,996% | 100.0% | 94.5% | $393,709 | **AVOID** | sustained_low_liquidity at RED |
+| 5 | `yUSD` | 297,996% | 100.0% | 91.5% | $169,721 | **AVOID** | oracle_unusable |
+| 6 | `PT-USR-25SEP2025` | 297,996% | 100.0% | 91.5% | $5,049 | **AVOID** | bad debt outstanding |
+| 7 | `RSS` | 297,996% | 100.0% | 77.0% | $3,598,498 | **AVOID** | bad debt outstanding |
+| 8 | `FUSD` | 297,958% | 100.0% | 77.0% | $2,391,464 | **AVOID** | oracle_unusable at RED |
+| 9 | `COPS` | 48% | 100.0% | 86.0% | $25,112,173 | **AVOID** | sustained_low_liquidity at RED |
+| 10 | `sUSDX` | 48% | 100.0% | 77.0% | $1,434,938 | **AVOID** | sustained_low_liquidity at RED |
+| 11 | `GUARD` | 46% | 100.0% | 86.0% | $25,106,828 | **AVOID** | sustained_low_liquidity at RED |
+| 12 | `PROOF` | 44% | 100.0% | 86.0% | $25,101,740 | **AVOID** | sustained_low_liquidity at RED |
 
 **Twelve of twelve fail.** Every one sits at 100% utilisation.
 
 ---
 
-## Why 29,799,580%
+## Why 297,996%
 
 That is not a yield. It is a division by nearly zero.
+
+**Careful with the units.** Morpho's API returns `netSupplyApy` as a *fraction* for normal
+markets (`0.0471` = 4.71%) but as an already-large number at extreme utilisation
+(`2979.93`). `morpho_fetch.py` multiplies by 100 exactly once, which is correct for both.
+An earlier revision of this document multiplied the result *again* and published
+`29,799,580%` — a 100x error of exactly the kind `DECISIONS.md` records. The table above is
+the corrected figure.
 
 A lending market's supply APY rises with utilisation `U`:
 
@@ -49,7 +56,7 @@ As `U → 1`, the borrow curve runs to its asymptote and `supplyAPY` explodes. A
 the market has **no liquidity left to withdraw** — the number that looks like the highest
 return is a direct measurement of how impossible exit has become.
 
-32 of the 100 markets were flagged `LOCKED` (utilisation > 95%): depositors cannot withdraw.
+38 of the 100 markets were flagged `LOCKED` (utilisation > 95%): depositors cannot withdraw.
 
 ---
 
@@ -63,7 +70,7 @@ CAUTION  26    (26%)
 AVOID    57    (57%)
 ```
 
-The best `REAL` markets still show **188%–735% APY at 69–90% utilisation**. Those numbers
+The best `REAL` markets still show **2%–7% APY at 69–91% utilisation**. Those numbers
 are also elevated, also depend on incentive emissions, and are not a promise. The screen
 says *"no obvious solvency defect at this timestamp"* — it does not say "safe," and it does
 not predict.
